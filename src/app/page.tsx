@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   const services = [
-    { icon: "🤖", title: "AI Chatbot Setup", desc: "Turn your website into a 24/7 lead capture machine. The bot handles questions, books appointments, and hands off warm leads.", price: "$149/mo" },
-    { icon: "📞", title: "AI Voice Receptionist", desc: "Never miss a call again. Your virtual receptionist answers instantly, qualifies callers, and books appointments.", price: "$249/mo" },
-    { icon: "📍", title: "Google Business Optimization", desc: "Show up in local searches when people look for what you do. More visibility = more calls.", price: "$399 one-time" },
-    { icon: "⭐", title: "AI Review Response", desc: "Every review gets a thoughtful response. Build trust automatically without spending hours typing.", price: "$99/mo" },
-    { icon: "✉️", title: "Email Automation", desc: "Follow up with every lead automatically. Nurture sequences that actually get read and convert.", price: "$49/mo + $199 setup" },
-    { icon: "📱", title: "Social Media Content", desc: "Fresh content every month across all platforms. Stay visible without becoming a social media manager.", price: "$299/mo" },
-    { icon: "📝", title: "AI Ad Copy", desc: "Better copy = more clicks = lower costs. Ads that actually perform, optimized constantly.", price: "$199/mo" },
-    { icon: "🔍", title: "SEO Content Writing", desc: "Articles that rank on Google. Real content, not keyword stuffing. Traffic that turns into customers.", price: "$149/article" },
-    { icon: "🎯", title: "Landing Page Creation", desc: "Pages designed to convert. Every element optimized for action. Track everything.", price: "$799/page" },
-    { icon: "🧲", title: "Lead Magnet & Funnel Setup", desc: "Complete lead gen system. Opt-in to sale, automated. Grow your list while you sleep.", price: "$1,499 one-time" },
+    { icon: "🤖", title: "AI Chatbot Setup", href: "/services/ai-chatbot", desc: "Turn your website into a 24/7 lead capture machine. The bot handles questions, books appointments, and hands off warm leads.", price: "$149/mo" },
+    { icon: "📞", title: "AI Voice Receptionist", href: "/services/ai-voice", desc: "Never miss a call again. Your virtual receptionist answers instantly, qualifies callers, and books appointments.", price: "$249/mo" },
+    { icon: "📍", title: "Google Business Optimization", href: "/services/google-business", desc: "Show up in local searches when people look for what you do. More visibility = more calls.", price: "$399 one-time" },
+    { icon: "⭐", title: "AI Review Response", href: "/services/review-response", desc: "Every review gets a thoughtful response. Build trust automatically without spending hours typing.", price: "$99/mo" },
+    { icon: "✉️", title: "Email Automation", href: "/services/email-automation", desc: "Follow up with every lead automatically. Nurture sequences that actually get read and convert.", price: "$49/mo + $199 setup" },
+    { icon: "📱", title: "Social Media Content", href: "/services/social-media", desc: "Fresh content every month across all platforms. Stay visible without becoming a social media manager.", price: "$299/mo" },
+    { icon: "📝", title: "AI Ad Copy", href: "/services/ad-copy", desc: "Better copy = more clicks = lower costs. Ads that actually perform, optimized constantly.", price: "$199/mo" },
+    { icon: "🔍", title: "SEO Content Writing", href: "/services/seo-content", desc: "Articles that rank on Google. Real content, not keyword stuffing. Traffic that turns into customers.", price: "$149/article" },
+    { icon: "🎯", title: "Landing Page Creation", href: "/services/landing-pages", desc: "Pages designed to convert. Every element optimized for action. Track everything.", price: "$799/page" },
+    { icon: "🧲", title: "Lead Magnet & Funnel Setup", href: "/services/lead-funnel", desc: "Complete lead gen system. Opt-in to sale, automated. Grow your list while you sleep.", price: "$1,499 one-time" },
   ];
 
   const stats = [
@@ -77,16 +77,16 @@ export default function Home() {
               From chatbots to content to full funnels, we have got all your marketing needs covered.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {services.map((service, idx) => (
-              <Link key={idx} href={`/services/${service.title.toLowerCase().replace(/ /g, "-").replace("ai-", "").replace("google-business", "google-business").replace("email-automation", "email-automation").replace("social-media", "social-media").replace("ad-copy", "ad-copy").replace("seo-content", "seo-content").replace("landing-pages", "landing-pages").replace("lead-funnel", "lead-funnel")}`} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group hover:-translate-y-1 block">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{service.title}</h3>
-                <p className="text-gray-600 text-sm mb-3">{service.desc}</p>
-                <div className="text-indigo-600 font-bold text-sm">{service.price}</div>
-              </Link>
-            ))}
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              {services.map((service, idx) => (
+                <Link key={idx} href={service.href} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group hover:-translate-y-1 block">
+                  <div className="text-4xl mb-4">{service.icon}</div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{service.title}</h3>
+                  <p className="text-gray-600 text-sm mb-3">{service.desc}</p>
+                  <div className="text-indigo-600 font-bold text-sm">{service.price}</div>
+                </Link>
+              ))}
+            </div>
           <div className="text-center mt-12">
             <Link href="/pricing" className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition-colors">
               View Pricing Details
