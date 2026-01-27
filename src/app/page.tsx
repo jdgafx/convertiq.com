@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   const services = [
+    { icon: "🧲", title: "AI Assisted LeadGen", href: "/services/lead-funnel", desc: "Your AI agent works 24/7 across website, Facebook Messenger, and LinkedIn—capturing leads, qualifying them, and booking appointments.", price: "$1,499 one-time" },
     { icon: "🤖", title: "AI Chatbot Setup", href: "/services/ai-chatbot", desc: "Turn your website into a 24/7 lead capture machine. The bot handles questions, books appointments, and hands off warm leads.", price: "$149/mo" },
     { icon: "📞", title: "AI Voice Receptionist", href: "/services/ai-voice", desc: "Never miss a call again. Your virtual receptionist answers instantly, qualifies callers, and books appointments.", price: "$249/mo" },
     { icon: "📍", title: "Google Business Optimization", href: "/services/google-business", desc: "Show up in local searches when people look for what you do. More visibility = more calls.", price: "$399 one-time" },
@@ -12,7 +13,6 @@ export default function Home() {
     { icon: "📝", title: "AI Ad Copy", href: "/services/ad-copy", desc: "Better copy = more clicks = lower costs. Ads that actually perform, optimized constantly.", price: "$199/mo" },
     { icon: "🔍", title: "SEO Content Writing", href: "/services/seo-content", desc: "Articles that rank on Google. Real content, not keyword stuffing. Traffic that turns into customers.", price: "$149/article" },
     { icon: "🎯", title: "Landing Page Creation", href: "/services/landing-pages", desc: "Pages designed to convert. Every element optimized for action. Track everything.", price: "$799/page" },
-    { icon: "🧲", title: "Lead Magnet & Funnel Setup", href: "/services/lead-funnel", desc: "Complete lead gen system. Opt-in to sale, automated. Grow your list while you sleep.", price: "$1,499 one-time" },
   ];
 
   const stats = [

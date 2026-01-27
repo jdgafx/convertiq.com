@@ -8,6 +8,13 @@ export const metadata = {
 
 const services = [
   { 
+    icon: "🧲", 
+    title: "AI Assisted LeadGen", 
+    desc: "Your AI agent works 24/7 across website, Facebook Messenger, and LinkedIn—capturing leads, qualifying them, and booking appointments.", 
+    price: "$1,499 one-time",
+    href: "/services/lead-funnel"
+  },
+  { 
     icon: "🤖", 
     title: "AI Chatbot Setup", 
     desc: "Turn your website into a 24/7 lead capture machine. The bot handles questions, books appointments, and hands off warm leads.", 
@@ -69,13 +76,6 @@ const services = [
     desc: "Pages designed to convert. Every element optimized for action. Track everything.", 
     price: "$799/page",
     href: "/services/landing-pages"
-  },
-  { 
-    icon: "🧲", 
-    title: "Lead Magnet & Funnel Setup", 
-    desc: "Complete lead gen system. Opt-in to sale, automated. Grow your list while you sleep.", 
-    price: "$1,499 one-time",
-    href: "/services/lead-funnel"
   },
 ];
 
