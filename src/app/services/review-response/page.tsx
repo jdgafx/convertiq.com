@@ -1,0 +1,86 @@
+import { Navbar, Footer } from "@/components/Layout";
+import Link from "next/link";
+
+export const metadata = {
+  title: "AI Review Response System | ConvertIQ",
+  description: "Build trust automatically. Respond to every review professionally and instantly.",
+};
+
+export default function ReviewResponsePage() {
+  return (
+    <main className="min-h-screen bg-white font-poppins">
+      <Navbar />
+      <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <div className="text-6xl mb-6">⭐</div>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Review Response</h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Every review deserves a response. Our AI handles it instantly—building trust while you focus on your business.
+          </p>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-gray-600 mb-4">Here is what our review system actually does:</p>
+              <ul className="space-y-4">
+                {[
+                  "Responds to positive reviews with genuine gratitude",
+                  "Handles negative reviews professionally (but flags them for you first)",
+                  "Tuned to your brand voice—not generic corporate speak",
+                  "Monitors 50+ review platforms and notifications",
+                  "Flags concerning reviews so you can address them personally",
+                  "Turns response time from days to minutes",
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
+              <div className="text-5xl font-black text-indigo-600 mb-2">$99<span className="text-xl text-gray-500">/mo</span></div>
+              <p className="text-gray-600 mb-6">Unlimited responses. No per-review fees.</p>
+              <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
+                Start 7-Day Free Trial
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Some Common Questions</h2>
+          {[
+            { q: "Can I customize the responses?", a: "Absolutely. We train the AI on your brand voice and you can approve templates before they go live." },
+            { q: "What platforms do you monitor?", a: "Google, Yelp, Facebook, TripAdvisor, and 40+ more. If a review appears anywhere, we see it and respond." },
+            { q: "What about angry customers?", a: "Negative reviews are flagged for your review before responding. You can choose to respond yourself or let AI handle it professionally." },
+            { q: "Does it sound robotic?", a: "No. The AI is trained to sound conversational and authentic—not like a generic auto-responder that everyone can spot." },
+          ].map((faq, idx) => (
+            <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
+              <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
+              <p className="text-gray-600">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="py-20 bg-indigo-600">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">Build Trust Automatically</h2>
+          <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
+            Respond to every review. Show customers you care. Start today.
+          </p>
+          <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
+            Start Free Trial
+          </Link>
+        </div>
+      </section>
+      <Footer />
+    </main>
+  );
+}
