@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   const services = [
-    { icon: "🧲", title: "AI Assisted LeadGen", href: "/services/lead-funnel", desc: "Your website works while you sleep. It captures leads from Facebook, LinkedIn, and your site—then books appointments on your calendar. Simple as that.", price: "$1,499 one-time" },
-    { icon: "🤖", title: "AI Chatbot Setup", href: "/services/ai-chatbot", desc: "A chatbot that actually answers questions like a real person would. It books appointments and hands you warm leads. One client tripled their leads in a week.", price: "$149/mo" },
-    { icon: "📞", title: "AI Voice Receptionist", href: "/services/ai-voice", desc: "Never miss another call. The receptionist answers instantly, filters spam, and books appointments. 24/7. No sick days.", price: "$249/mo" },
-    { icon: "📍", title: "Google Business Optimization", href: "/services/google-business", desc: "Show up on Maps when locals search for what you do. We helped hundreds of businesses get found online.", price: "$399 one-time" },
-    { icon: "⭐", title: "AI Review Response", href: "/services/review-response", desc: "Every review gets a thoughtful response automatically. Good reviews get celebrated. Bad ones get handled professionally.", price: "$99/mo" },
-    { icon: "✉️", title: "Email Automation", href: "/services/email-automation", desc: "Follow-up sequences that sound like you wrote them. Nurture leads until they're ready to buy.", price: "$49/mo + $199 setup" },
-    { icon: "📱", title: "Social Media Content", href: "/services/social-media", desc: "Fresh content every month across all platforms. Stay visible without doing the work yourself.", price: "$299/mo" },
-    { icon: "📝", title: "AI Ad Copy", href: "/services/ad-copy", desc: "Ad copy that actually converts. Better headlines, better descriptions, lower costs per lead.", price: "$199/mo" },
-    { icon: "🔍", title: "SEO Content Writing", href: "/services/seo-content", desc: "Articles that rank on Google because they're genuinely useful. No keyword stuffing, just good content.", price: "$149/article" },
-    { icon: "🎯", title: "Landing Page Creation", href: "/services/landing-pages", desc: "Pages built to convert. Every element optimized for action. We track everything so you see what works.", price: "$799/page" },
+    { icon: "🧲", title: "Automated Lead Capture", href: "/services/lead-funnel", desc: "We capture leads for you 24/7 across every channel. Whether someone finds you on social media or your site, our system picks up the conversation and handles the booking. You just wake up to a full calendar.", price: "$1,499 one-time" },
+    { icon: "🤖", title: "Smart Website Chat", href: "/services/ai-chatbot", desc: "Turn people browsing your site into customers right away. Our AI handles their questions with a human touch and gets meetings on the books while you focus on your work.", price: "$149/mo" },
+    { icon: "📞", title: "Virtual Front Desk", href: "/services/ai-voice", desc: "Never miss a potential client again. This system answers every call, filters out the spam, and makes sure real prospects get on your calendar immediately without you lifting a finger.", price: "$249/mo" },
+    { icon: "📍", title: "Local Search Mastery", href: "/services/google-business", desc: "If you aren't on the first page of local search, you are missing out on nearby customers. We tune up your profile so people in your neighborhood actually find you when they need help.", price: "$399 one-time" },
+    { icon: "⭐", title: "Reputation Management", href: "/services/review-response", desc: "Responding to reviews is essential but takes way too much time. We automate the process with thoughtful responses that keep your reputation solid and your customers happy.", price: "$99/mo" },
+    { icon: "✉️", title: "Natural Follow-Ups", href: "/services/email-automation", desc: "Emails that people actually want to read. We skip the generic templates and create natural follow-up sequences that turn interested visitors into long-term clients automatically.", price: "$49/mo + $199 setup" },
+    { icon: "📱", title: "Consistent Social Presence", href: "/services/social-media", desc: "Staying active on social media shouldn't be a second job for you. We manage your monthly posts so you stay relevant and visible without ever having to touch your phone.", price: "$299/mo" },
+    { icon: "📝", title: "High-Performance Ads", href: "/services/ad-copy", desc: "Stop guessing with your advertising budget. We create headlines that grab attention and constantly test new versions to lower your cost per lead while you watch the results.", price: "$199/mo" },
+    { icon: "🔍", title: "Content That Ranks", href: "/services/seo-content", desc: "Articles that provide real value to your readers. We help you rank on Google by writing helpful content that people actually enjoy reading, not just robot-filler.", price: "$149/article" },
+    { icon: "🎯", title: "Pages That Really Sell", href: "/services/landing-pages", desc: "Landing pages built for one purpose: more sales. We optimize every element to ensure your visitors take action, giving you the best return on your marketing investment.", price: "$799/page" },
   ];
 
   const stats = [
@@ -37,10 +37,10 @@ export default function Home() {
               Results in 7 days or less
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
-              Marketing That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Actually Works</span>
+              Grow Your Business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">AI That Actually Works</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Most agencies promise the world and deliver nothing. We use proven strategies and smart tech to get you real results fast.
+              Most marketing agencies make things way too complicated. We keep it simple: we use smart technology to bring you the right leads and book appointments automatically. You focus on your business, while we take care of the growth for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-1">
@@ -99,10 +99,10 @@ export default function Home() {
           <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Why Businesses Choose ConvertIQ</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: "⚡", title: "Fast Results", desc: "Honestly? Most of our clients see numbers move in about a week." },
-              { icon: "💰", title: "No Long Contracts", desc: "We do month-to-month. If you want to leave, you can. No handcuffs." },
-              { icon: "📊", title: "Real Reporting", desc: "We track everything. You'll never hear vague excuses from us." },
-              { icon: "👋", title: "Real Humans", desc: "Call us. We actually answer. Crazy concept, I know." },
+              { icon: "⚡", title: "Fast Implementation", desc: "Most of our clients see their new AI systems live and working in about a week." },
+              { icon: "💰", title: "Month-to-Month", desc: "We believe in earning your business. No long-term contracts, cancel whenever you need." },
+              { icon: "📊", title: "Transparent Reporting", desc: "We track every lead and booking. You will always know exactly how your investment is performing." },
+              { icon: "👋", title: "Direct Support", desc: "We are real people here to help. When you have a question, you get a direct answer from our team." },
             ].map((item, idx) => (
               <div key={idx} className="bg-white rounded-xl p-6 shadow">
                 <div className="text-3xl mb-3">{item.icon}</div>
