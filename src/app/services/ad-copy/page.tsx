@@ -60,7 +60,7 @@ export default function AdCopyPage() {
             { q: "Which platforms do you handle?", a: "Google Ads, Meta (that's Facebook and Instagram), LinkedIn Ads, and Microsoft Ads. Each one's got its own quirks and best practices—so what works on LinkedIn won't necessarily fly on Instagram, you know?" },
             { q: "How many variations do you actually write?", a: "Usually somewhere between 4-8 per ad set. It's enough to test things out without drowning in a million options." },
             { q: "What if I already have ads running?", a: "No worries. We'll take a hard look at what's not working and come up with some fresh alternatives. Sometimes the fix is dead simple—just a tweak here and there. Other times? Yeah, we probably need to start from scratch." },
-            { q: "How do you know if it is working?", a: "We track the stuff that counts: clicks, conversions, cost per acquisition. And honestly, we optimize for whatever metric actually matters to your business. That's the whole point, right?" },
+            { q: "How do you know if it is working?", a: "We track the metrics that count: clicks, conversions, and cost per acquisition. We optimize for the data that actually matters to your business goals." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

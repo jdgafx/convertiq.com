@@ -26,7 +26,7 @@ export default function ReviewResponsePage() {
               <p className="text-gray-600 mb-4">Here&apos;s how we keep your reputation spotless while you sleep:</p>
               <ul className="space-y-4">
                 {[
-                  "It says &apos;thanks&apos; to the good stuff in a way that feels real, not canned.",
+                  "It thanks customers for positive feedback in a way that feels real and authentic.",
                   "It handles the haters professionally—defusing the situation so you don&apos;t have to stress about it.",
                   "We teach it to sound like you, not a corporate press release.",
                   "Google, Yelp, Facebook—if someone&apos;s talking about you online, we catch it.",

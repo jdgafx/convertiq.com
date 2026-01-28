@@ -31,7 +31,7 @@ export default function SocialMediaPage() {
                   "Custom graphics—and yes, no more cringe stock photos of people shaking hands in meeting rooms.",
                   "Hashtags that are actually chosen to help people find you, not just random words thrown together.",
                   "We also jump into the comments, reply to people, and build a real community around your brand.",
-                  "At the end of each month, you get a report that breaks down what&apos;s working. Just the stuff that actually matters.",
+                  "At the end of each month, you get a report that breaks down what&apos;s working. Just the data that actually matters.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,7 +60,7 @@ export default function SocialMediaPage() {
             { q: "So, which platforms should you actually be on?", a: "Honestly, it depends on what you do. A local restaurant? Yeah, you're way better off on Instagram and Google Business than LinkedIn—that's just common sense, right? We help you zero in on where your customers actually spend their time." },
             { q: "Do I get to see posts before they go live?", a: "Absolutely. You'll get a content calendar every month. Review it, give it the thumbs up, tell us what needs changing—we're not hitting publish without your say-so, promise." },
             { q: "Can you post from my account?", a: "Yeah, we can if you want to hand over access. Or we can just send you the content and you post it yourself. Honestly, whatever you're comfortable with—no pressure here at all." },
-            { q: "What if I hate the stuff you create?", a: "No worries, we'll tweak it. Sometimes it takes a round or two to really nail your voice, so we'll keep working with you until it actually feels like your brand." },
+            { q: "What if I need changes to the content?", a: "No worries, we'll tweak it. Sometimes it takes a round or two to really nail your voice, so we'll keep working with you until it actually feels like your brand." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

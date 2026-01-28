@@ -9,7 +9,7 @@ export const metadata = {
 const services = [
   { 
     icon: "🧲", 
-    title: "Automated Lead Capture", 
+    title: "AI Assisted Advanced LeadGen", 
     desc: "Think of this as a team that never sleeps. Our AI finds potential customers on social media and your site, starts a conversation, and gets them on your calendar automatically. You wake up to a list of qualified appointments without the 'back and forth' emails.", 
     price: "$1,499 one-time",
     href: "/services/lead-funnel"

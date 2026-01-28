@@ -27,16 +27,16 @@ export default function AiChatbotPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">How It Helps Your Business</h2>
               <p className="text-gray-600 mb-6">
-                Our AI agents are trained specifically on your business. They understand your products, services, and pricing, allowing them to provide accurate information to your visitors 24/7.
+                We train the bot specifically on your stuff—your products, your pricing, how you actually talk. So when visitors ask questions, they get real answers that sound like you, not some generic robot.
               </p>
               <ul className="space-y-4">
             {[
-              "The bot is trained on your actual website content and documentation.",
-              "It qualifies every lead before booking an appointment.",
-              "The system syncs directly with your existing calendar.",
-              "It provides instant answers to common customer questions.",
-              "All lead data is automatically pushed to your CRM.",
-              "The AI continuously improves based on visitor interactions.",
+              "We feed it your actual website, docs, and any PDFs you have—so it really knows your business inside and out.",
+              "It asks the right questions to figure out if someone's actually worth your time before booking anything.",
+              "Plugs straight into whatever calendar you use—Google, Outlook, doesn't matter. Books only when you're free.",
+              "Visitors get instant answers at 2am. You don't have to be there.",
+              "Every conversation automatically flows into your CRM. No manual data entry.",
+              "And yeah, it gets smarter the more it chats with people. Learns what works.",
             ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -68,19 +68,19 @@ export default function AiChatbotPage() {
           {[
             { 
               q: "How does the free trial work?", 
-              a: "You get full access to the platform for 7 days with no credit card required. This allows you to see exactly how many qualified leads the system generates before committing." 
+              a: "You get the full thing for 7 days—no credit card needed. Just see how many leads it actually pulls in. If it doesn't work for you, walk away. No harm done." 
             },
             { 
               q: "How is the AI trained?", 
-              a: "We use your website content, PDFs, and existing documentation to build a custom knowledge base for your bot. This ensures it only provides accurate, business-specific information." 
+              a: "We upload your website, any PDFs you have, docs, whatever you've got. The bot learns it all so it gives answers that actually make sense for your business—not generic fluff." 
             },
             { 
               q: "Does it work with my calendar?", 
-              a: "Yes. It integrates with major calendar platforms like Google and Outlook, allowing visitors to book meetings only during your available hours." 
+              a: "Yup—works with Google, Outlook, whatever you use. Only books during times you actually have free. We set all that up for you." 
             },
             { 
               q: "What if it doesn't know an answer?", 
-              a: "The system will politely inform the visitor and instantly notify your team via email or SMS so a real person can follow up and close the lead." 
+              a: "It tells them something like 'Let me get someone who knows more about that'—then immediately pings your team via email or text. You follow up and close the deal. Easy." 
             },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">

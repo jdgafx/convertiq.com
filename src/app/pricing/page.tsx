@@ -10,7 +10,7 @@ export default function PricingPage() {
     const platformTiers = [
         {
             name: 'Starter',
-            description: 'For small businesses that want AI marketing tools without the complexity. You get a working chatbot, better local visibility, review automation, and basic analytics to track what is working.',
+            description: 'Perfect if you\'re just starting out. You\'ll get a chatbot that actually books appointments, your Google Business profile tuned up so locals can find you, automated review responses, and a simple dashboard to see what\'s working. No tech headaches.',
             monthlyPrice: 297,
             annualPrice: 247,
             features: [
@@ -26,7 +26,7 @@ export default function PricingPage() {
         },
         {
             name: 'Professional',
-            description: 'For businesses that are growing and need more firepower. This plan adds voice reception, email sequences that actually get read, social media content, and ad copy that converts better.',
+            description: 'Ready to level up? This plan gives you everything in Starter plus a voice receptionist that never misses calls, email sequences that people actually open, social posts that keep you top-of-mind, and ad copy that converts like crazy.',
             monthlyPrice: 597,
             annualPrice: 497,
             features: [
@@ -44,7 +44,7 @@ export default function PricingPage() {
         },
         {
             name: 'Enterprise',
-            description: 'For businesses that want everything done for them. This includes content marketing, landing pages, funnel setup, custom AI training, and a dedicated manager who knows your business.',
+            description: 'The full package—you get everything done for you. Content that ranks, landing pages that convert, complete funnels, custom AI trained specifically for your business, plus a dedicated manager who actually learns your operation inside and out.',
             monthlyPrice: 1297,
             annualPrice: 1097,
             features: [
@@ -73,33 +73,33 @@ export default function PricingPage() {
         { name: 'AI Ad Copy', price: '$199/mo', oneTime: false, setup: '$0', description: 'Better copy, more conversions' },
         { name: 'SEO Content Writing', price: '$149', oneTime: true, setup: null, description: '2,000+ word articles that rank' },
         { name: 'Landing Page Creation', price: '$799', oneTime: true, setup: null, description: 'High-converting page design' },
-        { name: 'Lead Funnel Setup', price: '$1,499', oneTime: true, setup: null, description: 'Complete automated funnel system' }
+        { name: 'AI Assisted Advanced LeadGen', price: '$1,499', oneTime: true, setup: null, description: 'Complete automated funnel system' }
     ];
 
     const faqs = [
         {
             question: "What is included in the free trial?",
-            answer: "You get full access to your chosen plan for 7 days with no credit card required. If you don't see the value, you can cancel instantly with no questions asked."
+            answer: "Everything. Seriously, you get the full platform for 7 days—no credit card, no tricks. If it doesn't blow you away, just walk away. No hard feelings, no hoops to jump through."
         },
         {
             question: "Can I customize the services?",
-            answer: "Yes. Every service is fully customizable to your specific business. Our team works with you to ensure every chatbot, email, and ad campaign aligns with your brand."
+            answer: "Totally. We don't do cookie-cutter. Every chatbot script, email template, and ad we write is tailored specifically to your business. We'll work with you until it sounds exactly like you."
         },
         {
             question: "Can I switch plans later?",
-            answer: "You can upgrade or downgrade your plan at any time. We will prorate the difference so you only pay for what you use."
+            answer: "Absolutely. Need to scale up? Cool. Need to scale down? Also cool. We adjust your billing so you only pay for what you actually use. No penalties, no drama."
         },
         {
             question: "Are there custom packages?",
-            answer: "We can build a unique package from the ground up if our standard tiers don't fit your needs. Contact us for a custom proposal."
+            answer: "If our plans don't quite fit, we'll build you something custom. Hit us up and tell us what you need—we'll put together a proposal that actually makes sense for your situation."
         },
         {
             question: "How quickly will I see results?",
-            answer: "Most clients see improvements within the first week. AI tools like chatbots go live immediately, while SEO usually takes 60 to 90 days to show movement."
+            answer: "Chatbots start working right away—you might see leads the first day. SEO takes longer, usually a couple months. Most folks notice real improvements within the first week though."
         },
         {
             question: "Is there a long-term contract?",
-            answer: "No. Everything is month-to-month. You can cancel your subscription at any time with 30 days notice."
+            answer: "Nope! Month-to-month all the way. If you need to cancel, just give us 30 days notice. We're not about locking people into contracts they don't want."
         }
     ];
 
@@ -238,7 +238,7 @@ export default function PricingPage() {
                                     { feature: 'AI Ad Copy', starter: false, pro: true, enterprise: true },
                                     { feature: 'SEO Content Writing', starter: false, pro: false, enterprise: '4/mo' },
                                     { feature: 'Landing Pages', starter: false, pro: false, enterprise: '2/mo' },
-                                    { feature: 'Lead Funnel Setup', starter: false, pro: false, enterprise: true },
+                                    { feature: 'AI Assisted Advanced LeadGen', starter: false, pro: false, enterprise: true },
                                     { feature: 'Custom Integrations', starter: false, pro: true, enterprise: true },
                                     { feature: 'Support Response Time', starter: '48hr', pro: '24hr', enterprise: 'Same day' },
                                     { feature: 'Strategy Calls', starter: false, pro: 'Weekly', enterprise: '2x/week' },

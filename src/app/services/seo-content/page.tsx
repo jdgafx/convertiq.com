@@ -23,7 +23,7 @@ export default function SeoContentPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Ever wonder why some content gets crazy traffic while the rest just sits there gathering dust? We create stuff Google actually loves—and here&apos;s the thing—people genuinely want to read it. Here&apos;s what makes the difference:</p>
+              <p className="text-gray-600 mb-4">Ever wonder why some content gets high traffic while other pages remain invisible? We create content that search engines favor and your audience actually wants to read. Here is how we make that happen:</p>
               <ul className="space-y-4">
                 {[
                   "Around 2,000 words of genuinely useful content that actually answers what searchers are looking for. No filler.",
@@ -60,7 +60,7 @@ export default function SeoContentPage() {
             { q: "How do you pick what to write about?", a: "Honestly, we dig into what your competitors are ranking for, check out what questions your customers are asking, and find out what search terms actually get traffic. We run everything by you before we start writing—no surprises." },
             { q: "Do you guarantee first page rankings?", a: "Look, no honest person can promise that. Here's what we can guarantee: well-written, properly optimized content. Rankings depend on so many factors though—competition, domain authority, how old your site is, you name it." },
             { q: "Can you publish directly to my site?", a: "Absolutely. WordPress, Wix, Squarespace—we can log in and handle it, or just give you the content to upload yourself. Whatever's easier for you." },
-            { q: "What kind of articles work best?", a: "How-to guides, industry explainers, comparisons, and answers to frequently asked questions. Basically, stuff people are actually searching for." },
+            { q: "What kind of articles work best?", a: "How-to guides, industry explainers, comparisons, and answers to frequently asked questions. Basically, the information your audience is actually searching for." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

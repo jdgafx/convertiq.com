@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Assisted LeadGen | ConvertIQ",
+  title: "AI Assisted Advanced LeadGen | ConvertIQ",
   description: "Turn visitors into customers 24/7. AI-powered lead capture across website, Facebook, and LinkedIn.",
 };
 
@@ -14,7 +14,7 @@ export default function LeadGenPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🧲</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Assisted LeadGen</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Assisted Advanced LeadGen</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Most lead funnels are broken. They either ask for too much info too soon, or they just drop leads into a black hole. We build funnels that actually convert strangers into booked appointments.
           </p>
@@ -25,17 +25,17 @@ export default function LeadGenPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why AI Lead Generation Works Better</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Advanced AI LeadGen Works Better</h2>
               <p className="text-gray-600 mb-6">
                 We build funnels that actually work—you know, the kind that turn strangers into booked appointments on your calendar. Here&apos;s how we roll:
               </p>
               <ul className="space-y-4">
                 {[
-                  "First, we create a killer lead magnet—something your ideal customer actually wants, whether that&apos;s a checklist, guide, or calculator.",
-                  "Then we build a landing page that converts at 20% or higher (yeah, that high).",
-                  "After that, we set up automated email follow-ups that nurture leads until they&apos;re ready to buy.",
-                  "We hook it up to your calendar so they can book directly.",
-                  "And we track everything so you know exactly what&apos;s working.",
+                  "We start by creating something your ideal customers actually want—maybe it's a checklist, a guide, or a calculator. Something they can't resist downloading.",
+                  "Then we build you a landing page that actually converts. We're talking 20% or better. Most agencies get excited about 5%—we shoot way higher.",
+                  "Next, we set up email sequences that don't feel robotic. These emails warm up your leads automatically until they're ready to talk.",
+                  "We connect everything to your calendar so qualified prospects can book time with you directly—no back-and-forth email chains.",
+                  "And yeah, we track all of it. You'll know exactly which pieces are working and which ones we need to tweak.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -109,27 +109,27 @@ export default function LeadGenPage() {
             {[
               {
                 q: "How is this different from the chatbot I already have?",
-                a: "Most chatbots are glorified FAQs—they answer questions but do not sell. Our AI actually has sales conversations. It qualifies leads, pushes for contact info, and books appointments. It knows when to be friendly and when to close. One client told us their old chatbot felt like a digital vending machine. This feels like having their best salesperson working night shifts."
+                a: "Look, most chatbots just answer basic questions and stop there. Ours actually sells. It figures out if someone's a good fit, gets their contact info, and books them on your calendar—all automatically. One of our clients said their old bot felt like talking to a vending machine. Ours? Like having their best sales rep pulling night shifts."
               },
               {
                 q: "What happens if I already use a CRM?",
-                a: "Good question—we integrate with most of them. HubSpot, Salesforce, Pipedrive, Zoho, you name it. Every conversation, every piece of data, flows straight into your existing system. Your sales team sees the full conversation history, so leads never have to repeat themselves."
+                a: "Good question—we plug into pretty much everything. HubSpot, Salesforce, Pipedrive, Zoho, you name it. Every chat, every detail, drops right into your existing setup. Your team sees the full conversation so leads never have to repeat themselves."
               },
               {
                 q: "Facebook Messenger sounds complicated. Is it?",
-                a: "Not at all. We handle the setup. Here is what happens: someone messages your Facebook page at 3am with questions about your service. Your AI responds immediately—yes, immediately—asks a couple qualifying questions, and if they are a good fit, offers to book a call. They click a link, pick a time, done. You wake up to a booked appointment."
+                a: "Not at all—that's our job. Here's what actually happens: someone DMs your Facebook page at 3am. Your bot replies instantly (yes, instantly), asks a few quick questions to qualify them, and if they're a fit, offers to book a call. They pick a time from your calendar, done. You wake up to a booked meeting. Pretty sweet."
               },
               {
                 q: "I have tried LinkedIn automation before and it felt spammy.",
-                a: "We hear you. Those tools that blast connection requests with generic messages? They do not work anymore and honestly, they give LinkedIn automation a bad name. Our approach is different. We find people who actually match your ideal customer profile, engage with their content in a genuine way (commenting thoughtfully, not just liking), and start conversations that feel natural. The goal is introductions, not spam."
+                a: "Yeah, we get that. Those tools spamming everyone with the same generic message? Total garbage—and they ruin LinkedIn for everyone. We do it differently. We find people who actually fit your ideal profile, engage with their posts like real humans (actual thoughtful comments, not just 'great post!'), and start real conversations. Think warm intros, not cold spam."
               },
               {
                 q: "How long until I see results?",
-                a: "It depends on your traffic and offer, but most clients see their first qualified lead within the first week. The system gets smarter as it learns what questions convert best for your business. By week three or four, you typically see a steady stream coming in without you doing anything."
+                a: "Depends on your traffic, honestly. Most folks see their first solid lead within the first week though. The cool part? The system learns what works best for your specific business and gets better over time. By week three or four, you'll usually have a steady flow coming in without lifting a finger."
               },
               {
                 q: "What if I need changes after launch?",
-                a: "First 30 days are free for any tweaks you want. After that, we charge reasonable hourly rates for edits. We are not the kind of shop that disappears after deployment—if you need changes, you get them. Most clients stick around because the system works, not because they are locked in."
+                a: "First 30 days? Totally free for whatever tweaks you need. After that, we bill hourly at reasonable rates. We're not those guys who vanish after launch—if you need something changed, you get it. Truth is, most clients stay because this stuff actually works, not because they're stuck in some contract."
               },
             ].map((faq, idx) => (
               <div key={idx} className="bg-white rounded-xl p-6 shadow">

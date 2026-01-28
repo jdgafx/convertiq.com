@@ -62,7 +62,7 @@ export default function EmailAutomationPage() {
             { q: "How long does this take?", a: "Give us about a week. We need a few days to really get your voice down, set up the tech, and test it all. Rushing just leads to mistakes." },
             { q: "What platforms do you work with?", a: "Pretty much all of them—Mailchimp, ConvertKit, Klaviyo, ActiveCampaign. If you're on something weird, we'll figure it out." },
             { q: "Can I write my own copy?", a: "Absolutely. It's your business. We can write it, you can write it, or we can mix and match. Whatever works best for you." },
-            { q: "What about spam filters?", a: "We handle all the technical stuff—DKIM, SPF, list hygiene—to keep you out of the spam folder. Most of our clients see 95%+ inbox rates." },
+            { q: "What about spam filters?", a: "We handle all the technical requirements—including DKIM, SPF, and list hygiene—to ensure your emails reach the inbox. Most of our clients see over 95% deliverability rates." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

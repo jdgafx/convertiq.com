@@ -9,8 +9,8 @@ export default function ContactPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-black mb-6">Get in Touch</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Have questions? Want to see if we\'re a good fit? 
-                        Drop us a line and we\'ll get back to you within 24 hours.
+                        Got questions? Just want to chat about what you need? 
+                        Shoot us a message—we typically reply within a day, usually faster.
                     </p>
                 </div>
             </section>
@@ -75,21 +75,21 @@ export default function ContactPage() {
                                     <div className="flex items-center gap-4">
                                         <span className="text-3xl">📍</span>
                                         <div>
-                                            <p className="font-bold text-gray-900">Swing by our office</p>
+                                            <p className="font-bold text-gray-900">Come say hi</p>
                                             <p className="text-gray-600">74 Northeastern Blvd #12a Ste 101<br />Nashua, NH 03062</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
                                         <span className="text-3xl">📧</span>
                                         <div>
-                                            <p className="font-bold text-gray-900">Send us an email</p>
+                                            <p className="font-bold text-gray-900">Email us</p>
                                             <p className="text-gray-600">hello@convertiq.ai</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
                                         <span className="text-3xl">📞</span>
                                         <div>
-                                            <p className="font-bold text-gray-900">Give us a call</p>
+                                            <p className="font-bold text-gray-900">Call us</p>
                                             <p className="text-gray-600">617-651-1457</p>
                                         </div>
                                     </div>
@@ -98,8 +98,7 @@ export default function ContactPage() {
                             <div className="bg-indigo-50 rounded-3xl p-10">
                                 <h3 className="text-2xl font-bold text-indigo-900 mb-4">Ready to Get Started?</h3>
                                 <p className="text-indigo-700 mb-6">
-                                    Book a free 15-minute call and we will discuss your situation. 
-                                    No sales pitch, no pressure—just honest advice.
+                                    Grab a free 15-minute call. We'll talk through what you're dealing with—no sales nonsense, just real talk about what might help.
                                 </p>
                                 <a href="mailto:hello@convertiq.ai" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us

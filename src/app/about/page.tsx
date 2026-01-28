@@ -129,7 +129,7 @@ export default function AboutPage() {
                             {
                                 client: "HVAC Company",
                                 story: "A local HVAC business was struggling to find leads online and relied almost entirely on word-of-mouth. They were only seeing about 15 leads a month from their site.",
-                                solution: "We set up an AI chatbot to handle 24/7 lead capture and optimized their Google Business profile. We also built targeted landing pages for their specific service areas.",
+                                solution: "We implemented our AI Assisted Advanced LeadGen system to handle 24/7 lead capture and optimized their Google Business profile. We also built targeted landing pages for their specific service areas.",
                                 result: "In just 8 weeks, their leads jumped to over 100 per month—a 567% increase. Their cost per lead dropped by 62%, and appointments now book directly through the bot.",
                                 testimonial: "I was skeptical at first, but these guys delivered. Our phone has not stopped ringing since day one."
                             },
