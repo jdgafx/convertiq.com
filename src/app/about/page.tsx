@@ -10,7 +10,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-black mb-6">About ConvertIQ</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Look, we help businesses get more leads and make more sales. That's it. Simple as that.
+                        We help businesses find more leads and close more sales using technology that actually delivers.
                     </p>
                 </div>
             </section>
@@ -48,26 +48,24 @@ export default function AboutPage() {
                     <div className="bg-white rounded-3xl p-10 md:p-16 shadow-xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            ConvertIQ started in 2023 with a simple idea: marketing shouldn't be complicated, expensive, or slow. 
-                            The founders? Yeah, they spent years at those big agencies watching the same problems repeat—clients 
-                            paying thousands for generic strategies that dragged on for months.
+                            ConvertIQ began with a simple observation: traditional marketing is often too slow and expensive for most businesses. 
+                            Our team spent years at large agencies, seeing clients pay high fees for generic strategies that took months to show any real movement.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            We knew there had to be a better way. By mixing AI with stuff that actually works, 
-                            we deliver results in days, not months—and at a fraction of what those agencies charge.
+                            We believed there was a better way to grow. By combining advanced AI with proven marketing principles, 
+                            we found we could deliver results in days instead of months. Our focus shifted from broad promises to specific, measurable outcomes.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                            Today? We work with 500+ businesses across the country. HVAC, law firms, 
-                            local restaurants—you name it, we've helped them get more leads and sales. And honestly? 
-                            We're just getting started.
+                            Today, we work with over 500 businesses across various industries. From local service providers to professional firms, 
+                            we help our clients automate their lead generation and focus on what they do best.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The ConvertIQ Difference</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {[
-                                { icon: "💸", title: "Fair Pricing", desc: "Transparent rates. No surprise fees. Cancel anytime." },
-                                { icon: "📈", title: "Real Results", desc: "We measure everything. You will always know what is working." },
-                                { icon: "🚀", title: "Fast Delivery", desc: "Most projects completed in 7 days or less." },
-                                { icon: "💬", title: "Actual Support", desc: "Real people answer your calls and emails. Promise." }
+                                { icon: "💸", title: "Fair Pricing", desc: "Clear, transparent rates with no hidden fees and the flexibility to cancel anytime." },
+                                { icon: "📈", title: "Measurable Results", desc: "We track every lead so you always know exactly how your marketing is performing." },
+                                { icon: "🚀", title: "Fast Implementation", desc: "Most of our AI systems are live and working for your business in about a week." },
+                                { icon: "💬", title: "Dedicated Support", desc: "You get direct access to our team whenever you have a question or need assistance." }
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-start gap-4">
                                     <span className="text-2xl">{item.icon}</span>
@@ -127,61 +125,35 @@ export default function AboutPage() {
                         {[
                             {
                                 client: "HVAC Company",
-                                challenge: "Struggling to generate leads online, relying mostly on referrals. Only getting about 10-15 leads per month from their website.",
-                                solution: "Implemented AI chatbot for 24/7 lead capture, optimized Google Business profile, created targeted landing pages for each service area.",
-                                results: ["Increased leads by 567% (from 15 to 100+ per month)", "Reduced cost per lead by 62%", "Booked appointments directly through chatbot"],
-                                timeframe: "8 weeks",
+                                story: "A local HVAC business was struggling to find leads online and relied almost entirely on word-of-mouth. They were only seeing about 15 leads a month from their site.",
+                                solution: "We set up an AI chatbot to handle 24/7 lead capture and optimized their Google Business profile. We also built targeted landing pages for their specific service areas.",
+                                result: "In just 8 weeks, their leads jumped to over 100 per month—a 567% increase. Their cost per lead dropped by 62%, and appointments now book directly through the bot.",
                                 testimonial: "I was skeptical at first, but these guys delivered. Our phone has not stopped ringing since day one."
                             },
                             {
                                 client: "Dental Practice",
-                                challenge: "New practice trying to build patient base. High no-show rate, poor online review management, and zero automation.",
-                                solution: "AI voice receptionist for appointment scheduling, automated review requests, email nurture sequence for new patients.",
-                                results: ["Booked 47 new patient appointments in first month", "Reduced no-show rate by 73%", "Achieved 4.8 star average rating with 127 reviews"],
-                                timeframe: "6 weeks",
+                                story: "A new dental practice needed to build its patient base quickly. They were facing high no-show rates and had no automated systems for review management.",
+                                solution: "We implemented an AI voice receptionist for scheduling and set up automated email sequences to nurture new patients and request reviews.",
+                                result: "They booked 47 new patient appointments in the first month alone. No-shows dropped by 73%, and they reached a 4.8-star rating with over 120 reviews.",
                                 testimonial: "The automation alone saves us 10+ hours per week. And the new patient flow is incredible."
-                            },
-                            {
-                                client: "Local Restaurant",
-                                challenge: "Invisible in local search, negative reviews going unanswered, declining foot traffic.",
-                                solution: "Google Business optimization, AI review response system, social media content strategy, local SEO campaign.",
-                                results: ["Doubled online reservations in 30 days", "Response rate to all reviews at 100%", "Ranked #1 for 12 local keywords"],
-                                timeframe: "4 weeks",
-                                testimonial: "We finally show up when people search for restaurants near us. Best investment we have made."
                             }
                         ].map((study, idx) => (
                             <div key={idx} className="bg-white rounded-3xl shadow-xl overflow-hidden">
                                 <div className="grid grid-cols-1 lg:grid-cols-2">
                                     <div className="bg-gradient-to-br from-indigo-600 to-indigo-800 p-10 text-white">
-                                        <div className="text-indigo-300 text-sm font-bold uppercase tracking-widest mb-4">Case Study</div>
+                                        <div className="text-indigo-300 text-sm font-bold uppercase tracking-widest mb-4">Success Story</div>
                                         <h3 className="text-3xl font-black mb-6">{study.client}</h3>
                                         <div className="space-y-6">
-                                            <div>
-                                                <h4 className="font-bold text-indigo-200 mb-2">The Challenge</h4>
-                                                <p className="text-indigo-100 text-sm">{study.challenge}</p>
-                                            </div>
-                                            <div>
-                                                <h4 className="font-bold text-indigo-200 mb-2">Our Solution</h4>
+                                            <p className="text-indigo-100 text-sm leading-relaxed">{study.story}</p>
+                                            <div className="pt-4 border-t border-indigo-500/30">
+                                                <h4 className="font-bold text-indigo-200 mb-2">The Solution</h4>
                                                 <p className="text-indigo-100 text-sm">{study.solution}</p>
-                                            </div>
-                                            <div>
-                                                <h4 className="font-bold text-indigo-200 mb-2">Timeframe</h4>
-                                                <p className="text-indigo-100 text-sm">{study.timeframe}</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="p-10">
-                                        <h4 className="font-bold text-gray-900 mb-4">Results</h4>
-                                        <ul className="space-y-3 mb-8">
-                                            {study.results.map((result, rIdx) => (
-                                                <li key={rIdx} className="flex items-center gap-3 text-gray-700">
-                                                    <span className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                                        <span className="text-emerald-600 text-sm">✓</span>
-                                                    </span>
-                                                    {result}
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        <h4 className="font-bold text-gray-900 mb-4">The Results</h4>
+                                        <p className="text-gray-700 mb-8 leading-relaxed">{study.result}</p>
                                         <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-indigo-500">
                                             <p className="text-gray-700 italic mb-3">"{study.testimonial}"</p>
                                             <p className="text-indigo-600 font-bold text-sm">— {study.client}</p>
