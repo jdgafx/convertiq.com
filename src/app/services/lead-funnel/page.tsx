@@ -16,7 +16,7 @@ export default function LeadGenPage() {
           <div className="text-6xl mb-6">🧲</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">AI Assisted LeadGen</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Your AI agent works around the clock—on your website, through Facebook Messenger, and on LinkedIn. It captures leads, asks the right questions, and books appointments while you focus on running your business.
+            Most lead funnels are broken. They either ask for too much info too soon, or they just drop leads into a black hole. We build funnels that actually convert strangers into booked appointments.
           </p>
         </div>
       </section>
@@ -27,16 +27,15 @@ export default function LeadGenPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Why AI Lead Generation Works Better</h2>
               <p className="text-gray-600 mb-6">
-                Here is what we set up for you. No fluff, no vague promises—just a system that actually brings in leads.
+                We build funnels that actually work—you know, the kind that turn strangers into booked appointments on your calendar. Here&apos;s how we roll:
               </p>
               <ul className="space-y-4">
                 {[
-                  "Your website visitor sees a friendly popup at the right moment—not annoying, just helpful. They ask questions, get answers, and before they leave, your AI has already collected their info and scored them as a hot lead.",
-                  "On Facebook? Someone messages your page at 2am asking about pricing. Instead of waiting 12 hours for a reply (and losing them), your AI responds instantly, asks a few qualifying questions, and books a call if they are serious.",
-                  "LinkedIn works differently, but our system finds prospects who match your ideal customer, engages with their content naturally, and starts conversations that turn into genuine business relationships.",
-                  "Every lead flows straight into your CRM—HubSpot, Salesforce, Pipedrive, whatever you use. No manual entry, no lost spreadsheets, no mistakes.",
-                  "The follow-up sequence kicks in automatically. A lead books a demo but goes quiet? Your AI sends a helpful follow-up at the perfect time, keeping the relationship warm without you lifting a finger.",
-                  "You see everything in a simple dashboard. New leads today, appointments booked this week, conversion rates by channel. Real numbers, no guessing.",
+                  "First, we create a killer lead magnet—something your ideal customer actually wants, whether that&apos;s a checklist, guide, or calculator.",
+                  "Then we build a landing page that converts at 20% or higher (yeah, that high).",
+                  "After that, we set up automated email follow-ups that nurture leads until they&apos;re ready to buy.",
+                  "We hook it up to your calendar so they can book directly.",
+                  "And we track everything so you know exactly what&apos;s working.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
