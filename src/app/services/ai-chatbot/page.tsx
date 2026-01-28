@@ -30,14 +30,14 @@ export default function AiChatbotPage() {
                 Here&apos;s the thing about this chatbot—it&apos;s basically soaked up everything about your business. It knows your products, your pricing, and exactly how to talk to your customers.
               </p>
               <ul className="space-y-4">
-                {[
-                  "It&apos;s trained on your actual website content—no generic answers here.",
-                  "Auto-qualification is a game-changer, honestly. You&apos;ll only chat with folks who are actually ready to buy.",
-                  "Calendar booking? Built right in. No more playing email ping-pong trying to coordinate schedules.",
-                  "It handles the basics instantly—hours, pricing, what you actually do.",
-                  "It plays nice with your CRM and email tools too, so nothing gets lost.",
-                  "Oh, and the really cool part? It keeps learning from your stuff and gets smarter all the time.",
-                ].map((item, idx) => (
+            {[
+              "We train it on your actual site. It doesn't guess. It knows your business.",
+              "It qualifies leads automatically. You stop talking to people who aren't buying.",
+              "It books appointments on your actual calendar. You just show up.",
+              "It handles hours, pricing, and services instantly.",
+              "It connects to your CRM so you never lose a lead.",
+              "And yeah, it learns. The more it chats, the smarter it gets.",
+            ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

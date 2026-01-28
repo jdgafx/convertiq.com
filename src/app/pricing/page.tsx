@@ -10,7 +10,7 @@ export default function PricingPage() {
     const platformTiers = [
         {
             name: 'Starter',
-            description: 'Perfect for small businesses getting started with AI marketing',
+            description: 'For small businesses that want AI marketing tools without the complexity. You get a working chatbot, better local visibility, review automation, and basic analytics to track what is working.',
             monthlyPrice: 297,
             annualPrice: 247,
             features: [
@@ -26,7 +26,7 @@ export default function PricingPage() {
         },
         {
             name: 'Professional',
-            description: 'For growing businesses ready to scale their marketing',
+            description: 'For businesses that are growing and need more firepower. This plan adds voice reception, email sequences that actually get read, social media content, and ad copy that converts better.',
             monthlyPrice: 597,
             annualPrice: 497,
             features: [
@@ -44,7 +44,7 @@ export default function PricingPage() {
         },
         {
             name: 'Enterprise',
-            description: 'Full-service AI marketing for established businesses',
+            description: 'For businesses that want everything done for them. This includes content marketing, landing pages, funnel setup, custom AI training, and a dedicated manager who knows your business.',
             monthlyPrice: 1297,
             annualPrice: 1097,
             features: [
@@ -64,14 +64,14 @@ export default function PricingPage() {
     ];
 
     const alaCarteServices = [
-        { name: 'AI Chatbot Setup', price: '$149/mo', oneTime: false, setup: '$497', description: 'Capture leads 24/7 with custom-trained AI' },
-        { name: 'AI Voice Receptionist', price: '$249/mo', oneTime: false, setup: '$0', description: 'Never miss a call. Pay per call handled.' },
-        { name: 'Google Business Optimization', price: '$399', oneTime: true, setup: null, description: 'Dominate local search in 3-7 days' },
-        { name: 'AI Review Response', price: '$99/mo', oneTime: false, setup: '$0', description: 'Auto-respond to all reviews' },
-        { name: 'Email Automation', price: '$49/mo', oneTime: false, setup: '$199', description: 'Nurture leads with smart sequences' },
+        { name: 'AI Chatbot Setup', price: '$149/mo', oneTime: false, setup: '$497', description: 'Lead capture chatbot that works 24/7' },
+        { name: 'AI Voice Receptionist', price: '$249/mo', oneTime: false, setup: '$0', description: 'Never miss calls. Pay per call handled.' },
+        { name: 'Google Business Optimization', price: '$399', oneTime: true, setup: null, description: 'Show up on Maps in 3-7 days' },
+        { name: 'AI Review Response', price: '$99/mo', oneTime: false, setup: '$0', description: 'Auto-respond to every review' },
+        { name: 'Email Automation', price: '$49/mo', oneTime: false, setup: '$199', description: 'Follow-up sequences that work' },
         { name: 'Social Media Content', price: '$299/mo', oneTime: false, setup: '$0', description: '20 posts/month across all platforms' },
         { name: 'AI Ad Copy', price: '$199/mo', oneTime: false, setup: '$0', description: 'Better copy, more conversions' },
-        { name: 'SEO Content Writing', price: '$149', oneTime: true, setup: null, description: '2,000+ word optimized articles' },
+        { name: 'SEO Content Writing', price: '$149', oneTime: true, setup: null, description: '2,000+ word articles that rank' },
         { name: 'Landing Page Creation', price: '$799', oneTime: true, setup: null, description: 'High-converting page design' },
         { name: 'Lead Funnel Setup', price: '$1,499', oneTime: true, setup: null, description: 'Complete automated funnel system' }
     ];

@@ -26,12 +26,12 @@ export default function AiVoicePage() {
               <p className="text-gray-600 mb-4">Here&apos;s a scary stat: most businesses miss about a third of their calls. That&apos;s money walking out the door. Here&apos;s how we fix that:</p>
               <ul className="space-y-4">
                 {[
-                  "It picks up on the first ring—24/7. No more voicemail black holes.",
+                  "It answers on the first ring. Every time. No more losing leads to voicemail.",
                   "It actually chats with people, qualifies them, and books appointments right then and there.",
-                  "Need a human? It knows exactly when to patch you in.",
+                  "If it gets stuck, it transfers the call to you. Seamlessly.",
                   "Keep your current number. We just make it smarter.",
-                  "We teach it your business in minutes, not weeks.",
-                  "Plays nice with Calendly, HubSpot, Salesforce—whatever you use.",
+                  "We can train it on your business in about 20 minutes.",
+                  "It integrates with whatever calendar or CRM you use.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

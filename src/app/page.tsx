@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   const services = [
-    { icon: "🧲", title: "AI Assisted LeadGen", href: "/services/lead-funnel", desc: "Your AI agent works 24/7 across website, Facebook Messenger, and LinkedIn—capturing leads, qualifying them, and booking appointments.", price: "$1,499 one-time" },
-    { icon: "🤖", title: "AI Chatbot Setup", href: "/services/ai-chatbot", desc: "Turn your website into a 24/7 lead capture machine. The bot handles questions, books appointments, and hands off warm leads.", price: "$149/mo" },
-    { icon: "📞", title: "AI Voice Receptionist", href: "/services/ai-voice", desc: "Never miss a call again. Your virtual receptionist answers instantly, qualifies callers, and books appointments.", price: "$249/mo" },
-    { icon: "📍", title: "Google Business Optimization", href: "/services/google-business", desc: "Show up in local searches when people look for what you do. More visibility = more calls.", price: "$399 one-time" },
-    { icon: "⭐", title: "AI Review Response", href: "/services/review-response", desc: "Every review gets a thoughtful response. Build trust automatically without spending hours typing.", price: "$99/mo" },
-    { icon: "✉️", title: "Email Automation", href: "/services/email-automation", desc: "Follow up with every lead automatically. Nurture sequences that actually get read and convert.", price: "$49/mo + $199 setup" },
-    { icon: "📱", title: "Social Media Content", href: "/services/social-media", desc: "Fresh content every month across all platforms. Stay visible without becoming a social media manager.", price: "$299/mo" },
-    { icon: "📝", title: "AI Ad Copy", href: "/services/ad-copy", desc: "Better copy = more clicks = lower costs. Ads that actually perform, optimized constantly.", price: "$199/mo" },
-    { icon: "🔍", title: "SEO Content Writing", href: "/services/seo-content", desc: "Articles that rank on Google. Real content, not keyword stuffing. Traffic that turns into customers.", price: "$149/article" },
-    { icon: "🎯", title: "Landing Page Creation", href: "/services/landing-pages", desc: "Pages designed to convert. Every element optimized for action. Track everything.", price: "$799/page" },
+    { icon: "🧲", title: "AI Assisted LeadGen", href: "/services/lead-funnel", desc: "Your website works while you sleep. It captures leads from Facebook, LinkedIn, and your site—then books appointments on your calendar. Simple as that.", price: "$1,499 one-time" },
+    { icon: "🤖", title: "AI Chatbot Setup", href: "/services/ai-chatbot", desc: "A chatbot that actually answers questions like a real person would. It books appointments and hands you warm leads. One client tripled their leads in a week.", price: "$149/mo" },
+    { icon: "📞", title: "AI Voice Receptionist", href: "/services/ai-voice", desc: "Never miss another call. The receptionist answers instantly, filters spam, and books appointments. 24/7. No sick days.", price: "$249/mo" },
+    { icon: "📍", title: "Google Business Optimization", href: "/services/google-business", desc: "Show up on Maps when locals search for what you do. We helped hundreds of businesses get found online.", price: "$399 one-time" },
+    { icon: "⭐", title: "AI Review Response", href: "/services/review-response", desc: "Every review gets a thoughtful response automatically. Good reviews get celebrated. Bad ones get handled professionally.", price: "$99/mo" },
+    { icon: "✉️", title: "Email Automation", href: "/services/email-automation", desc: "Follow-up sequences that sound like you wrote them. Nurture leads until they're ready to buy.", price: "$49/mo + $199 setup" },
+    { icon: "📱", title: "Social Media Content", href: "/services/social-media", desc: "Fresh content every month across all platforms. Stay visible without doing the work yourself.", price: "$299/mo" },
+    { icon: "📝", title: "AI Ad Copy", href: "/services/ad-copy", desc: "Ad copy that actually converts. Better headlines, better descriptions, lower costs per lead.", price: "$199/mo" },
+    { icon: "🔍", title: "SEO Content Writing", href: "/services/seo-content", desc: "Articles that rank on Google because they're genuinely useful. No keyword stuffing, just good content.", price: "$149/article" },
+    { icon: "🎯", title: "Landing Page Creation", href: "/services/landing-pages", desc: "Pages built to convert. Every element optimized for action. We track everything so you see what works.", price: "$799/page" },
   ];
 
   const stats = [
@@ -37,11 +37,10 @@ export default function Home() {
               Results in 7 days or less
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
-              Marketing That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Actually Gets Results</span>
+              Marketing That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Actually Works</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Most marketing agencies overpromise and underdeliver. We do things differently. 
-              Smart tech + proven strategies = real results in days, not months.
+              Most agencies promise the world and deliver nothing. We use proven strategies and smart tech to get you real results fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-1">
@@ -74,7 +73,7 @@ export default function Home() {
             <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">All Services</span>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-4 mb-6">10 AI-Powered Services</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From chatbots to content to full funnels, we have got all your marketing needs covered.
+              We do chatbots. We do content. We build funnels. Basically, if it gets you leads, we build it.
             </p>
           </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -100,10 +99,10 @@ export default function Home() {
           <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Why Businesses Choose ConvertIQ</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: "⚡", title: "Fast Results", desc: "Most clients see improvements within 7 days" },
-              { icon: "💰", title: "No Long Contracts", desc: "Month-to-month. Cancel anytime" },
-              { icon: "📊", title: "Real Reporting", desc: "Track everything. No vague promises" },
-              { icon: "👋", title: "Real Humans", desc: "We actually answer our phones and emails" },
+              { icon: "⚡", title: "Fast Results", desc: "Honestly? Most of our clients see numbers move in about a week." },
+              { icon: "💰", title: "No Long Contracts", desc: "We do month-to-month. If you want to leave, you can. No handcuffs." },
+              { icon: "📊", title: "Real Reporting", desc: "We track everything. You'll never hear vague excuses from us." },
+              { icon: "👋", title: "Real Humans", desc: "Call us. We actually answer. Crazy concept, I know." },
             ].map((item, idx) => (
               <div key={idx} className="bg-white rounded-xl p-6 shadow">
                 <div className="text-3xl mb-3">{item.icon}</div>
@@ -124,8 +123,8 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { quote: "ConvertIQ completely transformed our lead generation. We went from 10 leads a month to over 100 in just 8 weeks. The AI chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
-              { quote: "Finally, a marketing company that actually delivers. We have worked with agencies before, but none of them got results this fast. The team is responsive, professional, and actually cares about our success.", author: "Sarah L.", company: "Dental Practice" },
+              { quote: "ConvertIQ honestly changed everything for us. We went from like 10 leads to over 100 in eight weeks. That AI chatbot? It grabs leads while I'm sleeping.", author: "Mike R.", company: "HVAC Company Owner" },
+              { quote: "Finally found a marketing team that does what they say. We've burned through agencies before, but these guys are fast. They actually care.", author: "Sarah L.", company: "Dental Practice" },
               { quote: "Our Google Business profile was basically invisible before ConvertIQ took it over. Now we show up in the map pack for all our target keywords. Phone has not stopped ringing.", author: "James T.", company: "Local Restaurant Owner" },
               { quote: "The AI voice receptionist pays for itself every single month. We used to miss 20% of our calls. Now every single one gets answered professionally, 24/7.", author: "Amanda K.", company: "Law Firm" },
               { quote: "Email automation changed our business. We were spending hours every week on manual follow-ups. Now it happens automatically, and our close rate has increased by 40%.", author: "David M.", company: "Real Estate Agency" },
@@ -152,8 +151,8 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-black text-white mb-6">Ready to Grow?</h2>
           <p className="text-indigo-100 text-xl mb-10 max-w-2xl mx-auto">
-            We've helped hundreds of businesses get more leads and make more sales. 
-            Let's see if we can do the same for you.
+            We've helped hundreds of businesses grow. Seriously. 
+            Let's chat—no pressure, just seeing if it makes sense.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             Book a Free Call

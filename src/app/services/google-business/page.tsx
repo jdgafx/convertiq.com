@@ -26,12 +26,12 @@ export default function GoogleBusinessPage() {
               <p className="text-gray-600 mb-4">Most businesses have incomplete profiles and don&apos;t even know it. Here&apos;s what we actually fix:</p>
               <ul className="space-y-4">
                 {[
-                  "We don&apos;t just fill in the blanks. We optimize every field with the exact keywords your customers are typing in.",
+                  "Filling in the blanks isn't enough. We go deep on keywords to make sure you actually show up.",
                   "Photos that actually sell your work, not just generic stock images.",
                   "We fix your categories so you stop showing up for the wrong stuff.",
                   "We pre-load your Q&A with the questions people are actually thinking but scared to ask.",
                   "We set up a system so reviews get answered fast.",
-                  "Real numbers every month. Calls, directions, website clicks.",
+                  "We track the metrics that pay the bills. Calls, clicks, directions.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
