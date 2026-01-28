@@ -48,16 +48,19 @@ export default function AboutPage() {
                     <div className="bg-white rounded-3xl p-10 md:p-16 shadow-xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            ConvertIQ began with a simple observation: traditional marketing is often too slow and expensive for most businesses. 
-                            Our team spent years at large agencies, seeing clients pay high fees for generic strategies that took months to show any real movement.
+                            ConvertIQ was built by the same dedicated team behind <a href="https://www.primemarketingexperts.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prime Marketing Experts</a>. 
+                            Led by Michael Krieger, our mission remains the same: helping businesses grow through smart, results-driven strategies.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            We believed there was a better way to grow. By combining advanced AI with proven marketing principles, 
-                            we found we could deliver results in days instead of months. Our focus shifted from broad promises to specific, measurable outcomes.
+                            Michael Krieger, a native Bostonian and graduate of the University of Massachusetts, Lowell, founded Prime Marketing Experts in 2017. 
+                            With years of experience helping hundreds of small and medium-sized businesses scale, Michael saw a new opportunity to use artificial intelligence to make marketing faster, more accessible, and significantly more effective.
+                        </p>
+                        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                            ConvertIQ is the next evolution of that vision. We combine the deep marketing expertise learned at Prime with cutting-edge AI technology to deliver qualified leads in days, not months. 
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                            Today, we work with over 500 businesses across various industries. From local service providers to professional firms, 
-                            we help our clients automate their lead generation and focus on what they do best.
+                            Today, we continue to support over 500 businesses across the country. Whether you're a local service provider or a professional firm, 
+                            you benefit from the same high standards and commitment to results that Michael has championed since day one.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The ConvertIQ Difference</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

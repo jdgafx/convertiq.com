@@ -4,58 +4,58 @@ import Link from 'next/link';
 export default function BlogPage() {
     const posts = [
         {
-            slug: 'ai-marketing-guide-2025',
-            title: 'The Complete Guide to AI-Powered Marketing in 2025',
-            excerpt: 'AI is changing everything, and honestly, if you\'re not paying attention, you\'re falling behind fast. We break down exactly how AI is transforming marketing.',
+            title: '2025 State of Marketing Report: The AI Revolution',
+            excerpt: 'The marketing landscape is shifting fast. This report from HubSpot explores the trends and tools that define a successful AI-first strategy this year.',
             category: 'Marketing',
-            date: '2025-01-15',
-            readTime: '8 min read',
-            image: 'bg-gradient-to-br from-blue-500 to-indigo-600'
+            date: '2025-01-25',
+            readTime: '12 min read',
+            image: 'bg-gradient-to-br from-blue-500 to-indigo-600',
+            url: 'https://www.hubspot.com/state-of-marketing'
         },
         {
-            slug: 'chatbot-best-practices-2025',
-            title: 'Chatbot Best Practices for 2025: What Actually Converts',
-            excerpt: 'Most chatbots are terrible, right? They frustrate people instead of helping. Here is how to build ones that actually convert visitors into paying customers.',
+            title: 'Choosing the Best AI Sales Agents for Your Business',
+            excerpt: 'Not all chatbots are created equal. We look at the top-performing AI sales agents that actually help businesses book more meetings and close deals.',
             category: 'Technology',
-            date: '2025-01-10',
-            readTime: '6 min read',
-            image: 'bg-gradient-to-br from-emerald-500 to-teal-600'
-        },
-        {
-            slug: 'roi-ai-voice-receptionist',
-            title: 'Calculate the ROI of AI Voice Receptionists',
-            excerpt: 'Curious about AI phone systems? See the real numbers—actual savings from real businesses. The results might surprise you.',
-            category: 'Business',
-            date: '2025-01-05',
-            readTime: '7 min read',
-            image: 'bg-gradient-to-br from-amber-500 to-orange-600'
-        },
-        {
-            slug: 'google-business-optimization-guide',
-            title: 'The Ultimate Google Business Optimization Guide',
-            excerpt: 'Local search matters more than ever. This guide walks you through dominating Google Maps so customers can actually find you.',
-            category: 'Local SEO',
-            date: '2024-12-28',
+            date: '2025-01-20',
             readTime: '10 min read',
-            image: 'bg-gradient-to-br from-red-500 to-pink-600'
+            image: 'bg-gradient-to-br from-emerald-500 to-teal-600',
+            url: 'https://www.ruh.ai/blogs/best-ai-sales-agents-for-business'
         },
         {
-            slug: 'email-automation-strategies',
-            title: 'Email Automation Strategies That Actually Get Results',
-            excerpt: 'Email marketing is broken. Everyone is sending the same boring newsletters. Learn how to build automated sequences that nurture leads and drive real sales.',
-            category: 'Email Marketing',
-            date: '2024-12-20',
-            readTime: '9 min read',
-            image: 'bg-gradient-to-br from-violet-500 to-purple-600'
+            title: 'The Ultimate AI Marketing Strategy Guide',
+            excerpt: 'AI can do more than just write emails. It can find your best prospects by analyzing behavior and scoring them for priority. Here is how to use it.',
+            category: 'Strategy',
+            date: '2025-01-15',
+            readTime: '15 min read',
+            image: 'bg-gradient-to-br from-amber-500 to-orange-600',
+            url: 'https://reply.io/blog/ai-marketing-strategy/'
         },
         {
-            slug: 'social-media-content-strategy',
-            title: 'Social Media Content Strategy for Service Businesses',
-            excerpt: 'If social media feels like a time-suck, you are not imagining it. Here is how to create content that attracts customers without living on your phone.',
-            category: 'Social Media',
-            date: '2024-12-15',
+            title: 'Top AI Lead Generation Software to Watch in 2025',
+            excerpt: 'We compared the top lead gen tools on the market. If you want to scale your outreach without increasing your workload, these are the tools you need.',
+            category: 'Tools',
+            date: '2025-01-10',
             readTime: '8 min read',
-            image: 'bg-gradient-to-br from-cyan-500 to-blue-600'
+            image: 'bg-gradient-to-br from-red-500 to-pink-600',
+            url: 'https://fr.dorik.com/blog/best-ai-lead-generation-software'
+        },
+        {
+            title: 'Automating Lead Generation with Intelligent Workflows',
+            excerpt: 'Learn how connecting your forms to automation tools can streamline your entire sales process. It is about working smarter, not harder.',
+            category: 'Automation',
+            date: '2025-01-05',
+            readTime: '9 min read',
+            image: 'bg-gradient-to-br from-violet-500 to-purple-600',
+            url: 'https://heyform.net/blog/the-ultimate-guide-to-heyform-zapier-integration-automate-lead-generation-in-2025/'
+        },
+        {
+            title: 'How Top Sales Teams are Using AI to Win',
+            excerpt: 'Real-world examples of how sales teams are using AI to automate routine work and personalize their outreach at scale.',
+            category: 'Sales',
+            date: '2024-12-28',
+            readTime: '7 min read',
+            image: 'bg-gradient-to-br from-cyan-500 to-blue-600',
+            url: 'https://www.linkedin.com/pulse/5-ways-top-sales-reps-used-ai-crush-2025-goals-what-you-fairchild-b6nme'
         }
     ];
 
@@ -65,9 +65,9 @@ export default function BlogPage() {
 
             <section className="bg-[#f9f6f3] py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#1a1a1a] mb-6">Our Blog</h1>
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#1a1a1a] mb-6">Latest Insights</h1>
                     <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed italic">
-                        Want to stay ahead of the curve? Let&apos;s talk about what&apos;s actually working in digital marketing, tech, and growing your business right now.
+                        Stay informed on how artificial intelligence is changing the way we find leads and grow businesses.
                     </p>
                 </div>
             </section>
@@ -75,8 +75,8 @@ export default function BlogPage() {
             <section className="py-20">
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {posts.map((post) => (
-                            <Link key={post.slug} href={`/blog/${post.slug}`} className="flex flex-col group cursor-pointer">
+                        {posts.map((post, idx) => (
+                            <a key={idx} href={post.url} target="_blank" rel="noopener noreferrer" className="flex flex-col group cursor-pointer">
                                 <div className={`h-48 rounded-lg mb-6 ${post.image} flex items-center justify-center`}>
                                     <span className="text-6xl text-white/30">📄</span>
                                 </div>
@@ -88,9 +88,9 @@ export default function BlogPage() {
                                     <span>{post.readTime}</span>
                                 </div>
                                 <div className="mt-4 text-indigo-600 font-bold text-sm uppercase tracking-widest flex items-center">
-                                    Read More <span className="ml-2 text-xl group-hover:translate-x-2 transition-transform">→</span>
+                                    Read Article <span className="ml-2 text-xl group-hover:translate-x-2 transition-transform">→</span>
                                 </div>
-                            </Link>
+                            </a>
                         ))}
                     </div>
                 </div>
