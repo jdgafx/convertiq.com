@@ -15,7 +15,7 @@ export default function AiVoicePage() {
           <div className="text-6xl mb-6">📞</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">AI Voice Receptionist</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Your phone never sleeps. Neither does our AI. Every call answered, every lead captured.
+            Look, your phone keeps ringing even when you&apos;re off the clock. Our AI doesn&apos;t sleep either. It grabs every call, every time.
           </p>
         </div>
       </section>
@@ -23,18 +23,18 @@ export default function AiVoicePage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Most businesses miss 20-30% of calls. Here is what our voice receptionist does:</p>
+              <p className="text-gray-600 mb-4">Here&apos;s a scary stat: most businesses miss about a third of their calls. That&apos;s money walking out the door. Here&apos;s how we fix that:</p>
               <ul className="space-y-4">
                 {[
-                  "Answers instantly—24/7, no voicemail jail",
-                  "Qualifies callers and books appointments on the spot",
-                  "Can transfer to the right person when needed",
-                  "Works with your existing phone number (no new line needed)",
-                  "Trained on your business FAQs in just minutes",
-                  "Connects to Calendly, HubSpot, Salesforce—your tools",
+                  "It picks up on the first ring—24/7. No more voicemail black holes.",
+                  "It actually chats with people, qualifies them, and books appointments right then and there.",
+                  "Need a human? It knows exactly when to patch you in.",
+                  "Keep your current number. We just make it smarter.",
+                  "We teach it your business in minutes, not weeks.",
+                  "Plays nice with Calendly, HubSpot, Salesforce—whatever you use.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -57,10 +57,10 @@ export default function AiVoicePage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Quick Questions</h2>
           {[
-            { q: "How fast can I get set up?", a: "Most businesses are up and running within 24-48 hours. We train the AI on your business info and connect to your phone system." },
-            { q: "What if the AI cannot handle a call?", a: "It can warm-transfer to you, take a message, or schedule a callback. You set the rules for how it handles different situations." },
-            { q: "Do I have to change my phone number?", a: "No. You keep your number. We just route calls through our AI layer first." },
-            { q: "How much does it cost per call?", a: "First 500 minutes included each month. Overage is $0.15/min—very affordable compared to hiring reception staff." },
+            { q: "How fast can I get set up?", a: "Honestly? We can have you live in 24-48 hours. We just need to feed it your business info and hook up the phone lines." },
+            { q: "What if the AI cannot handle a call?", a: "If it gets stumped, it can warm-transfer to you, take a message, or schedule a callback. You make the rules." },
+            { q: "Do I have to change my phone number?", a: "Nope. Keep your number. We just sit in the background and handle the traffic." },
+            { q: "How much does it cost per call?", a: "First 500 minutes included each month. Overage is $0.15/min—way cheaper than hiring reception staff." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

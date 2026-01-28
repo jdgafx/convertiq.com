@@ -15,7 +15,7 @@ export default function GoogleBusinessPage() {
           <div className="text-6xl mb-6">📍</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Google Business Profile</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Show up in the local map pack. Be found by customers nearby searching for what you offer.
+            When someone pulls out their phone and searches for what you do, you need to be the first name they see. It&apos;s that simple.
           </p>
         </div>
       </section>
@@ -23,18 +23,18 @@ export default function GoogleBusinessPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Most businesses have incomplete Google profiles. Here is what we optimize:</p>
+              <p className="text-gray-600 mb-4">Most businesses have incomplete profiles and don&apos;t even know it. Here&apos;s what we actually fix:</p>
               <ul className="space-y-4">
                 {[
-                  "Complete profile optimization with strategic keywords",
-                  "Strategic photo placement that shows what you actually do",
-                  "Category and attribute optimization so you show up for the right searches",
-                  "Q&A seeding with your expertise (before customers ask)",
-                  "Review response automation set up",
-                  "Monthly reporting so you see what is working",
+                  "We don&apos;t just fill in the blanks. We optimize every field with the exact keywords your customers are typing in.",
+                  "Photos that actually sell your work, not just generic stock images.",
+                  "We fix your categories so you stop showing up for the wrong stuff.",
+                  "We pre-load your Q&A with the questions people are actually thinking but scared to ask.",
+                  "We set up a system so reviews get answered fast.",
+                  "Real numbers every month. Calls, directions, website clicks.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -57,10 +57,10 @@ export default function GoogleBusinessPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Some Things Clients Ask</h2>
           {[
-            { q: "How long until I see results?", a: "Most clients see improved rankings within 3-7 days. The biggest impact comes from showing up in the local 3-pack when people search nearby." },
-            { q: "Do I need to provide content?", a: "We use your existing information and optimize it. You just approve the changes before we publish." },
-            { q: "What if I already have a profile?", a: "Perfect. We optimize what is there and fill in gaps. Most businesses have incomplete profiles they never finished." },
-            { q: "Is this really a one-time fee?", a: "Yes. The optimization is done once. You can add monthly management for $99/mo if you want ongoing updates and posting." },
+            { q: "How long until I see results?", a: "Honestly? You'll often see movement in 3-7 days. Google loves an active, complete profile. The real magic happens when you start popping up in that local '3-pack' map." },
+            { q: "Do I need to provide content?", a: "Nope. We dig through what you already have. You just give us the thumbs up before we go live." },
+            { q: "What if I already have a profile?", a: "Even better. We'll take what you started and actually finish it. Most profiles we see are about 60% done." },
+            { q: "Is this really a one-time fee?", a: "Yep. You pay once, we fix it. If you want us to stick around and post updates, we can do that too, but no pressure." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

@@ -6,7 +6,7 @@ export default function BlogPage() {
         {
             slug: 'ai-marketing-guide-2025',
             title: 'The Complete Guide to AI-Powered Marketing in 2025',
-            excerpt: 'Discover how AI is transforming marketing and how you can leverage it for your business. From chatbots to content creation, learn what actually works.',
+            excerpt: 'AI is changing everything, and honestly, if you\'re not paying attention, you\'re falling behind fast. We break down exactly how AI is transforming marketing.',
             category: 'Marketing',
             date: '2025-01-15',
             readTime: '8 min read',
@@ -15,7 +15,7 @@ export default function BlogPage() {
         {
             slug: 'chatbot-best-practices-2025',
             title: 'Chatbot Best Practices for 2025: What Actually Converts',
-            excerpt: 'Learn how to set up AI chatbots that actually convert visitors into customers, not just answer questions.',
+            excerpt: 'Most chatbots are terrible, right? They frustrate people instead of helping. Here is how to build ones that actually convert visitors into paying customers.',
             category: 'Technology',
             date: '2025-01-10',
             readTime: '6 min read',
@@ -24,7 +24,7 @@ export default function BlogPage() {
         {
             slug: 'roi-ai-voice-receptionist',
             title: 'Calculate the ROI of AI Voice Receptionists',
-            excerpt: 'Find out how much you could save by implementing an AI phone system. Real numbers from real businesses.',
+            excerpt: 'Curious about AI phone systems? See the real numbers—actual savings from real businesses. The results might surprise you.',
             category: 'Business',
             date: '2025-01-05',
             readTime: '7 min read',
@@ -33,7 +33,7 @@ export default function BlogPage() {
         {
             slug: 'google-business-optimization-guide',
             title: 'The Ultimate Google Business Optimization Guide',
-            excerpt: 'Learn how to dominate local search and get more customers finding your business on Google Maps.',
+            excerpt: 'Local search matters more than ever. This guide walks you through dominating Google Maps so customers can actually find you.',
             category: 'Local SEO',
             date: '2024-12-28',
             readTime: '10 min read',
@@ -42,7 +42,7 @@ export default function BlogPage() {
         {
             slug: 'email-automation-strategies',
             title: 'Email Automation Strategies That Actually Get Results',
-            excerpt: 'Stop sending generic newsletters. Learn how to create automated sequences that nurture leads and drive sales.',
+            excerpt: 'Email marketing is broken. Everyone is sending the same boring newsletters. Learn how to build automated sequences that nurture leads and drive real sales.',
             category: 'Email Marketing',
             date: '2024-12-20',
             readTime: '9 min read',
@@ -51,7 +51,7 @@ export default function BlogPage() {
         {
             slug: 'social-media-content-strategy',
             title: 'Social Media Content Strategy for Service Businesses',
-            excerpt: 'How to create content that attracts customers without spending all day on social media.',
+            excerpt: 'If social media feels like a time-suck, you are not imagining it. Here is how to create content that attracts customers without living on your phone.',
             category: 'Social Media',
             date: '2024-12-15',
             readTime: '8 min read',
@@ -67,7 +67,7 @@ export default function BlogPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-extrabold text-[#1a1a1a] mb-6">Our Blog</h1>
                     <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed italic">
-                        Discover the latest insights, trends, and strategies in digital marketing, technology, and business growth.
+                        Want to stay ahead of the curve? Let&apos;s talk about what&apos;s actually working in digital marketing, tech, and growing your business right now.
                     </p>
                 </div>
             </section>

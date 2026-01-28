@@ -23,18 +23,18 @@ export default function SeoContentPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here is what separates content that ranks from content that disappears:</p>
+              <p className="text-gray-600 mb-4">Ever wonder why some content gets crazy traffic while the rest just sits there gathering dust? We create stuff Google actually loves—and here&apos;s the thing—people genuinely want to read it. Here&apos;s what makes the difference:</p>
               <ul className="space-y-4">
                 {[
-                  "2,000+ words that actually answer search queries (no fluff, no padding)",
-                  "We research keywords with actual search volume—not made-up opportunities",
-                  "Internal linking that makes sense for your site structure",
-                  "Meta titles and descriptions that get people to click",
-                  "Headers that make sense to readers and Google",
-                  "Content ready to paste into WordPress, Wix, Squarespace—whatever you use",
+                  "Around 2,000 words of genuinely useful content that actually answers what searchers are looking for. No filler.",
+                  "We don&apos;t guess at keywords. We dig into ones with real search volume—actual opportunities, not made-up nonsense.",
+                  "Internal linking that actually makes sense for how your site is structured.",
+                  "Meta titles and descriptions that make people stop scrolling and click.",
+                  "Headers that sound natural to readers while playing nice with Google at the same time.",
+                  "And honestly? The best part is that it&apos;s ready to drop right into WordPress, Wix, Squarespace—whatever platform you&apos;re using.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -57,10 +57,10 @@ export default function SeoContentPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Before You Ask</h2>
           {[
-            { q: "How do you pick what to write about?", a: "We look at what your competitors rank for, what questions your customers ask, and what search terms actually have traffic. You approve topics before we write." },
-            { q: "Do you guarantee first page rankings?", a: "No honest person can. We guarantee well-written, properly optimized content. Rankings depend on competition, domain authority, and many other factors." },
-            { q: "Can you publish directly to my site?", a: "Yes. WordPress, Wix, Squarespace—we can log in and publish, or just give you the content to upload yourself." },
-            { q: "What kind of articles work best?", a: "How-to guides, industry explainers, comparisons, and answers to frequently asked questions. Things people actually search for." },
+            { q: "How do you pick what to write about?", a: "Honestly, we dig into what your competitors are ranking for, check out what questions your customers are asking, and find out what search terms actually get traffic. We run everything by you before we start writing—no surprises." },
+            { q: "Do you guarantee first page rankings?", a: "Look, no honest person can promise that. Here's what we can guarantee: well-written, properly optimized content. Rankings depend on so many factors though—competition, domain authority, how old your site is, you name it." },
+            { q: "Can you publish directly to my site?", a: "Absolutely. WordPress, Wix, Squarespace—we can log in and handle it, or just give you the content to upload yourself. Whatever's easier for you." },
+            { q: "What kind of articles work best?", a: "How-to guides, industry explainers, comparisons, and answers to frequently asked questions. Basically, stuff people are actually searching for." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

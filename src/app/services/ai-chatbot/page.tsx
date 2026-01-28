@@ -16,7 +16,7 @@ export default function AiChatbotPage() {
           <div className="text-6xl mb-6">🤖</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">AI Chatbot Setup</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Capture leads while you sleep. Your website works 24/7, so should your lead capture.
+            Picture this: you&apos;re catching some Z&apos;s while leads are rolling in. Your website doesn&apos;t punch a clock, so why should your lead capture, right?
           </p>
         </div>
       </section>
@@ -25,18 +25,21 @@ export default function AiChatbotPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here is what you actually get with our chatbot setup:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why It Works</h2>
+              <p className="text-gray-600 mb-6">
+                Here&apos;s the thing about this chatbot—it&apos;s basically soaked up everything about your business. It knows your products, your pricing, and exactly how to talk to your customers.
+              </p>
               <ul className="space-y-4">
                 {[
-                  "A chatbot trained on your website, products, and common questions",
-                  "Auto-qualification so you only talk to serious prospects",
-                  "Calendar booking built in—no back-and-forth scheduling emails",
-                  "Instant answers to common questions (hours, pricing, services)",
-                  "Connects to your CRM and email tools",
-                  "Trains on your content and gets smarter over time",
+                  "It&apos;s trained on your actual website content—no generic answers here.",
+                  "Auto-qualification is a game-changer, honestly. You&apos;ll only chat with folks who are actually ready to buy.",
+                  "Calendar booking? Built right in. No more playing email ping-pong trying to coordinate schedules.",
+                  "It handles the basics instantly—hours, pricing, what you actually do.",
+                  "It plays nice with your CRM and email tools too, so nothing gets lost.",
+                  "Oh, and the really cool part? It keeps learning from your stuff and gets smarter all the time.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -51,6 +54,9 @@ export default function AiChatbotPage() {
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
               </Link>
+              <p className="text-xs text-gray-500 mt-4 text-center">
+                Try it on your site. If it doesn&apos;t work, you don&apos;t pay.
+              </p>
             </div>
           </div>
         </div>
@@ -58,12 +64,24 @@ export default function AiChatbotPage() {
 
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Common Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Questions You Might Have</h2>
           {[
-            { q: "What is included in the 7-day free trial?", a: "Full access to everything—no credit card required. Test the chatbot on your site, see leads come in, and decide if it works for you. If you are not happy, just cancel—no questions asked." },
-            { q: "How does the chatbot actually learn?", a: "We train it on your website, documents, and any FAQs you provide. You can also manually add Q&A pairs. It gets smarter over time as it interacts with visitors." },
-            { q: "Can it really book appointments?", a: "Yes. It connects to your calendar and lets visitors book slots directly. No more 'when are you available?' emails." },
-            { q: "What if it cannot answer something?", a: "It can silently notify you via email or Slack, or hand off to live chat. You are in complete control." },
+            { 
+              q: "Okay, let's talk about the free trial.", 
+              a: "You get full access to everything, no credit card required. Seriously, just sign up, test it out on your site, watch those leads start rolling in, and see if it's a fit. Not into it? Cancel anytime. Super simple." 
+            },
+            { 
+              q: "So how does this thing actually learn?", 
+              a: "We train it on your website, your docs, any FAQs you've got sitting around. Oh, and you can manually add your own Q&A pairs too. The best part? It gets smarter over time as it chats with your visitors. Pretty cool, right?" 
+            },
+            { 
+              q: "Can it actually book appointments?", 
+              a: "Yep, absolutely. It syncs up with your calendar and lets people book slots right then and there. No more endless back-and-forth emails trying to figure out when someone's available. Trust me, once you use it, you'll wonder how you ever lived without it." 
+            },
+            { 
+              q: "What happens when it can't answer something?", 
+              a: "No stress—it can shoot you a message through email or Slack, or seamlessly hand things off to live chat. You're always in the driver's seat, so nothing falls through the cracks." 
+            },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -77,7 +95,7 @@ export default function AiChatbotPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to Capture More Leads?</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Start your free trial today. See the difference an AI chatbot makes in just 7 days.
+            Give it a week. Seriously. If you don't see more qualified leads coming in, just walk away.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all">
             Start Free Trial

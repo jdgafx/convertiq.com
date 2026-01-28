@@ -15,7 +15,7 @@ export default function ReviewResponsePage() {
           <div className="text-6xl mb-6">⭐</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">AI Review Response</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Every review deserves a response. Our AI handles it instantly—building trust while you focus on your business.
+            Leaving a review unanswered is like ignoring someone who just walked up to shake your hand. We make sure you never leave anyone hanging.
           </p>
         </div>
       </section>
@@ -23,18 +23,18 @@ export default function ReviewResponsePage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here is what our review system actually does:</p>
+              <p className="text-gray-600 mb-4">Here&apos;s how we keep your reputation spotless while you sleep:</p>
               <ul className="space-y-4">
                 {[
-                  "Responds to positive reviews with genuine gratitude",
-                  "Handles negative reviews professionally (but flags them for you first)",
-                  "Tuned to your brand voice—not generic corporate speak",
-                  "Monitors 50+ review platforms and notifications",
-                  "Flags concerning reviews so you can address them personally",
-                  "Turns response time from days to minutes",
+                  "It says &apos;thanks&apos; to the good stuff in a way that feels real, not canned.",
+                  "It handles the haters professionally—defusing the situation so you don&apos;t have to stress about it.",
+                  "We teach it to sound like you, not a corporate press release.",
+                  "Google, Yelp, Facebook—if someone&apos;s talking about you online, we catch it.",
+                  "If things get heated, it pings you instantly so you can step in.",
+                  "It responds in minutes, not &apos;whenever I get around to it&apos;.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -57,10 +57,10 @@ export default function ReviewResponsePage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Some Common Questions</h2>
           {[
-            { q: "Can I customize the responses?", a: "Absolutely. We train the AI on your brand voice and you can approve templates before they go live." },
-            { q: "What platforms do you monitor?", a: "Google, Yelp, Facebook, TripAdvisor, and 40+ more. If a review appears anywhere, we see it and respond." },
-            { q: "What about angry customers?", a: "Negative reviews are flagged for your review before responding. You can choose to respond yourself or let AI handle it professionally." },
-            { q: "Does it sound robotic?", a: "No. The AI is trained to sound conversational and authentic—not like a generic auto-responder that everyone can spot." },
+            { q: "Can I customize the responses?", a: "Totally. You can tweak the voice, approve templates, or just let it run. It's your reputation, you're in charge." },
+            { q: "What platforms do you monitor?", a: "Pretty much everywhere people complain or compliment. Google, Yelp, TripAdvisor—we got 'em covered." },
+            { q: "What about angry customers?", a: "We don't let the AI freelance on angry rants. Those get flagged straight to you unless you tell us otherwise." },
+            { q: "Does it sound robotic?", a: "Not a chance. We specifically train it to avoid that 'Thank you valued customer' vibe. It sounds like a human being." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

@@ -15,7 +15,7 @@ export default function EmailAutomationPage() {
           <div className="text-6xl mb-6">✉️</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Email Automation</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Automated email sequences that nurture leads and drive sales—running 24/7 while you focus on other things.
+            Look, automated emails usually sound like... automated emails. We fix that. We build sequences that actually sound like you, running in the background 24/7.
           </p>
         </div>
       </section>
@@ -24,18 +24,18 @@ export default function EmailAutomationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Most Clients See Results in About a Week</h2>
-              <p className="text-gray-600 mb-4">We have built dozens of email systems for HVAC companies, law firms, dentists, and more. Here is what you get:</p>
+              <p className="text-gray-600 mb-4">We&apos;ve built dozens of email systems for HVAC companies, law firms, dentists, and more. Here&apos;s what you actually get:</p>
               <ul className="space-y-4">
                 {[
-                  "Welcome sequence that actually feels personal—not like a robot wrote it",
-                  "Cart recovery emails that bring people back (we have seen 15-30% recovery rates)",
-                  "Follow-up emails that do not feel spammy",
-                  "Re-engagement campaigns for the people who went quiet",
-                  "Smart triggers based on what people actually do",
-                  "Testing built in—we do not just guess",
+                  "A welcome series that actually feels personal—like a real person sat down to write it.",
+                  "Cart recovery emails that bring people back (honestly, we usually see 15-30% recovery rates).",
+                  "Follow-ups that don&apos;t feel spammy or annoying.",
+                  "Campaigns to wake up those quiet subscribers who haven&apos;t opened anything in months.",
+                  "Smart triggers based on what people actually *do* on your site.",
+                  "We test everything. We don&apos;t just guess and hope.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -59,10 +59,10 @@ export default function EmailAutomationPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Common Questions</h2>
           {[
-            { q: "How long does the whole process take?", a: "Usually about a week. We need a few days to understand your business, write the copy, set up the automation, and test everything. Rushing usually means mistakes." },
-            { q: "What platforms work with this?", a: "Most of them—Mailchimp, ConvertKit, Klaviyo, ActiveCampaign. If you are on something else, we will figure it out." },
-            { q: "Can I write my own copy?", a: "Absolutely. Some clients have very specific voices. We can use your words, our words, or a mix. Your choice." },
-            { q: "What happens if emails go to spam?", a: "We design everything to avoid spam filters—proper authentication, list hygiene, and actually useful content. Most clients see 95%+ inbox rates." },
+            { q: "How long does this take?", a: "Give us about a week. We need a few days to really get your voice down, set up the tech, and test it all. Rushing just leads to mistakes." },
+            { q: "What platforms do you work with?", a: "Pretty much all of them—Mailchimp, ConvertKit, Klaviyo, ActiveCampaign. If you're on something weird, we'll figure it out." },
+            { q: "Can I write my own copy?", a: "Absolutely. It's your business. We can write it, you can write it, or we can mix and match. Whatever works best for you." },
+            { q: "What about spam filters?", a: "We handle all the technical stuff—DKIM, SPF, list hygiene—to keep you out of the spam folder. Most of our clients see 95%+ inbox rates." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -75,7 +75,7 @@ export default function EmailAutomationPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Tired of Chasing Leads Manually?</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            One of our clients put it best: "I used to spend 3 hours a day on follow-ups. Now it all happens while I sleep."
+            One of our clients put it best: &quot;I used to spend 3 hours a day on follow-ups. Now it all happens while I sleep.&quot;
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Let us Build Your Sequence

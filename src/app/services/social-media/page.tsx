@@ -15,7 +15,7 @@ export default function SocialMediaPage() {
           <div className="text-6xl mb-6">📱</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Social Media Content</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Consistent posting across all platforms. Content that actually gets engagement—not crickets.
+            Look, social media can feel like a full-time job—and honestly, nobody&apos;s got time for that. But if you&apos;re not showing up consistently, you&apos;re basically invisible.
           </p>
         </div>
       </section>
@@ -23,18 +23,18 @@ export default function SocialMediaPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here is the thing about social media: you have to show up consistently or disappear. But nobody wants to spend their whole day on it. Here is what we do:</p>
+              <p className="text-gray-600 mb-4">We get it. You want results without living on your phone. So here&apos;s what we do for you:</p>
               <ul className="space-y-4">
                 {[
-                  "20 posts that actually feel like you—not generic stock photos",
-                  "We post to LinkedIn, Facebook, Instagram, and X",
-                  "Custom graphics (no more boring stock photos of people shaking hands)",
-                  "Hashtags that get you found—not random keywords",
-                  "We engage with comments and build community",
-                  "Monthly report that tells you what is working, not just vanity metrics",
+                  "20 posts a month that actually sound like you. None of that stiff corporate nonsense.",
+                  "We handle LinkedIn, Facebook, Instagram, and X. All of them.",
+                  "Custom graphics—and yes, no more cringe stock photos of people shaking hands in meeting rooms.",
+                  "Hashtags that are actually chosen to help people find you, not just random words thrown together.",
+                  "We also jump into the comments, reply to people, and build a real community around your brand.",
+                  "At the end of each month, you get a report that breaks down what&apos;s working. Just the stuff that actually matters.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-emerald-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">{item}</span>
@@ -57,10 +57,10 @@ export default function SocialMediaPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">What You Might Be Wondering</h2>
           {[
-            { q: "Which platforms should I even be on?", a: "It depends on your business. A local restaurant needs Instagram and Google Business more than LinkedIn. We help you focus where your customers actually are." },
-            { q: "Do I get to see posts before they go live?", a: "Yes. You get a content calendar every month. Review, approve, request changes. We do not post without your okay." },
-            { q: "Can you actually post from my account?", a: "We can if you want to give us access. Or we just hand you the content and you post it yourself. Whatever you are comfortable with." },
-            { q: "What if I hate the content you create?", a: "We adjust. Sometimes it takes a round or two to get the voice right. We work with you until it feels like your brand." },
+            { q: "So, which platforms should you actually be on?", a: "Honestly, it depends on what you do. A local restaurant? Yeah, you're way better off on Instagram and Google Business than LinkedIn—that's just common sense, right? We help you zero in on where your customers actually spend their time." },
+            { q: "Do I get to see posts before they go live?", a: "Absolutely. You'll get a content calendar every month. Review it, give it the thumbs up, tell us what needs changing—we're not hitting publish without your say-so, promise." },
+            { q: "Can you post from my account?", a: "Yeah, we can if you want to hand over access. Or we can just send you the content and you post it yourself. Honestly, whatever you're comfortable with—no pressure here at all." },
+            { q: "What if I hate the stuff you create?", a: "No worries, we'll tweak it. Sometimes it takes a round or two to really nail your voice, so we'll keep working with you until it actually feels like your brand." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -73,7 +73,7 @@ export default function SocialMediaPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Your Competitors Are Posting. Are You?</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            One restaurant client told us: "I kept meaning to post. Then I never did. Now my Instagram actually looks alive."
+            One restaurant client told us: &quot;I kept meaning to post. Then I never did. Now my Instagram actually looks alive.&quot;
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Get a Content Calendar
