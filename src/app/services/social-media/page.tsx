@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Social Media Content Package | ConvertIQ",
+  title: "Consistent Social Presence Package | ConvertIQ",
   description: "20 posts per month across all platforms. Stay visible without the hassle.",
 };
 
@@ -13,7 +13,7 @@ export default function SocialMediaPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">📱</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">Social Media Content</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Consistent Social Presence</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Look, social media can feel like a full-time job—and honestly, nobody&apos;s got time for that. But if you&apos;re not showing up consistently, you&apos;re basically invisible.
           </p>

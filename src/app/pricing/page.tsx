@@ -78,32 +78,28 @@ export default function PricingPage() {
 
     const faqs = [
         {
-            question: "What is included in the 7-day free trial?",
-            answer: "So what do you get with the 7-day free trial? Full access to everything in your chosen plan for a full week. Seriously, no credit card needed to start. And hey, if you're not seeing results, just cancel. No hassle, no questions asked. Simple as that. You can even try individual services à la carte with the same free trial setup."
+            question: "What is included in the free trial?",
+            answer: "You get full access to your chosen plan for 7 days with no credit card required. If you don't see the value, you can cancel instantly with no questions asked."
         },
         {
-            question: "Can I customize any service?",
-            answer: "Absolutely. Every single service is fully customizable. Want a chatbot trained on your specific products? Done. Need email sequences tailored to your industry? No problem. Our team works hand-in-hand with you to make sure everything fits your business like a glove. And here's the best part—all that customization is included, no extra fees whatsoever."
+            question: "Can I customize the services?",
+            answer: "Yes. Every service is fully customizable to your specific business. Our team works with you to ensure every chatbot, email, and ad campaign aligns with your brand."
         },
         {
             question: "Can I switch plans later?",
-            answer: "Yep, upgrade or downgrade whenever you need to. We'll just prorate the difference so you only pay for what you actually use. Oh, and you can mix and match too—use the platform for some services and throw in specific à la carte items as your needs change."
+            answer: "You can upgrade or downgrade your plan at any time. We will prorate the difference so you only pay for what you use."
         },
         {
-            question: "Do you offer custom packages?",
-            answer: "Curious about custom packages? Yeah, we've totally got you. Need something one-of-a-kind? We'll build it from the ground up. Our Enterprise plan is a solid starting point for custom work, but honestly, we can work with just about any budget. Just tell us what you need and we'll put together a proposal for you."
+            question: "Are there custom packages?",
+            answer: "We can build a unique package from the ground up if our standard tiers don't fit your needs. Contact us for a custom proposal."
         },
         {
             question: "How quickly will I see results?",
-            answer: "So how fast will you see results? Most clients notice improvements within the first week. AI chatbots and voice receptionists get to work immediately. SEO and content marketing? That's a bit different—usually takes about 60 to 90 days to see real movement in your rankings. Worth the wait though, promise."
+            answer: "Most clients see improvements within the first week. AI tools like chatbots go live immediately, while SEO usually takes 60 to 90 days to show movement."
         },
         {
             question: "Is there a long-term contract?",
-            answer: "Long-term contracts? Nope. Everything is month-to-month. We figure we should earn your business every single month, not lock you into something. Cancel anytime with 30 days notice. Simple as that."
-        },
-        {
-            question: "What if I need help with customization?",
-            answer: "What if you need help customizing things? That's what we're here for, honestly. All plans include customization support. Enterprise customers get a dedicated account manager, and Professional plans get priority support. We'll work with you until everything is exactly how you want it—no rush, no stress."
+            answer: "No. Everything is month-to-month. You can cancel your subscription at any time with 30 days notice."
         }
     ];
 

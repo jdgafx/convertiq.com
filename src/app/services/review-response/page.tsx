@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Review Response System | ConvertIQ",
+  title: "Reputation Management System | ConvertIQ",
   description: "Build trust automatically. Respond to every review professionally and instantly.",
 };
 
@@ -13,7 +13,7 @@ export default function ReviewResponsePage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">⭐</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Review Response</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Reputation Management</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Leaving a review unanswered is like ignoring someone who just walked up to shake your hand. We make sure you never leave anyone hanging.
           </p>

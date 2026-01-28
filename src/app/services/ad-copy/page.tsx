@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Ad Copy Optimization | ConvertIQ",
+  title: "High-Performance Ads Optimization | ConvertIQ",
   description: "Better copy, more clicks, lower costs. Ads that actually convert.",
 };
 
@@ -13,7 +13,7 @@ export default function AdCopyPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">📝</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Ad Copy Optimization</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">High-Performance Ads Optimization</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Honestly, stop throwing your money away on copy that just doesn&apos;t work. We write headlines and descriptions that actually get clicks—it&apos;s kind of our thing.
           </p>

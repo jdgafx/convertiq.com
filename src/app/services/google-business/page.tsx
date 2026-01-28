@@ -13,9 +13,9 @@ export default function GoogleBusinessPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">📍</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">Google Business Profile</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Local Search Mastery</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            When someone pulls out their phone and searches for what you do, you need to be the first name they see. It&apos;s that simple.
+            When someone in your neighborhood searches for the services you provide, your business needs to be the first name they see. We ensure your profile is fully optimized to capture that local demand.
           </p>
         </div>
       </section>
@@ -23,15 +23,16 @@ export default function GoogleBusinessPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Most businesses have incomplete profiles and don&apos;t even know it. Here&apos;s what we actually fix:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Optimizing for Visibility</h2>
+              <p className="text-gray-600 mb-6">Most local profiles are only partially complete, leaving significant traffic on the table. We perform a deep-dive optimization to ensure you show up in the local '3-pack' when it matters most.</p>
               <ul className="space-y-4">
                 {[
-                  "Filling in the blanks isn't enough. We go deep on keywords to make sure you actually show up.",
-                  "Photos that actually sell your work, not just generic stock images.",
-                  "We fix your categories so you stop showing up for the wrong stuff.",
-                  "We pre-load your Q&A with the questions people are actually thinking but scared to ask.",
-                  "We set up a system so reviews get answered fast.",
-                  "We track the metrics that pay the bills. Calls, clicks, directions.",
+                  "We perform extensive keyword research to match how your local customers actually search.",
+                  "We select and optimize high-quality images that showcase your best work to potential clients.",
+                  "We verify every category and attribute to ensure you appear for the correct service searches.",
+                  "We populate your profile with relevant Q&A to answer customer concerns before they even call.",
+                  "We implement a reliable system to ensure every customer review receives a professional response.",
+                  "We track phone calls, website clicks, and direction requests so you can measure your return.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,12 +56,12 @@ export default function GoogleBusinessPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Some Things Clients Ask</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
           {[
-            { q: "How long until I see results?", a: "Honestly? You'll often see movement in 3-7 days. Google loves an active, complete profile. The real magic happens when you start popping up in that local '3-pack' map." },
-            { q: "Do I need to provide content?", a: "Nope. We dig through what you already have. You just give us the thumbs up before we go live." },
-            { q: "What if I already have a profile?", a: "Even better. We'll take what you started and actually finish it. Most profiles we see are about 60% done." },
-            { q: "Is this really a one-time fee?", a: "Yep. You pay once, we fix it. If you want us to stick around and post updates, we can do that too, but no pressure." },
+            { q: "How long until we see movement?", a: "Most businesses see an increase in visibility within 3 to 7 days. Google rewards active and complete profiles, and the real growth happens once you secure a spot in the local map pack." },
+            { q: "Do I need to provide new content?", a: "Not necessarily. Our team will review your existing website and assets to build out your profile. We simply need your approval before any major updates go live." },
+            { q: "What if I already have an existing profile?", a: "We specialize in taking existing profiles and making them high-performers. Most profiles we audit are only 60% optimized—we take them to 100%." },
+            { q: "Is this a recurring monthly fee?", a: "This is a one-time optimization service. We fix your profile and set the foundation. If you want ongoing management later, we can discuss that, but there's no obligation." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

@@ -2,8 +2,8 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "SEO Content Writing | ConvertIQ",
-  description: "2,000+ word articles that rank. Real SEO, not keyword stuffing.",
+  title: "Content That Ranks | ConvertIQ",
+  description: "2,000+ word articles that rank. Real SEO, not valuable information.",
 };
 
 export default function SeoContentPage() {
@@ -13,7 +13,7 @@ export default function SeoContentPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🔍</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">SEO Content Writing</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Content That Ranks</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Content that Google loves and humans actually read. Keywords that rank, copy that converts.
           </p>

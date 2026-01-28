@@ -13,9 +13,9 @@ export default function AiVoicePage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">📞</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Voice Receptionist</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Virtual Front Desk</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Look, your phone keeps ringing even when you&apos;re off the clock. Our AI doesn&apos;t sleep either. It grabs every call, every time.
+            Stop missing opportunities because you were too busy to pick up the phone. Our AI-powered voice receptionists answer instantly, qualify every caller, and book appointments directly on your calendar.
           </p>
         </div>
       </section>
@@ -23,15 +23,16 @@ export default function AiVoicePage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here&apos;s a scary stat: most businesses miss about a third of their calls. That&apos;s money walking out the door. Here&apos;s how we fix that:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">24/7 Phone Answering</h2>
+              <p className="text-gray-600 mb-6">Most businesses miss roughly one-third of their incoming calls. Our AI system ensures every potential client gets a response the moment they call, regardless of the time or day.</p>
               <ul className="space-y-4">
                 {[
-                  "It answers on the first ring. Every time. No more losing leads to voicemail.",
-                  "It actually chats with people, qualifies them, and books appointments right then and there.",
-                  "If it gets stuck, it transfers the call to you. Seamlessly.",
-                  "Keep your current number. We just make it smarter.",
-                  "We can train it on your business in about 20 minutes.",
-                  "It integrates with whatever calendar or CRM you use.",
+                  "Calls are answered on the first ring to prevent leads from calling your competitors.",
+                  "The AI naturally qualifies callers and books appointments based on your criteria.",
+                  "If a complex situation arises, the system can seamlessly transfer the call to your team.",
+                  "Keep your existing business phone number while adding intelligent automation.",
+                  "We can train the system on your specific service details in less than an hour.",
+                  "Direct integration with your calendar ensures no double-bookings occur.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,12 +56,12 @@ export default function AiVoicePage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Quick Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
           {[
-            { q: "How fast can I get set up?", a: "Honestly? We can have you live in 24-48 hours. We just need to feed it your business info and hook up the phone lines." },
-            { q: "What if the AI cannot handle a call?", a: "If it gets stumped, it can warm-transfer to you, take a message, or schedule a callback. You make the rules." },
-            { q: "Do I have to change my phone number?", a: "Nope. Keep your number. We just sit in the background and handle the traffic." },
-            { q: "How much does it cost per call?", a: "First 500 minutes included each month. Overage is $0.15/min—way cheaper than hiring reception staff." },
+            { q: "How quickly can I go live?", a: "Most businesses are set up and receiving calls within 24 to 48 hours. We just need your basic business details and appointment preferences." },
+            { q: "What if the AI cannot handle a specific request?", a: "You define the rules. The system can take a detailed message, transfer the call to your mobile, or schedule a callback for your team." },
+            { q: "Do I need a new phone number?", a: "No. You keep your current number. We simply route your calls through our intelligent system so they can be handled automatically." },
+            { q: "How are the minutes tracked?", a: "Your plan includes a set number of minutes each month. We provide a transparent dashboard so you can see exactly how many calls were handled." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

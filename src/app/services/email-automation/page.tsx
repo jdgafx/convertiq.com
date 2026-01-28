@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Email Automation Sequences | ConvertIQ",
+  title: "Human-Like Follow Ups Sequences | ConvertIQ",
   description: "Turn subscribers into customers with smart email sequences that actually get read.",
 };
 
@@ -13,7 +13,7 @@ export default function EmailAutomationPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">✉️</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">Email Automation</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Human-Like Follow Ups</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Look, automated emails usually sound like... automated emails. We fix that. We build sequences that actually sound like you, running in the background 24/7.
           </p>

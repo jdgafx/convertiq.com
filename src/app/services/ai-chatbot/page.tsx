@@ -14,9 +14,9 @@ export default function AiChatbotPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🤖</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Chatbot Setup</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Smart Website Chat</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Picture this: you&apos;re catching some Z&apos;s while leads are rolling in. Your website doesn&apos;t punch a clock, so why should your lead capture, right?
+            Your website should be your best salesperson. We set up custom-trained AI chatbots that engage every visitor, answer their questions, and book qualified appointments on your calendar.
           </p>
         </div>
       </section>
@@ -25,18 +25,18 @@ export default function AiChatbotPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why It Works</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">How It Helps Your Business</h2>
               <p className="text-gray-600 mb-6">
-                Here&apos;s the thing about this chatbot—it&apos;s basically soaked up everything about your business. It knows your products, your pricing, and exactly how to talk to your customers.
+                Our AI agents are trained specifically on your business. They understand your products, services, and pricing, allowing them to provide accurate information to your visitors 24/7.
               </p>
               <ul className="space-y-4">
             {[
-              "We train it on your actual site. It doesn't guess. It knows your business.",
-              "It qualifies leads automatically. You stop talking to people who aren't buying.",
-              "It books appointments on your actual calendar. You just show up.",
-              "It handles hours, pricing, and services instantly.",
-              "It connects to your CRM so you never lose a lead.",
-              "And yeah, it learns. The more it chats, the smarter it gets.",
+              "The bot is trained on your actual website content and documentation.",
+              "It qualifies every lead before booking an appointment.",
+              "The system syncs directly with your existing calendar.",
+              "It provides instant answers to common customer questions.",
+              "All lead data is automatically pushed to your CRM.",
+              "The AI continuously improves based on visitor interactions.",
             ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -64,23 +64,23 @@ export default function AiChatbotPage() {
 
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Questions You Might Have</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
           {[
             { 
-              q: "Okay, let's talk about the free trial.", 
-              a: "You get full access to everything, no credit card required. Seriously, just sign up, test it out on your site, watch those leads start rolling in, and see if it's a fit. Not into it? Cancel anytime. Super simple." 
+              q: "How does the free trial work?", 
+              a: "You get full access to the platform for 7 days with no credit card required. This allows you to see exactly how many qualified leads the system generates before committing." 
             },
             { 
-              q: "So how does this thing actually learn?", 
-              a: "We train it on your website, your docs, any FAQs you've got sitting around. Oh, and you can manually add your own Q&A pairs too. The best part? It gets smarter over time as it chats with your visitors. Pretty cool, right?" 
+              q: "How is the AI trained?", 
+              a: "We use your website content, PDFs, and existing documentation to build a custom knowledge base for your bot. This ensures it only provides accurate, business-specific information." 
             },
             { 
-              q: "Can it actually book appointments?", 
-              a: "Yep, absolutely. It syncs up with your calendar and lets people book slots right then and there. No more endless back-and-forth emails trying to figure out when someone's available. Trust me, once you use it, you'll wonder how you ever lived without it." 
+              q: "Does it work with my calendar?", 
+              a: "Yes. It integrates with major calendar platforms like Google and Outlook, allowing visitors to book meetings only during your available hours." 
             },
             { 
-              q: "What happens when it can't answer something?", 
-              a: "No stress—it can shoot you a message through email or Slack, or seamlessly hand things off to live chat. You're always in the driver's seat, so nothing falls through the cracks." 
+              q: "What if it doesn't know an answer?", 
+              a: "The system will politely inform the visitor and instantly notify your team via email or SMS so a real person can follow up and close the lead." 
             },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
