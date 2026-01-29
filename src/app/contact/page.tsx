@@ -7,10 +7,10 @@ export default function ContactPage() {
 
             <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-black mb-6">Hit Us Up</h1>
+                    <h1 className="text-4xl md:text-6xl font-black mb-6">Contact Us</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Questions? Want to talk shop? Just shoot us a message. 
-                        We usually get back to people pretty quick—same day most of the time.
+                        Have questions or want to discuss your project? Send us a message 
+                        and we will respond promptly—typically within the same business day.
                     </p>
                 </div>
             </section>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                                 <button type="submit" className="w-full bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5">
                                     Send Message
                                 </button>
-                                 <p className="text-xs text-gray-500 text-center">We'll hit you back within a day. Usually faster.</p>
+                                 <p className="text-xs text-gray-500 text-center">We typically respond within 24 hours.</p>
                             </form>
                         </div>
                         <div className="space-y-8">
@@ -96,9 +96,9 @@ export default function ContactPage() {
                                 </div>
                             </div>
                             <div className="bg-indigo-50 rounded-3xl p-10">
-                                <h3 className="text-2xl font-bold text-indigo-900 mb-4">Wanna Chat?</h3>
+                                <h3 className="text-2xl font-bold text-indigo-900 mb-4">Schedule a Call</h3>
                                 <p className="text-indigo-700 mb-6">
-                                    Free 15-min call. Tell us what's bugging you. No sales pitch—just us figuring out if we can actually help or not.
+                                    Free 15-minute consultation. Tell us about your challenges. No sales pitch—just an honest conversation about how we might be able to help.
                                 </p>
                                 <a href="mailto:hello@convertiq.ai" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us
