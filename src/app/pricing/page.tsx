@@ -10,7 +10,7 @@ export default function PricingPage() {
     const platformTiers = [
         {
             name: 'Starter',
-            description: 'Perfect if you\'re just starting out. You\'ll get a chatbot that actually books appointments, your Google Business profile tuned up so locals can find you, automated review responses, and a simple dashboard to see what\'s working. No tech headaches.',
+            description: 'Just getting started? This gets you a chatbot that actually books stuff, your Google Business sorted so people nearby can find you, auto-review replies, and a dead-simple dashboard. Nothing complicated.',
             monthlyPrice: 297,
             annualPrice: 247,
             features: [
@@ -26,7 +26,7 @@ export default function PricingPage() {
         },
         {
             name: 'Professional',
-            description: 'Ready to level up? This plan gives you everything in Starter plus a voice receptionist that never misses calls, email sequences that people actually open, social posts that keep you top-of-mind, and ad copy that converts like crazy.',
+            description: "Ready to step it up? You get everything in Starter, plus a phone bot that never misses a call, emails that people actually read, social posts so you stay on people's radar, and ad copy that actually converts.",
             monthlyPrice: 597,
             annualPrice: 497,
             features: [
@@ -44,7 +44,7 @@ export default function PricingPage() {
         },
         {
             name: 'Enterprise',
-            description: 'The full package—you get everything done for you. Content that ranks, landing pages that convert, complete funnels, custom AI trained specifically for your business, plus a dedicated manager who actually learns your operation inside and out.',
+            description: "The whole shebang. We do everything—content that ranks, pages that convert, full funnels, custom AI trained on your stuff, plus a dedicated manager who actually learns how your business works.",
             monthlyPrice: 1297,
             annualPrice: 1097,
             features: [
@@ -113,10 +113,10 @@ export default function PricingPage() {
                         Transparent Pricing
                     </span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6">
-                        Simple Pricing. <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Real Results.</span>
+                        Straightforward Prices. <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">No BS.</span>
                     </h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                        No hidden fees. No long-term contracts. Full customization on everything—that&apos;s just how we roll.
+                        No sneaky fees. No contracts locking you in. Everything&apos;s customizable—because that&apos;s how we do things.
                     </p>
                     <div className="flex items-center justify-center gap-4 mb-4">
                         <span className={`text-lg ${!isAnnual ? 'text-white font-bold' : 'text-gray-400'}`}>Monthly</span>
@@ -290,10 +290,10 @@ export default function PricingPage() {
             <section className="bg-gradient-to-r from-indigo-600 to-indigo-700 py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-                        Ready to Transform Your Marketing?
+                        Ready to Actually Get Stuff Done?
                     </h2>
                     <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
-                        Start your 7-day free trial today. No credit card required. Cancel anytime.
+                        Try it free for 7 days. No credit card BS. Cancel whenever you want.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact" className="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
