@@ -2,36 +2,75 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Marketing Services | ConvertIQ",
-  description: "10 AI-powered marketing services that actually get results. From chatbots to content to full funnels.",
+  title: "AI Solutions & Services | Amp AI Experts",
+  description: "AI solutions that scale. From lead generation to custom applications, we build systems that automate and grow your business.",
 };
 
 const services = [
   { 
-    icon: "🧲", 
-    title: "AI Assisted Advanced LeadGen", 
-    desc: "Think of this as a team that never sleeps. Our AI finds potential customers on social media and your site, starts a conversation, and gets them on your calendar automatically. You wake up to a list of qualified appointments without the 'back and forth' emails.", 
-    price: "$1,499 one-time",
-    href: "/services/lead-funnel"
+    icon: "🚀", 
+    title: "AI Lead Generation", 
+    desc: "We build AI systems that find your ideal customers across social media, search, and 100+ ad platforms. Our programmatic approach means your pipeline stays full while you focus on closing deals.", 
+    price: "$2,499/mo",
+    href: "/services/lead-generation",
+    featured: true
+  },
+  { 
+    icon: "💡", 
+    title: "AI Consulting", 
+    desc: "Not sure where AI fits in your business? We'll audit your operations and build a roadmap. From automation opportunities to custom implementations, we help you cut costs and scale faster.", 
+    price: "$500/hr or $3,999/mo",
+    href: "/services/ai-consulting",
+    featured: true
+  },
+  { 
+    icon: "📞", 
+    title: "AI Voice Solutions", 
+    desc: "AI Phone Receptionist and Cold Calling powered by VoiceIQ. Every call gets answered, qualified, and booked. Whether it's inbound leads or outbound prospecting, your phone becomes a revenue machine.", 
+    price: "$349/mo",
+    href: "/services/ai-voice",
+    featured: true
+  },
+  { 
+    icon: "⚙️", 
+    title: "Custom AI Applications", 
+    desc: "Need something built specifically for your workflow? We create bespoke AI applications that integrate with your existing tools. From internal automation to customer-facing features.", 
+    price: "Custom quote",
+    href: "/services/custom-apps",
+    featured: true
   },
   { 
     icon: "🤖", 
     title: "Smart Website Chat", 
-    desc: "Most chatbots are frustrating. Ours actually answers questions like a real person would—then books the call when someone's ready. We've seen clients significantly increase their qualified leads within a week of putting this on their site.", 
+    desc: "Most chatbots are frustrating. Ours actually answers questions like a real person would—then books the call when someone's ready. We've seen clients significantly increase their qualified leads within a week.", 
     price: "$149/mo",
     href: "/services/ai-chatbot"
   },
   { 
-    icon: "📞", 
-    title: "Virtual Front Desk", 
-    desc: "Every missed call is a missed opportunity. This virtual receptionist answers instantly, qualifies the caller, and books the appointment. It never calls in sick and handles your phone lines 24/7 so you can focus on the work.", 
-    price: "$249/mo",
-    href: "/services/ai-voice"
+    icon: "📱", 
+    title: "AI Social Media", 
+    desc: "Staying active on social media works, but it takes a lot of time. We manage your monthly posts across all platforms so you stay visible and relevant without ever having to touch your phone.", 
+    price: "$299/mo",
+    href: "/services/social-media"
+  },
+  { 
+    icon: "📝", 
+    title: "Programmatic Advertising", 
+    desc: "Bad ad copy is a waste of money. We write headlines and descriptions that actually get clicks—and we keep testing them until your cost per lead drops. AI-managed campaigns across 100+ platforms.", 
+    price: "$599/mo",
+    href: "/services/ad-copy"
+  },
+  { 
+    icon: "✉️", 
+    title: "Natural Follow-Ups", 
+    desc: "Most email follow-ups feel cold and generic. Our sequences read like you wrote them yourself. With personal touches and a natural flow, we move leads through your pipeline.", 
+    price: "$49/mo + $199 setup",
+    href: "/services/email-automation"
   },
   { 
     icon: "📍", 
     title: "Local Search Mastery", 
-    desc: "If you're not showing up on Maps when people nearby search for what you do, you're losing business. We refine your profile so people in your neighborhood actually find you. More visibility leads to more phone calls.", 
+    desc: "If you're not showing up on Maps when people nearby search for what you do, you're losing business. We refine your profile so people in your neighborhood actually find you.", 
     price: "$399 one-time",
     href: "/services/google-business"
   },
@@ -42,41 +81,6 @@ const services = [
     price: "$99/mo",
     href: "/services/review-response"
   },
-  { 
-    icon: "✉️", 
-    title: "Natural Follow-Ups", 
-    desc: "Most email follow-ups feel cold and generic. Our sequences read like you wrote them yourself. With personal touches and a natural flow, we move leads through your pipeline instead of letting them sit and collect dust.", 
-    price: "$49/mo + $199 setup",
-    href: "/services/email-automation"
-  },
-  { 
-    icon: "📱", 
-    title: "Consistent Social Presence", 
-    desc: "Staying active on social media works, but it takes a lot of time. We manage your monthly posts across all platforms so you stay visible and relevant without ever having to touch your phone.", 
-    price: "$299/mo",
-    href: "/services/social-media"
-  },
-  { 
-    icon: "📝", 
-    title: "High-Performance Ads", 
-    desc: "Bad ad copy is a waste of money. We write headlines and descriptions that actually get clicks—and we keep testing them until your cost per lead drops. You watch the numbers improve while we handle the data.", 
-    price: "$199/mo",
-    href: "/services/ad-copy"
-  },
-  { 
-    icon: "🔍", 
-    title: "Content That Ranks", 
-    desc: "SEO isn't about stuffing keywords; it's about providing value. We write articles people actually want to read—the kind that ranks on Google because it's genuinely useful to your audience.", 
-    price: "$149/article",
-    href: "/services/seo-content"
-  },
-  { 
-    icon: "🎯", 
-    title: "Conversion-First Pages", 
-    desc: "Some pages just sit there. Ours are built to drive action—getting people to click, call, or buy. Every headline and button placement is tested to make sure you get the best return on your investment.", 
-    price: "$799/page",
-    href: "/services/landing-pages"
-  },
 ];
 
 export default function ServicesPage() {
@@ -84,20 +88,41 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-white font-sans">
       <Navbar />
 
-      {/* Hero Section */}
       <section className="bg-[#0F0F23] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <span className="text-indigo-400 font-bold uppercase tracking-widest text-sm">Our Services</span>
             <h1 className="text-4xl md:text-6xl font-black mt-4 mb-6">
-              Grow Your Business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Proven AI Strategies</span>
+              AI Solutions That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Actually Scale</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              We provide specific, results-oriented tools to help you find more leads and book more appointments automatically. 
+              From lead generation to custom applications. We build AI systems that automate your business and drive real growth.
             </p>
         </div>
       </section>
 
-      {/* Services Grid */}
+      <section className="py-16 bg-indigo-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Featured</span>
+            <h2 className="text-3xl font-black text-gray-900 mt-2">Our Core AI Solutions</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {services.filter(s => s.featured).map((service, idx) => (
+              <Link 
+                key={idx} 
+                href={service.href}
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-indigo-100 group hover:-translate-y-1 block"
+              >
+                <div className="text-5xl mb-4">{service.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">{service.desc}</p>
+                <div className="text-indigo-600 font-bold text-lg">{service.price}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -117,7 +142,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-black text-white mb-6">Not Sure Where to Start?</h2>

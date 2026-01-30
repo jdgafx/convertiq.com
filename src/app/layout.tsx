@@ -3,35 +3,35 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "ConvertIQ | AI-Powered Marketing Agency",
-    template: "%s | ConvertIQ",
+    default: "Amp AI Experts | AI Solutions That Scale",
+    template: "%s | Amp AI Experts",
   },
-  description: "Intelligence that converts. AI-powered marketing solutions that deliver measurable results in days, not months. Get more leads and make more sales.",
-  keywords: ["AI marketing", "marketing agency", "AI chatbot", "AI voice receptionist", "Google Business optimization", "email automation", "social media marketing", "lead generation"],
-  authors: [{ name: "ConvertIQ" }],
-  creator: "ConvertIQ",
-  publisher: "ConvertIQ",
-  metadataBase: new URL("https://convertiq.ai"),
+  description: "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence. From lead generation to custom applications.",
+  keywords: ["AI solutions", "AI consulting", "AI lead generation", "custom AI applications", "AI chatbot", "AI voice", "programmatic advertising", "AI automation"],
+  authors: [{ name: "Amp AI Experts" }],
+  creator: "Amp AI Experts",
+  publisher: "Amp AI Experts",
+  metadataBase: new URL("https://ampaiexperts.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://convertiq.ai",
-    siteName: "ConvertIQ",
-    title: "ConvertIQ | AI-Powered Marketing Agency",
-    description: "Intelligence that converts. AI-powered marketing solutions that deliver measurable results in days, not months.",
+    url: "https://ampaiexperts.com",
+    siteName: "Amp AI Experts",
+    title: "Amp AI Experts | AI Solutions That Scale",
+    description: "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "ConvertIQ - Marketing That Actually Works",
+        alt: "Amp AI Experts - AI Solutions That Scale",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ConvertIQ | AI-Powered Marketing Agency",
-    description: "Intelligence that converts. AI-powered marketing solutions that deliver measurable results.",
+    title: "Amp AI Experts | AI Solutions That Scale",
+    description: "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -55,9 +55,9 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "ConvertIQ",
-    "image": "https://convertiq.ai/logo.png",
-    "description": "AI-powered marketing solutions that deliver measurable results in days, not months.",
+    "name": "Amp AI Experts",
+    "image": "https://ampaiexperts.com/logo.png",
+    "description": "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "74 Northeastern Blvd #12a Ste 101",
@@ -67,8 +67,8 @@ export default function RootLayout({
       "addressCountry": "US",
     },
     "telephone": "+1-617-651-1457",
-    "email": "hello@convertiq.ai",
-    "url": "https://convertiq.ai",
+    "email": "hello@ampaiexperts.com",
+    "url": "https://ampaiexperts.com",
     "priceRange": "$$",
     "openingHoursSpecification": [
       {
@@ -85,15 +85,15 @@ export default function RootLayout({
       },
     ],
     "sameAs": [
-      "https://www.facebook.com/convertiq",
-      "https://www.twitter.com/convertiq",
-      "https://www.linkedin.com/company/convertiq",
+      "https://www.facebook.com/ampaiexperts",
+      "https://www.twitter.com/ampaiexperts",
+      "https://www.linkedin.com/company/ampaiexperts",
     ],
     "areaServed": {
       "@type": "Place",
       "name": "United States",
     },
-    "serviceType": "Marketing Agency",
+    "serviceType": "AI Solutions Provider",
   };
 
   return (

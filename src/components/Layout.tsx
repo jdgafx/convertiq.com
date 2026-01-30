@@ -8,8 +8,8 @@ export function Navbar() {
 
     const mainNavigation = [
         { label: "About", href: "/about" },
+        { label: "Services", href: "/services" },
         { label: "Pricing", href: "/pricing" },
-        { label: "Blog", href: "/blog" },
         { label: "Contact", href: "/contact" },
     ];
 
@@ -19,7 +19,8 @@ export function Navbar() {
             <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 container mx-auto px-4">
                 <div className="flex items-center">
                     <Link href="/" className="transition-opacity hover:opacity-90 flex items-center gap-3">
-                        <img src="/logo.svg" alt="ConvertIQ" className="h-14 w-auto" />
+                        <span className="text-2xl font-black text-indigo-600">Amp</span>
+                        <span className="text-2xl font-bold text-gray-800">AI Experts</span>
                     </Link>
                 </div>
 
@@ -48,7 +49,8 @@ export function Navbar() {
             {/* Mobile Header */}
             <div className="xl:hidden flex items-center justify-between px-4 py-4 border-b bg-white relative z-50">
                 <Link href="/" className="flex items-center gap-2">
-                    <img src="/favicon.svg" alt="ConvertIQ" className="h-10 w-auto" />
+                    <span className="text-xl font-black text-indigo-600">Amp</span>
+                    <span className="text-xl font-bold text-gray-800">AI Experts</span>
                 </Link>
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -98,10 +100,11 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
                     <div className="space-y-8">
                         <Link href="/" className="flex items-center gap-3">
-                            <img src="/logo.svg" alt="ConvertIQ" className="h-16 w-auto" style={{ filter: 'brightness(0) invert(1)' }} />
+                            <span className="text-3xl font-black text-indigo-400">Amp</span>
+                            <span className="text-3xl font-bold text-white">AI Experts</span>
                         </Link>
                         <p className="text-gray-400 text-[15px] leading-relaxed pr-6">
-                            Marketing that works. AI-powered solutions that deliver real results in days, not months.
+                            AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.
                         </p>
                     </div>
 
@@ -109,8 +112,8 @@ export function Footer() {
                         <h4 className="text-lg font-bold uppercase tracking-wider mb-8 text-white">Quick Links</h4>
                         <ul className="grid grid-cols-1 gap-3 text-gray-400 text-sm">
                             <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
                             <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                            <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                         </ul>
                     </div>
@@ -124,7 +127,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <span className="text-indigo-400 mr-4 text-xl">📧</span>
-                                <a href="mailto:hello@convertiq.ai" className="hover:text-white transition-colors">hello@convertiq.ai</a>
+                                <a href="mailto:hello@ampaiexperts.com" className="hover:text-white transition-colors">hello@ampaiexperts.com</a>
                             </li>
                             <li className="flex items-center">
                                 <span className="text-indigo-400 mr-4 text-xl">📞</span>
@@ -137,7 +140,7 @@ export function Footer() {
 
             <div className="bg-[#0b111f] py-8">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs tracking-widest uppercase">
-                    <p>© {new Date().getFullYear()} ConvertIQ. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Amp AI Experts. All rights reserved.</p>
                     <div className="flex space-x-8 mt-6 md:mt-0">
                         <Link href="#" className="hover:text-white transition-colors">Terms of use</Link>
                         <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
