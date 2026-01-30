@@ -19,7 +19,7 @@ export function Navbar() {
             <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 container mx-auto px-4">
                 <div className="flex items-center">
                     <Link href="/" className="transition-opacity hover:opacity-90">
-                        <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-10 w-auto" />
+                        <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-16 w-auto" />
                     </Link>
                 </div>
 
@@ -48,7 +48,7 @@ export function Navbar() {
             {/* Mobile Header */}
             <div className="xl:hidden flex items-center justify-between px-4 py-4 border-b bg-white relative z-50">
                 <Link href="/">
-                    <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-8 w-auto" />
+                    <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-12 w-auto" />
                 </Link>
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
