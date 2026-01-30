@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     if (!post) return { title: 'Post Not Found' };
     
     return {
-        title: `${post.title} | ConvertIQ Blog`,
+        title: `${post.title} | Amp AI Blog`,
         description: post.excerpt,
     };
 }
@@ -32,7 +32,7 @@ function getPost(slug: string) {
             category: 'Marketing',
             date: '2025-01-15',
             readTime: '8 min read',
-            author: 'ConvertIQ Team'
+            author: 'Amp AI Team'
         },
         'chatbot-best-practices-2025': {
             title: 'Chatbot Best Practices for 2025: What Actually Converts',
@@ -40,7 +40,7 @@ function getPost(slug: string) {
             category: 'Technology',
             date: '2025-01-10',
             readTime: '6 min read',
-            author: 'ConvertIQ Team'
+            author: 'Amp AI Team'
         },
         'roi-ai-voice-receptionist': {
             title: 'Calculate the ROI of AI Voice Receptionists',
@@ -48,7 +48,7 @@ function getPost(slug: string) {
             category: 'Business',
             date: '2025-01-05',
             readTime: '7 min read',
-            author: 'ConvertIQ Team'
+            author: 'Amp AI Team'
         },
         'google-business-optimization-guide': {
             title: 'The Ultimate Google Business Optimization Guide',
@@ -56,7 +56,7 @@ function getPost(slug: string) {
             category: 'Local SEO',
             date: '2024-12-28',
             readTime: '10 min read',
-            author: 'ConvertIQ Team'
+            author: 'Amp AI Team'
         },
         'email-automation-strategies': {
             title: 'Email Automation Strategies That Actually Get Results',
@@ -64,7 +64,7 @@ function getPost(slug: string) {
             category: 'Email Marketing',
             date: '2024-12-20',
             readTime: '9 min read',
-            author: 'ConvertIQ Team'
+            author: 'Amp AI Team'
         },
         'social-media-content-strategy': {
             title: 'Social Media Content Strategy for Service Businesses',
@@ -72,7 +72,7 @@ function getPost(slug: string) {
             category: 'Social Media',
             date: '2024-12-15',
             readTime: '8 min read',
-            author: 'ConvertIQ Team'
+            author: 'Amp AI Team'
         }
     };
     return posts[slug];

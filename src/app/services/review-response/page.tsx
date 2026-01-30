@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Reputation Management System | ConvertIQ",
+  title: "Reputation Management System | Amp AI",
   description: "Build trust automatically. Respond to every review professionally and instantly.",
 };
 

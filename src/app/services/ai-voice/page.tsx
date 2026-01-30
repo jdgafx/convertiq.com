@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Voice Receptionist | ConvertIQ",
+  title: "AI Voice Receptionist | Amp AI",
   description: "Never miss a call again. AI-powered phone answering that works 24/7.",
 };
 

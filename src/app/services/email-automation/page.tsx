@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Human-Like Follow Ups Sequences | ConvertIQ",
+  title: "Human-Like Follow Ups Sequences | Amp AI",
   description: "Turn subscribers into customers with smart email sequences that actually get read.",
 };
 

@@ -8,7 +8,7 @@ export default function AboutPage() {
 
             <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-black mb-6">About ConvertIQ</h1>
+                    <h1 className="text-4xl md:text-6xl font-black mb-6">About Amp AI</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         We help businesses find more leads and close more sales using technology that actually delivers.
                     </p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                     <div className="bg-white rounded-3xl p-10 md:p-16 shadow-xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            ConvertIQ was built by the same dedicated team behind <a href="https://www.primemarketingexperts.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prime Marketing Experts</a>. 
+                            Amp AI was built by the same dedicated team behind <a href="https://www.primemarketingexperts.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prime Marketing Experts</a>. 
                             Led by Michael Krieger, our mission remains the same: helping businesses grow through smart, results-driven strategies.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -56,13 +56,13 @@ export default function AboutPage() {
                             With years of experience helping hundreds of small and medium-sized businesses scale, Michael saw a new opportunity to use artificial intelligence to make marketing faster, more accessible, and significantly more effective.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            ConvertIQ is the next evolution of that vision. We combine the deep marketing expertise learned at Prime with cutting-edge AI technology to deliver qualified leads in days, not months. 
+                            Amp AI is the next evolution of that vision. We combine the deep marketing expertise learned at Prime with cutting-edge AI technology to deliver qualified leads in days, not months. 
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-8">
                             Today, we continue to support over 500 businesses across the country. Whether you're a local service provider or a professional firm, 
                             you benefit from the same high standards and commitment to results that Michael has championed since day one.
                         </p>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The ConvertIQ Difference</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Amp AI Difference</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {[
                                 { icon: "💸", title: "Fair Pricing", desc: "Clear, transparent rates with no hidden fees and the flexibility to cancel anytime." },
@@ -93,9 +93,9 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold mb-8">What Our Clients Say</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { quote: "ConvertIQ completely transformed our lead generation. Seriously—we went from 10 leads a month to over 100 in 8 weeks. The AI chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
+                            { quote: "Amp AI completely transformed our lead generation. Seriously—we went from 10 leads a month to over 100 in 8 weeks. The AI chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
                             { quote: "Finally—a marketing company that actually delivers. We've worked with agencies before; none got results this fast. These guys? Responsive, professional, and they actually care if we succeed.", author: "Sarah L.", company: "Dental Practice" },
-                            { quote: "Our Google Business profile was basically invisible before ConvertIQ took it over. Now we show up in the map pack for all our target keywords. Phone has not stopped ringing.", author: "James T.", company: "Local Restaurant Owner" },
+                            { quote: "Our Google Business profile was basically invisible before Amp AI took it over. Now we show up in the map pack for all our target keywords. Phone has not stopped ringing.", author: "James T.", company: "Local Restaurant Owner" },
                             { quote: "The AI voice receptionist pays for itself every single month. We used to miss 20% of our calls. Now every single one gets answered professionally, 24/7.", author: "Amanda K.", company: "Law Firm" },
                             { quote: "Email automation changed our business. We were spending hours every week on manual follow-ups. Now it happens automatically, and our close rate has increased by 40%.", author: "David M.", company: "Real Estate Agency" },
                             { quote: "The landing page they built for us generated $47,000 in its first month. Nope, not a typo. Best marketing investment we've ever made, period.", author: "Jennifer P.", company: "E-commerce Business" }

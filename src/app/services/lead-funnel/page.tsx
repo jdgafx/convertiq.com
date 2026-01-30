@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Assisted Advanced LeadGen | ConvertIQ",
+  title: "AI Assisted Advanced LeadGen | Amp AI",
   description: "Turn visitors into customers 24/7. AI-powered lead capture across website, Facebook, and LinkedIn.",
 };
 

@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Content That Ranks | ConvertIQ",
+  title: "Content That Ranks | Amp AI",
   description: "2,000+ word articles that rank. Real SEO, not valuable information.",
 };
 

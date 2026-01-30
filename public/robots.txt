@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://convertiq.ai/sitemap.xml
+Sitemap: https://ampaiexperts.com/sitemap.xml

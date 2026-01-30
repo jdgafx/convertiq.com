@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Consistent Social Presence Package | ConvertIQ",
+  title: "Consistent Social Presence Package | Amp AI",
   description: "20 posts per month across all platforms. Stay visible without the hassle.",
 };
 

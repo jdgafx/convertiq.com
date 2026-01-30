@@ -20,9 +20,9 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <div className="bg-white rounded-3xl p-10 shadow-xl">
                             <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-                            <form className="space-y-6" action="https://formsubmit.co/hello@convertiq.ai" method="POST">
-                                <input type="hidden" name="_subject" value="New Contact Form Submission - ConvertIQ" />
-                                <input type="hidden" name="_next" value="https://convertiq.ai/contact?success=true" />
+                            <form className="space-y-6" action="https://formsubmit.co/hello@ampaiexperts.com" method="POST">
+                                <input type="hidden" name="_subject" value="New Contact Form Submission - Amp AI" />
+                                <input type="hidden" name="_next" value="https://ampaiexperts.com/contact?success=true" />
                                 <input type="hidden" name="_honeypot" value="" />
                                 <div>
                                     <label className="block text-sm font-bold text-gray-700 mb-2">Your Name</label>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                                         <span className="text-3xl">📧</span>
                                         <div>
                                             <p className="font-bold text-gray-900">Email us</p>
-                                            <p className="text-gray-600">hello@convertiq.ai</p>
+                                            <p className="text-gray-600">hello@ampaiexperts.com</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
@@ -100,7 +100,7 @@ export default function ContactPage() {
                                 <p className="text-indigo-700 mb-6">
                                     Free 15-minute consultation. Tell us about your challenges. No sales pitch—just an honest conversation about how we might be able to help.
                                 </p>
-                                <a href="mailto:hello@convertiq.ai" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
+                                <a href="mailto:hello@ampaiexperts.com" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us
                                 </a>
                             </div>
