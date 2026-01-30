@@ -12,7 +12,7 @@ const services = [
     title: "AI Lead Generation", 
     desc: "We build AI systems that find your ideal customers across social media, search, and 100+ ad platforms. Our programmatic approach means your pipeline stays full while you focus on closing deals.", 
     price: "$2,499/mo",
-    href: "/services/lead-generation",
+    href: "/services/lead-funnel",
     featured: true
   },
   { 
@@ -20,7 +20,7 @@ const services = [
     title: "AI Consulting", 
     desc: "Not sure where AI fits in your business? We'll audit your operations and build a roadmap. From automation opportunities to custom implementations, we help you cut costs and scale faster.", 
     price: "$500/hr or $3,999/mo",
-    href: "/services/ai-consulting",
+    href: "/contact",
     featured: true
   },
   { 
@@ -33,10 +33,10 @@ const services = [
   },
   { 
     icon: "⚙️", 
-    title: "Custom AI Applications", 
-    desc: "Need something built specifically for your workflow? We create bespoke AI applications that integrate with your existing tools. From internal automation to customer-facing features.", 
-    price: "Custom quote",
-    href: "/services/custom-apps",
+    title: "Landing Page Optimization", 
+    desc: "Your landing page has 3 seconds to convince visitors. We design and optimize pages that load fast, look great, and convert visitors into leads. A/B tested layouts that actually work.", 
+    price: "$899 one-time",
+    href: "/services/landing-pages",
     featured: true
   },
   { 
