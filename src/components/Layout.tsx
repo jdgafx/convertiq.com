@@ -18,9 +18,8 @@ export function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 container mx-auto px-4">
                 <div className="flex items-center">
-                    <Link href="/" className="transition-opacity hover:opacity-90 flex items-center gap-3">
-                        <span className="text-2xl font-black text-indigo-600">Amp</span>
-                        <span className="text-2xl font-bold text-gray-800">AI Experts</span>
+                    <Link href="/" className="transition-opacity hover:opacity-90">
+                        <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-10 w-auto" />
                     </Link>
                 </div>
 
@@ -48,9 +47,8 @@ export function Navbar() {
 
             {/* Mobile Header */}
             <div className="xl:hidden flex items-center justify-between px-4 py-4 border-b bg-white relative z-50">
-                <Link href="/" className="flex items-center gap-2">
-                    <span className="text-xl font-black text-indigo-600">Amp</span>
-                    <span className="text-xl font-bold text-gray-800">AI Experts</span>
+                <Link href="/">
+                    <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-8 w-auto" />
                 </Link>
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -99,9 +97,8 @@ export function Footer() {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
                     <div className="space-y-8">
-                        <Link href="/" className="flex items-center gap-3">
-                            <span className="text-3xl font-black text-indigo-400">Amp</span>
-                            <span className="text-3xl font-bold text-white">AI Experts</span>
+                        <Link href="/">
+                            <img src="/logo-amp-ai.svg" alt="Amp AI Experts" className="h-12 w-auto brightness-200" />
                         </Link>
                         <p className="text-gray-400 text-[15px] leading-relaxed pr-6">
                             AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.

@@ -103,10 +103,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
-        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon.svg" />
-        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon.svg" />
+        <link rel="icon" href="/favicon-amp.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon-amp.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-amp.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-amp.svg" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
         <script
           dangerouslySetInnerHTML={{
