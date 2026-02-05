@@ -29,7 +29,7 @@ export default function AdCopyPage() {
                    "We create 4-8 headline variations for each ad set and let the testing do its thing.",
                   "We do calls-to-action that actually make people click—not those boring 'Learn More' buttons we all scroll right past.",
                   "Google, Meta, LinkedIn—we know what works on each platform.",
-                  "Different messages for different audiences because, let's be honest, a homeowner thinks way differently than a contractor.",
+                  "Different messages for different audiences because, let&apos;s be honest, a homeowner thinks way differently than a contractor.",
                   "Oh, and most folks completely overlook extra details that make your ad stand out and actually make a real difference.",
                   "We do weekly updates to improve results based on real data, not guesses. It's really not that complicated when you break it down.",
                 ].map((item, idx) => (
