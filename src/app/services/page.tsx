@@ -9,8 +9,8 @@ export const metadata = {
 const services = [
   { 
     icon: "🚀", 
-    title: "Automated Sales Funnels", 
-    desc: "We find your ideal customers on social media, search, and over 100 ad platforms. You get a steady stream of leads. You focus on closing them.", 
+    title: "AI Assisted Leadgen", 
+    desc: "We use smart AI to find your perfect customers across social media and 100+ ad platforms. The system fills your funnel automatically so you just focus on closing deals.", 
     price: "Starting at $1,499 Setup + $299/mo",
     href: "/services/lead-funnel",
     featured: true
