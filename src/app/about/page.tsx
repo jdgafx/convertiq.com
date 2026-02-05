@@ -52,23 +52,22 @@ export default function AboutPage() {
                             Led by Michael Krieger, our mission remains the same: helping businesses grow through smart, results-driven strategies.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            Michael Krieger, a native Bostonian and graduate of the University of Massachusetts, Lowell, founded Prime Marketing Experts in 2017. 
-                            With years of experience helping hundreds of small and medium-sized businesses scale, Michael saw a new opportunity to use artificial intelligence to make marketing faster, more accessible, and significantly more effective.
+                            Michael Krieger started Prime Marketing Experts back in 2017. He's from Boston, went to UMass Lowell, and spent years helping hundreds of small businesses figure out how to grow. 
+                            Along the way, he noticed something: AI was getting good enough to make marketing faster and way more affordable for regular businesses.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            Amp AI is the next evolution of that vision. We combine the deep marketing expertise learned at Prime with cutting-edge AI technology to deliver qualified leads in days, not months. 
+                            Amp AI is what came next. We took everything we learned at Prime and mixed it with AI tools that actually work—the kind that get you qualified leads in days, not months. 
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                            Today, we continue to support over 500 businesses across the country. Whether you're a local service provider or a professional firm, 
-                            you benefit from the same high standards and commitment to results that Michael has championed since day one.
+                            We now work with over 500 businesses across the country. Doesn't matter if you're a plumber or a law firm—you get the same attention to detail and focus on results that Michael's been about since day one.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Amp AI Difference</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {[
-                                { icon: "💸", title: "Fair Pricing", desc: "Clear, transparent rates with no hidden fees and the flexibility to cancel anytime." },
-                                { icon: "📈", title: "Measurable Results", desc: "We track every lead so you always know exactly how your marketing is performing." },
-                                { icon: "🚀", title: "Fast Implementation", desc: "Most of our AI systems are live and working for your business in about a week." },
-                                { icon: "💬", title: "Dedicated Support", desc: "You get direct access to our team whenever you have a question or need assistance." }
+                                { icon: "💸", title: "Fair Pricing", desc: "You see exactly what you're paying. No surprise fees, and you can walk away whenever." },
+                                { icon: "📈", title: "Measurable Results", desc: "We track every single lead. You'll always know if your money's actually working." },
+                                { icon: "🚀", title: "Fast Setup", desc: "Most of our stuff goes live in about a week. No months of waiting around." },
+                                { icon: "💬", title: "Real Support", desc: "Got a question? Just reach out. You talk to actual people who know your account." }
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-start gap-4">
                                     <span className="text-2xl">{item.icon}</span>
@@ -93,9 +92,9 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold mb-8">What Our Clients Say</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { quote: "Amp AI completely transformed our lead generation. Seriously—we went from 10 leads a month to over 100 in 8 weeks. The AI chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
-                            { quote: "Finally—a marketing company that actually delivers. We've worked with agencies before; none got results this fast. These guys? Responsive, professional, and they actually care if we succeed.", author: "Sarah L.", company: "Dental Practice" },
-                            { quote: "Our Google Business profile was basically invisible before Amp AI took it over. Now we show up in the map pack for all our target keywords. Phone has not stopped ringing.", author: "James T.", company: "Local Restaurant Owner" },
+                            { quote: "Amp AI finally fixed our lead generation problem. We went from 10 leads a month to over 100 in just 8 weeks. The chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
+                            { quote: "We've worked with plenty of agencies, but none delivered results this fast. We saw more patient inquiries in the first month than we did all last year.", author: "Sarah L.", company: "Dental Practice" },
+                            { quote: "We went from being invisible on Google to dominating the local map pack. Our phone hasn't stopped ringing with reservation inquiries.", author: "James T.", company: "Local Restaurant Owner" },
                             { quote: "The AI voice receptionist pays for itself every single month. We used to miss 20% of our calls. Now every single one gets answered professionally, 24/7.", author: "Amanda K.", company: "Law Firm" },
                             { quote: "Email automation changed our business. We were spending hours every week on manual follow-ups. Now it happens automatically, and our close rate has increased by 40%.", author: "David M.", company: "Real Estate Agency" },
                             { quote: "The landing page they built for us generated $47,000 in its first month. Nope, not a typo. Best marketing investment we've ever made, period.", author: "Jennifer P.", company: "E-commerce Business" }
@@ -122,22 +121,22 @@ export default function AboutPage() {
                     <div className="text-center mb-16">
                         <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Success Stories</span>
                         <h2 className="text-4xl font-black text-gray-900 mt-4 mb-6">Case Studies</h2>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">Real results from real clients. See how we have helped businesses grow.</p>
+                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">Actual numbers from businesses we've worked with. No fluff.</p>
                     </div>
                     <div className="space-y-16">
                         {[
                             {
                                 client: "HVAC Company",
-                                story: "A local HVAC business was struggling to find leads online and relied almost entirely on word-of-mouth. They were only seeing about 15 leads a month from their site.",
-                                solution: "We implemented our AI Assisted Advanced LeadGen system to handle 24/7 lead capture and optimized their Google Business profile. We also built targeted landing pages for their specific service areas.",
-                                result: "In just 8 weeks, their leads jumped to over 100 per month—a 567% increase. Their cost per lead dropped by 62%, and appointments now book directly through the bot.",
+                                story: "This HVAC company was getting maybe 15 leads a month from their website. Pretty much lived off referrals and word of mouth.",
+                                solution: "We set up an AI chatbot that catches leads around the clock, fixed up their Google Business profile, and built landing pages for the specific areas they serve.",
+                                result: "Eight weeks later? Over 100 leads a month. That's a 567% jump. Their cost per lead dropped 62%, and people now book appointments straight through the bot.",
                                 testimonial: "I was skeptical at first, but these guys delivered. Our phone has not stopped ringing since day one."
                             },
                             {
                                 client: "Dental Practice",
-                                story: "A new dental practice needed to build its patient base quickly. They were facing high no-show rates and had no automated systems for review management.",
-                                solution: "We implemented an AI voice receptionist for scheduling and set up automated email sequences to nurture new patients and request reviews.",
-                                result: "They booked 47 new patient appointments in the first month alone. No-shows dropped by 73%, and they reached a 4.8-star rating with over 120 reviews.",
+                                story: "Brand new dental practice. They needed patients fast, kept dealing with no-shows, and had zero systems for getting reviews.",
+                                solution: "We put in an AI phone system that handles scheduling, plus automated emails to follow up with new patients and ask for reviews.",
+                                result: "First month: 47 new patient appointments. No-shows dropped 73%. And they hit 4.8 stars with 120+ reviews.",
                                 testimonial: "The automation alone saves us 10+ hours per week. And the new patient flow is incredible."
                             }
                         ].map((study, idx) => (

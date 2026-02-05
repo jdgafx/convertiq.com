@@ -15,7 +15,7 @@ export default function EmailAutomationPage() {
           <div className="text-6xl mb-6">✉️</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Human-Like Follow Ups</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Look, automated emails usually sound like... automated emails. We fix that. We build sequences that actually sound like you, running in the background 24/7.
+            Look, most automated emails are boring and go straight to spam. We don't do that. We build sequences that actually sound like a human wrote them, so you can turn subscribers into customers without sounding like a robot.
           </p>
         </div>
       </section>
@@ -24,7 +24,7 @@ export default function EmailAutomationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Most Clients See Results in About a Week</h2>
-              <p className="text-gray-600 mb-4">We&apos;ve built dozens of email systems for HVAC companies, law firms, dentists, and more. Here&apos;s what you actually get:</p>
+              <p className="text-gray-600 mb-4">Honestly, the goal is to make your emails feel like a one-on-one conversation. We've done this for HVAC, law firms, you name it. Here's how we help you win:</p>
               <ul className="space-y-4">
                 {[
                   "A welcome series that actually feels personal—like a real person sat down to write it.",
@@ -45,8 +45,8 @@ export default function EmailAutomationPage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$199<span className="text-xl text-gray-500">setup</span></div>
-              <p className="text-gray-600 mb-2">Plus $49/mo for sending</p>
+              <div className="text-4xl font-black text-indigo-600 mb-2">Starting at $199 setup + $49/mo</div>
+              <p className="text-gray-600 mb-2">Custom sequence build and monthly optimization.</p>
               <p className="text-gray-500 text-sm mb-6">First 2,500 subscribers included</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
@@ -62,7 +62,7 @@ export default function EmailAutomationPage() {
             { q: "How long does this take?", a: "Give us about a week. We need a few days to really get your voice down, set up the tech, and test it all. Rushing just leads to mistakes." },
             { q: "What platforms do you work with?", a: "Pretty much all of them—Mailchimp, ConvertKit, Klaviyo, ActiveCampaign. If you're on something weird, we'll figure it out." },
             { q: "Can I write my own copy?", a: "Absolutely. It's your business. We can write it, you can write it, or we can mix and match. Whatever works best for you." },
-            { q: "What about spam filters?", a: "We handle all the technical requirements—including DKIM, SPF, and list hygiene—to ensure your emails reach the inbox. Most of our clients see over 95% deliverability rates." },
+            { q: "What about spam filters?", a: "We set up all the technical stuff—DKIM, SPF, list cleaning—so your emails actually land in inboxes. Most clients see 95%+ deliverability." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

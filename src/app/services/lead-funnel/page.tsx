@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Assisted Advanced LeadGen | Amp AI",
+  title: "Smart Lead Capture | Amp AI",
   description: "Turn visitors into customers 24/7. AI-powered lead capture across website, Facebook, and LinkedIn.",
 };
 
@@ -14,7 +14,7 @@ export default function LeadGenPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🧲</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Assisted Advanced LeadGen</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Smart Lead Capture</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Most lead funnels are broken. They either ask for too much info too soon, or they just drop leads into a black hole. We build funnels that actually convert strangers into booked appointments.
           </p>
@@ -25,7 +25,7 @@ export default function LeadGenPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Advanced AI LeadGen Works Better</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Smart Lead Capture Works Better</h2>
               <p className="text-gray-600 mb-6">
                 We build funnels that actually work—you know, the kind that turn strangers into booked appointments on your calendar. Here&apos;s how we roll:
               </p>
@@ -47,11 +47,11 @@ export default function LeadGenPage() {
               </ul>
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Investment</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$1,499</div>
-              <p className="text-gray-500 mb-2">one-time setup fee</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
+              <div className="text-5xl font-black text-indigo-600 mb-2">$1,499 setup + $299/mo</div>
+              <p className="text-sm text-gray-500 mb-2">Complete lead generation system</p>
               <p className="text-gray-600 mb-6">
-                No monthly retainers. No hidden costs. You pay once, we build the system, and it keeps working.
+                Simple, transparent pricing. We build the system, keep it running, and ensure your leads keep flowing.
               </p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Get Started
@@ -145,16 +145,16 @@ export default function LeadGenPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">The Number One Reason Leads Get Lost</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto text-lg">
-            Response time. A lead that does not get a reply within 5 minutes is 10x less likely to convert. That is just how people work—they move on, forget, find a competitor. 
+            Response time. A lead that doesn't get a reply within 5 minutes is 10x less likely to convert. That's just how people work—they move on, forget, find a competitor. 
           </p>
           <p className="text-indigo-100 mb-10 max-w-2xl mx-auto text-lg">
-            One gym owner we worked with put it simply: "I used to lose 5 to 10 leads a week because I could not respond fast enough. Now I wake up to appointments already booked on my calendar."
+            One gym owner we worked with put it simply: "I used to lose 5 to 10 leads a week because I couldn't respond fast enough. Now I wake up to appointments already booked on my calendar."
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             Book Your Discovery Call
           </Link>
           <p className="text-indigo-200 text-sm mt-6">
-            Takes 15 minutes. No pressure. We will just talk about what you need.
+            Takes 15 minutes. No pressure. We'll just talk about what you need.
           </p>
         </div>
       </section>

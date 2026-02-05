@@ -3,82 +3,82 @@ import Link from "next/link";
 
 export const metadata = {
   title: "AI Solutions & Services | Amp AI Experts",
-  description: "AI solutions that scale. From lead generation to custom applications, we build systems that automate and grow your business.",
+  description: "We help businesses get more leads and save time with AI. From finding customers to handling calls, we build tools that actually work.",
 };
 
 const services = [
   { 
     icon: "🚀", 
-    title: "AI Lead Generation", 
-    desc: "We build AI systems that find your ideal customers across social media, search, and 100+ ad platforms. Our programmatic approach means your pipeline stays full while you focus on closing deals.", 
-    price: "$2,499/mo",
+    title: "Automated Sales Funnels", 
+    desc: "We find your ideal customers on social media, search, and over 100 ad platforms. You get a steady stream of leads. You focus on closing them.", 
+    price: "Starting at $1,499 Setup + $299/mo",
     href: "/services/lead-funnel",
     featured: true
   },
   { 
     icon: "💡", 
-    title: "AI Consulting", 
-    desc: "Not sure where AI fits in your business? We'll audit your operations and build a roadmap. From automation opportunities to custom implementations, we help you cut costs and scale faster.", 
-    price: "$500/hr or $3,999/mo",
+    title: "SEO Content", 
+    desc: "We use AI to research and write high-quality articles that actually rank on Google. You get fresh content that brings in organic traffic without the high cost of a writing agency.", 
+    price: "Starting at $149 per article",
     href: "/contact",
     featured: true
   },
   { 
     icon: "📞", 
-    title: "AI Voice Solutions", 
-    desc: "AI Phone Receptionist and Cold Calling powered by VoiceIQ. Every call gets answered, qualified, and booked. Whether it's inbound leads or outbound prospecting, your phone becomes a revenue machine.", 
-    price: "$349/mo",
+    title: "AI Voice", 
+    desc: "Never miss a call again. Our AI answers, qualifies leads, and books appointments—day or night. Works for incoming calls and outbound too.", 
+    price: "Starting at $497 Setup + $249/mo",
     href: "/services/ai-voice",
     featured: true
   },
   { 
     icon: "⚙️", 
-    title: "Landing Page Optimization", 
-    desc: "Your landing page has 3 seconds to convince visitors. We design and optimize pages that load fast, look great, and convert visitors into leads. A/B tested layouts that actually work.", 
-    price: "$899 one-time",
+    title: "Landing Pages", 
+    desc: "You've got about 3 seconds to grab someone's attention. We build pages that load fast and get people to take action. Tested. Proven.", 
+    price: "Starting at $799 one-time",
     href: "/services/landing-pages",
     featured: true
   },
   { 
     icon: "🤖", 
-    title: "Smart Website Chat", 
-    desc: "Most chatbots are frustrating. Ours actually answers questions like a real person would—then books the call when someone's ready. We've seen clients significantly increase their qualified leads within a week.", 
-    price: "$149/mo",
+    title: "AI Chatbot", 
+    desc: "Most chatbots stink. Ours talks like a real person and books calls when people are ready. Clients often see more qualified leads in the first week.", 
+    price: "Starting at $497 Setup + $149/mo",
     href: "/services/ai-chatbot"
   },
   { 
     icon: "📱", 
-    title: "AI Social Media", 
-    desc: "Staying active on social media works, but it takes a lot of time. We manage your monthly posts across all platforms so you stay visible and relevant without ever having to touch your phone.", 
-    price: "$299/mo",
+    title: "Social Media", 
+    desc: "Posting regularly works. It's also a time suck. We handle your posts across all platforms so you stay visible without the hassle.", 
+    price: "Starting at $299/mo",
     href: "/services/social-media"
   },
   { 
     icon: "📝", 
-    title: "Programmatic Advertising", 
-    desc: "Bad ad copy is a waste of money. We write headlines and descriptions that actually get clicks—and we keep testing them until your cost per lead drops. AI-managed campaigns across 100+ platforms.", 
-    price: "$599/mo",
+    title: "Ad Copy", 
+    desc: "Bad ads waste money. We write headlines that get clicks and keep testing until your cost per lead goes down. Runs on 100+ platforms.", 
+    price: "Starting at $299 Setup + $199/mo",
     href: "/services/ad-copy"
   },
   { 
     icon: "✉️", 
-    title: "Natural Follow-Ups", 
-    desc: "Most email follow-ups feel cold and generic. Our sequences read like you wrote them yourself. With personal touches and a natural flow, we move leads through your pipeline.", 
-    price: "$49/mo + $199 setup",
+    title: "Email Automation", 
+    desc: "Generic emails get ignored. We write follow-ups that sound like you—personal, friendly, and they actually get replies.", 
+    price: "Starting at $199 Setup + $49/mo",
     href: "/services/email-automation"
   },
   { 
     icon: "📍", 
-    title: "Local Search Mastery", 
-    desc: "If you're not showing up on Maps when people nearby search for what you do, you're losing business. We refine your profile so people in your neighborhood actually find you.", 
-    price: "$399 one-time",
+    title: "Google Business", 
+    desc: "If people can't find you on Google Maps, they're finding your competition. We fix your profile so locals actually see you.", 
+    price: "Starting at $399 one-time",
     href: "/services/google-business"
   },
   { 
     icon: "⭐", 
-    title: "Reputation Management", 
-    desc: "Reviews matter, but responding to every single one is a full-time job. Our system reads each review and writes a thoughtful response automatically. Good reviews are celebrated, and concerns are handled professionally.", 
-    price: "$99/mo",
+    title: "Review Response", 
+    desc: "Replying to every review takes forever. Our AI reads each one and writes a thoughtful response. Good ones get thanked. Bad ones get handled.", 
+    price: "Starting at $99/mo",
     href: "/services/review-response"
   },
 ];
@@ -92,11 +92,11 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 text-center">
           <span className="text-indigo-400 font-bold uppercase tracking-widest text-sm">Our Services</span>
             <h1 className="text-4xl md:text-6xl font-black mt-4 mb-6">
-              AI Solutions That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Actually Scale</span>
-            </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              From lead generation to custom applications. We build AI systems that automate your business and drive real growth.
-            </p>
+               AI That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Gets Results</span>
+             </h1>
+             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+               More leads. Less busywork. We build AI tools that save you time and bring in customers.
+             </p>
         </div>
       </section>
 
@@ -104,7 +104,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Featured</span>
-            <h2 className="text-3xl font-black text-gray-900 mt-2">Our Core AI Solutions</h2>
+            <h2 className="text-3xl font-black text-gray-900 mt-2">What We Do Best</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.filter(s => s.featured).map((service, idx) => (
@@ -144,15 +144,15 @@ export default function ServicesPage() {
 
       <section className="py-20 bg-indigo-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-6">Not Sure Where to Start?</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-6">Not Sure What You Need?</h2>
           <p className="text-indigo-100 text-xl mb-8 max-w-2xl mx-auto">
-            Book a free 15-minute call. We'll tell you what you need (and what you don't).
+            Let's talk for 15 minutes. No pitch—we'll just figure out what makes sense for you.
           </p>
           <Link 
             href="/contact" 
             className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1"
           >
-            Book Free Consultation
+            Book a Free Call
           </Link>
         </div>
       </section>

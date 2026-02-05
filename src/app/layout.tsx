@@ -3,10 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Amp AI Experts | AI Solutions That Scale",
+    default: "Amp AI Experts | AI Tools That Grow Your Business",
     template: "%s | Amp AI Experts",
   },
-  description: "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence. From lead generation to custom applications.",
+  description: "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
   keywords: ["AI solutions", "AI consulting", "AI lead generation", "custom AI applications", "AI chatbot", "AI voice", "programmatic advertising", "AI automation"],
   authors: [{ name: "Amp AI Experts" }],
   creator: "Amp AI Experts",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://ampaiexperts.com",
     siteName: "Amp AI Experts",
-    title: "Amp AI Experts | AI Solutions That Scale",
-    description: "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.",
+    title: "Amp AI Experts | AI Tools That Grow Your Business",
+    description: "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
     images: [
       {
         url: "/og-image.jpg",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amp AI Experts | AI Solutions That Scale",
-    description: "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.",
+    title: "Amp AI Experts | AI Tools That Grow Your Business",
+    description: "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -57,7 +57,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "name": "Amp AI Experts",
     "image": "https://ampaiexperts.com/logo.png",
-    "description": "AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.",
+    "description": "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "74 Northeastern Blvd #12a Ste 101",

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "High-Performance Ads Optimization | Amp AI",
-  description: "Better copy, more clicks, lower costs. Ads that actually convert.",
+  description: "Ad copy that grabs attention and gets clicks. Lower your costs and sell more.",
 };
 
 export default function AdCopyPage() {
@@ -15,7 +15,7 @@ export default function AdCopyPage() {
           <div className="text-6xl mb-6">📝</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">High-Performance Ads Optimization</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Honestly, stop throwing your money away on copy that just doesn&apos;t work. We write headlines and descriptions that actually get clicks—it&apos;s kind of our thing.
+            Stop wasting money on ads people ignore. We write short, sharp headlines that grab attention and make people click. We test different versions every month to keep your costs low and your sales high.
           </p>
         </div>
       </section>
@@ -26,12 +26,12 @@ export default function AdCopyPage() {
               <p className="text-gray-600 mb-4">Here&apos;s something that keeps us up at night: most businesses waste a massive chunk of their ad budget—sometimes 30-50%—on copy that totally misses the mark. That&apos;s crazy, right? So here&apos;s how we tackle things:</p>
               <ul className="space-y-4">
                 {[
-                  "We create 4-8 headline variations for each ad set and let the A/B testing do its thing.",
+                   "We create 4-8 headline variations for each ad set and let the testing do its thing.",
                   "We do calls-to-action that actually make people click—not those boring 'Learn More' buttons we all scroll right past.",
                   "Google, Meta, LinkedIn—we know what works on each platform.",
                   "Different messages for different audiences because, let's be honest, a homeowner thinks way differently than a contractor.",
-                  "Oh, and most folks completely overlook ad extension recommendations that could actually make a real difference.",
-                  "We do weekly optimization based on real data, not guesses. It's really not that complicated when you break it down.",
+                  "Oh, and most folks completely overlook extra details that make your ad stand out and actually make a real difference.",
+                  "We do weekly updates to improve results based on real data, not guesses. It's really not that complicated when you break it down.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,8 +44,8 @@ export default function AdCopyPage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$199<span className="text-xl text-gray-500">/mo</span></div>
-              <p className="text-gray-600 mb-6">Includes unlimited copy revisions.</p>
+              <div className="text-4xl font-black text-indigo-600 mb-2">Starting at $299 setup + $199/mo</div>
+              <p className="text-gray-600 mb-6">Unlimited copy revisions included.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
               </Link>
@@ -60,7 +60,7 @@ export default function AdCopyPage() {
             { q: "Which platforms do you handle?", a: "Google Ads, Meta (that's Facebook and Instagram), LinkedIn Ads, and Microsoft Ads. Each one's got its own quirks and best practices—so what works on LinkedIn won't necessarily fly on Instagram, you know?" },
             { q: "How many variations do you actually write?", a: "Usually somewhere between 4-8 per ad set. It's enough to test things out without drowning in a million options." },
             { q: "What if I already have ads running?", a: "No worries. We'll take a hard look at what's not working and come up with some fresh alternatives. Sometimes the fix is dead simple—just a tweak here and there. Other times? Yeah, we probably need to start from scratch." },
-            { q: "How do you know if it is working?", a: "We track the metrics that count: clicks, conversions, and cost per acquisition. We optimize for the data that actually matters to your business goals." },
+            { q: "How do you know if it's working?", a: "We track clicks, conversions, and cost per lead. If the numbers go up and costs go down, it's working. We don't chase vanity metrics." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

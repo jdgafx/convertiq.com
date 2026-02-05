@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Reputation Management System | Amp AI",
-  description: "Build trust automatically. Respond to every review professionally and instantly.",
+  description: "We handle your customer reviews for you. Thoughtful, personal replies to every person.",
 };
 
 export default function ReviewResponsePage() {
@@ -15,7 +15,7 @@ export default function ReviewResponsePage() {
           <div className="text-6xl mb-6">⭐</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Reputation Management</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Leaving a review unanswered is like ignoring someone who just walked up to shake your hand. We make sure you never leave anyone hanging.
+            We handle your customer feedback so you don&apos;t have to. Every review gets a thoughtful, personal reply within 24 hours. It shows people you care and helps your business show up higher in local searches.
           </p>
         </div>
       </section>
@@ -44,8 +44,8 @@ export default function ReviewResponsePage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$99<span className="text-xl text-gray-500">/mo</span></div>
-              <p className="text-gray-600 mb-6">Unlimited responses. No per-review fees.</p>
+              <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $99<span className="text-xl text-gray-500">/mo</span></div>
+              <p className="text-gray-600 mb-6">Unlimited responses included. No per-review fees.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
               </Link>

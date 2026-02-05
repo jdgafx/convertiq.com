@@ -16,7 +16,7 @@ export default function AiChatbotPage() {
           <div className="text-6xl mb-6">🤖</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Smart Website Chat</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Your website should be your best salesperson. We set up custom-trained AI chatbots that engage every visitor, answer their questions, and book qualified appointments on your calendar.
+            Look, your website should be doing more than just sitting there. Honestly, if it's not starting conversations and booking leads while you're asleep, you're losing money. We build custom-trained AI chatbots that actually talk to your visitors and get them on your calendar.
           </p>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default function AiChatbotPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">How It Helps Your Business</h2>
               <p className="text-gray-600 mb-6">
-                We train the bot specifically on your stuff—your products, your pricing, how you actually talk. So when visitors ask questions, they get real answers that sound like you, not some generic robot.
+                Honestly, most chatbots are trash. We do it differently. We train your bot on your actual business docs and PDFs so it sounds like you, not some generic script. It's like having your best salesperson working 24/7 without the coffee breaks.
               </p>
               <ul className="space-y-4">
             {[
@@ -49,8 +49,8 @@ export default function AiChatbotPage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$149<span className="text-xl text-gray-500">/mo</span></div>
-              <p className="text-gray-600 mb-6">Plus one-time setup fee of $497</p>
+              <div className="text-4xl font-black text-indigo-600 mb-2">Starting at $497 setup + $149/mo</div>
+              <p className="text-gray-600 mb-6">Custom training and monthly AI management.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
               </Link>

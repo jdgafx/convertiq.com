@@ -10,7 +10,7 @@ export default function PricingPage() {
     const platformTiers = [
         {
             name: 'Starter',
-            description: 'Just getting started? This gets you a chatbot that actually books stuff, your Google Business sorted so people nearby can find you, auto-review replies, and a dead-simple dashboard. Nothing complicated.',
+            description: "Look, if you're just testing the waters—this is your starting point. You get a chatbot that books appointments while you sleep, we'll fix up your Google listing so locals can actually find you, and reviews get answered on autopilot. Pretty simple stuff.",
             monthlyPrice: 297,
             annualPrice: 247,
             features: [
@@ -26,7 +26,7 @@ export default function PricingPage() {
         },
         {
             name: 'Professional',
-            description: "Ready to step it up? You get everything in Starter, plus a phone bot that never misses a call, emails that people actually read, social posts so you stay on people's radar, and ad copy that actually converts.",
+            description: "Here's the thing—most of our clients land here. You get everything from Starter plus a phone bot that picks up when you can't, email sequences that don't feel spammy, regular social posts, and ad copy that people actually click on.",
             monthlyPrice: 597,
             annualPrice: 497,
             features: [
@@ -44,7 +44,7 @@ export default function PricingPage() {
         },
         {
             name: 'Enterprise',
-            description: "The whole shebang. We do everything—content that ranks, pages that convert, full funnels, custom AI trained on your stuff, plus a dedicated manager who actually learns how your business works.",
+            description: "This is the full package. We handle your content, build landing pages, set up complete funnels, train custom AI on your business, and you get a dedicated person who knows your stuff inside and out.",
             monthlyPrice: 1297,
             annualPrice: 1097,
             features: [
@@ -64,42 +64,42 @@ export default function PricingPage() {
     ];
 
     const alaCarteServices = [
-        { name: 'AI Chatbot Setup', price: '$149/mo', oneTime: false, setup: '$497', description: 'Lead capture chatbot that works 24/7' },
-        { name: 'AI Voice Receptionist', price: '$249/mo', oneTime: false, setup: '$0', description: 'Never miss calls. Pay per call handled.' },
-        { name: 'Google Business Optimization', price: '$399', oneTime: true, setup: null, description: 'Show up on Maps in 3-7 days' },
-        { name: 'AI Review Response', price: '$99/mo', oneTime: false, setup: '$0', description: 'Auto-respond to every review' },
-        { name: 'Email Automation', price: '$49/mo', oneTime: false, setup: '$199', description: 'Follow-up sequences that work' },
-        { name: 'Social Media Content', price: '$299/mo', oneTime: false, setup: '$0', description: '20 posts/month across all platforms' },
-        { name: 'AI Ad Copy', price: '$199/mo', oneTime: false, setup: '$0', description: 'Better copy, more conversions' },
-        { name: 'SEO Content Writing', price: '$149', oneTime: true, setup: null, description: '2,000+ word articles that rank' },
-        { name: 'Landing Page Creation', price: '$799', oneTime: true, setup: null, description: 'High-converting page design' },
-        { name: 'AI Assisted Advanced LeadGen', price: '$1,499', oneTime: true, setup: null, description: 'Complete automated funnel system' }
+        { name: 'AI Chatbot', price: 'Starting at $149/mo', oneTime: false, setup: '$497 one-time setup', description: 'A bot that grabs leads while you sleep' },
+        { name: 'AI Voice', price: 'Starting at $249/mo', oneTime: false, setup: '$497 one-time setup', description: 'Picks up so you never miss a call again' },
+        { name: 'Google Business', price: 'Starting at $399 one-time', oneTime: true, setup: null, description: 'Get found on Maps—usually takes 3-7 days' },
+        { name: 'Review Response', price: 'Starting at $99/mo', oneTime: false, setup: null, description: 'Replies to reviews without you lifting a finger' },
+        { name: 'Email Automation', price: 'Starting at $49/mo', oneTime: false, setup: '$199 one-time setup', description: 'Follow-ups that actually get opened' },
+        { name: 'Social Media', price: 'Starting at $299/mo', oneTime: false, setup: null, description: '20 posts a month so you stay visible' },
+        { name: 'Ad Copy', price: 'Starting at $199/mo', oneTime: false, setup: '$299 one-time setup', description: 'Words that make people click' },
+        { name: 'SEO Content', price: 'Starting at $149 per article', oneTime: true, setup: null, description: 'Long-form stuff that ranks on Google' },
+        { name: 'Landing Pages', price: 'Starting at $799 one-time', oneTime: true, setup: null, description: 'Pages built to turn visitors into leads' },
+        { name: 'Automated Sales Funnels', price: 'Starting at $299/mo', oneTime: false, setup: '$1,499 one-time setup', description: 'The whole funnel—soup to nuts' }
     ];
 
     const faqs = [
         {
-            question: "What is included in the free trial?",
-            answer: "Everything. Seriously, you get the full platform for 7 days—no credit card, no tricks. If it doesn't blow you away, just walk away. No hard feelings, no hoops to jump through."
+            question: "What do I get in the free trial?",
+            answer: "The whole thing. All of it. 7 days, no credit card needed, no weird catches. Try it out. If it's not for you, no big deal—just don't continue. Zero hassle."
         },
         {
-            question: "Can I customize the services?",
-            answer: "Totally. We don't do cookie-cutter. Every chatbot script, email template, and ad we write is tailored specifically to your business. We'll work with you until it sounds exactly like you."
+            question: "Can you make it fit my business?",
+            answer: "That's the whole point. We don't copy-paste the same stuff for everyone. Your chatbot scripts, emails, ads—all of it gets written for YOUR business. We keep tweaking until it sounds like you."
         },
         {
-            question: "Can I switch plans later?",
-            answer: "Absolutely. Need to scale up? Cool. Need to scale down? Also cool. We adjust your billing so you only pay for what you actually use. No penalties, no drama."
+            question: "What if I want to change plans?",
+            answer: "Go for it. Upgrade when you're ready to grow, downgrade if things slow down. We adjust your bill to match. No fees, no guilt trips."
         },
         {
-            question: "Are there custom packages?",
-            answer: "If our plans don't quite fit, we'll build you something custom. Hit us up and tell us what you need—we'll put together a proposal that actually makes sense for your situation."
+            question: "What if none of these plans work for me?",
+            answer: "Then we'll make one that does. Just tell us what you're looking for and we'll put something together that fits your situation."
         },
         {
-            question: "How quickly will I see results?",
-            answer: "Chatbots start working right away—you might see leads the first day. SEO takes longer, usually a couple months. Most folks notice real improvements within the first week though."
+            question: "How fast will this actually work?",
+            answer: "Depends on what you're using. Chatbots? Day one. Could see leads that same afternoon. SEO takes a bit—usually a couple months to really kick in. But most people notice changes in the first week or two."
         },
         {
-            question: "Is there a long-term contract?",
-            answer: "Nope! Month-to-month all the way. If you need to cancel, just give us 30 days notice. We're not about locking people into contracts they don't want."
+            question: "Do I have to sign a long contract?",
+            answer: "Nope. Month to month. Want to cancel? Just let us know 30 days ahead. We're not into trapping people."
         }
     ];
 
@@ -168,9 +168,9 @@ export default function PricingPage() {
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">À La Carte Services</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">Just Need One Thing?</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Need just one or two services? Pick exactly what you need. All services are fully customizable.
+                            Not everyone needs the full package. Grab what makes sense for you. We can tweak any of these to fit.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -193,12 +193,12 @@ export default function PricingPage() {
                                         <span className="text-gray-500 text-sm">/mo</span>
                                     )}
                                 </div>
-                                {service.setup && service.setup !== '$0' && (
-                                    <p className="text-gray-400 text-xs mt-1">Setup: {service.setup}</p>
-                                )}
+                                    {service.setup && (
+                                        <p className="text-gray-500 text-xs mt-2 font-medium">+ {service.setup}</p>
+                                    )}
                                 <div className="mt-4 pt-4 border-t border-gray-100">
-                                    <p className="text-xs text-indigo-600 font-medium">✓ Fully customizable</p>
-                                    <p className="text-xs text-indigo-600 font-medium">✓ Integration support included</p>
+                                    <p className="text-xs text-indigo-600 font-medium">✓ We'll tailor it to you</p>
+                                    <p className="text-xs text-indigo-600 font-medium">✓ Help with setup included</p>
                                 </div>
                             </div>
                         ))}
@@ -214,8 +214,8 @@ export default function PricingPage() {
             <section className="py-20">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">Compare Plans</h2>
-                        <p className="text-gray-600">See exactly what is included in each plan</p>
+                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">What's in Each Plan?</h2>
+                        <p className="text-gray-600">Here's the breakdown so you know what you're getting</p>
                     </div>
                     <div className="max-w-5xl mx-auto overflow-x-auto">
                         <table className="w-full">
@@ -230,15 +230,15 @@ export default function PricingPage() {
                             <tbody>
                                 {[
                                     { feature: 'AI Chatbot', starter: true, pro: true, enterprise: true },
-                                    { feature: 'AI Voice Receptionist', starter: false, pro: true, enterprise: true },
-                                    { feature: 'Google Business Optimization', starter: true, pro: true, enterprise: true },
-                                    { feature: 'AI Review Response', starter: true, pro: true, enterprise: true },
+                                    { feature: 'AI Voice', starter: false, pro: true, enterprise: true },
+                                    { feature: 'Google Business', starter: true, pro: true, enterprise: true },
+                                    { feature: 'Review Response', starter: true, pro: true, enterprise: true },
                                     { feature: 'Email Automation', starter: false, pro: true, enterprise: true },
-                                    { feature: 'Social Media Content', starter: false, pro: true, enterprise: true },
-                                    { feature: 'AI Ad Copy', starter: false, pro: true, enterprise: true },
-                                    { feature: 'SEO Content Writing', starter: false, pro: false, enterprise: '4/mo' },
+                                    { feature: 'Social Media', starter: false, pro: true, enterprise: true },
+                                    { feature: 'Ad Copy', starter: false, pro: true, enterprise: true },
+                                    { feature: 'SEO Content', starter: false, pro: false, enterprise: '4/mo' },
                                     { feature: 'Landing Pages', starter: false, pro: false, enterprise: '2/mo' },
-                                    { feature: 'AI Assisted Advanced LeadGen', starter: false, pro: false, enterprise: true },
+                                    { feature: 'Automated Sales Funnels', starter: false, pro: false, enterprise: true },
                                     { feature: 'Custom Integrations', starter: false, pro: true, enterprise: true },
                                     { feature: 'Support Response Time', starter: '48hr', pro: '24hr', enterprise: 'Same day' },
                                     { feature: 'Strategy Calls', starter: false, pro: 'Weekly', enterprise: '2x/week' },
@@ -273,8 +273,8 @@ export default function PricingPage() {
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">Frequently Asked Questions</h2>
-                        <p className="text-gray-600">Got questions? We have got answers.</p>
+                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">Questions People Usually Ask</h2>
+                        <p className="text-gray-600">Stuff we get asked all the time</p>
                     </div>
                     <div className="max-w-3xl mx-auto space-y-6">
                         {faqs.map((faq, idx) => (
@@ -290,10 +290,10 @@ export default function PricingPage() {
             <section className="bg-gradient-to-r from-indigo-600 to-indigo-700 py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-                        Ready to Actually Get Stuff Done?
+                        Want to See If This Actually Works?
                     </h2>
                     <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
-                        Try it free for 7 days. No credit card BS. Cancel whenever you want.
+                        7 days free. No card required. Walk away anytime if it's not your thing.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact" className="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">

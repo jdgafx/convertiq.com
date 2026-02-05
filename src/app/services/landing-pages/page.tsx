@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "High-Converting Pages | Amp AI",
-  description: "Pages designed to convert. Trackable, optimized, and built to sell.",
+  description: "Pages built to turn visitors into customers. Clean, fast, and easy to use.",
 };
 
 export default function LandingPagesPage() {
@@ -15,7 +15,7 @@ export default function LandingPagesPage() {
           <div className="text-6xl mb-6">🎯</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">High-Converting Pages</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Look, we build pages that actually sell. No fluff—just clean design and a straight path for customers to hit "Buy". Honestly, it's not rocket science.
+            A single page built to turn visitors into leads. We write the words, design the layout, and make sure the &quot;Buy&quot; button works every time. You get a clean site that loads fast and actually makes you money.
           </p>
         </div>
       </section>
@@ -23,15 +23,15 @@ export default function LandingPagesPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here's the honest difference between a pretty page and one that makes money:</p>
+              <p className="text-gray-600 mb-4">Here&apos;s the honest difference between a pretty page and one that makes money:</p>
               <ul className="space-y-4">
                 {[
-                  "It looks perfect on mobile—let's be real, that's where 70% of your traffic comes from.",
+                  "It looks perfect on mobile—let&apos;s be real, that&apos;s where 70% of your traffic comes from.",
                   "It loads fast, like under 3 seconds. Any slower, and people bounce.",
                   "Headlines that actually make you stop scrolling.",
                   "We mix in your best reviews and logos so trust is built instantly—people buy from people they trust, right?",
-                  "Big, clear buttons. We don't hide checkout.",
-                  "We set up tracking that actually works so you know what's bringing in money.",
+                  "Big, clear buttons. We don&apos;t hide checkout.",
+                  "We set up tracking that actually works so you know what&apos;s bringing in money.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,8 +44,9 @@ export default function LandingPagesPage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$799<span className="text-xl text-gray-500">/page</span></div>
-              <p className="text-gray-600 mb-6">Includes 2 rounds of revisions.</p>
+              <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $799<span className="text-xl text-gray-500">/page</span></div>
+              <p className="text-sm text-gray-500 mb-2">One-time fee per page</p>
+              <p className="text-gray-600 mb-6">Two rounds of revisions included.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Order Landing Page
               </Link>
@@ -73,7 +74,7 @@ export default function LandingPagesPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">That Landing Page You&apos;ve Been Putting Off</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            A client in e-commerce told us their landing page generated $47,000 in its first month. Seriously, they'd been "meaning to get around to it" for two years.
+            A client in e-commerce told us their landing page generated $47,000 in its first month. Seriously, they&apos;d been &quot;meaning to get around to it&quot; for two years.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Build My Page

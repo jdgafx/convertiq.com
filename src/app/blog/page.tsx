@@ -5,7 +5,7 @@ export default function BlogPage() {
     const posts = [
         {
             title: '2025 State of Marketing Report: The AI Revolution',
-            excerpt: 'The marketing landscape is shifting fast. This report from HubSpot explores the trends and tools that define a successful AI-first strategy this year.',
+            excerpt: 'HubSpot put together their annual marketing report. Lots of data on what tools actually work and which trends are worth paying attention to.',
             category: 'Marketing',
             date: '2025-01-25',
             readTime: '12 min read',
@@ -14,7 +14,7 @@ export default function BlogPage() {
         },
         {
             title: 'Choosing the Best AI Sales Agents for Your Business',
-            excerpt: 'Not all chatbots are created equal. We look at the top-performing AI sales agents that actually help businesses book more meetings and close deals.',
+            excerpt: 'Most chatbots are terrible. These ones are not. A breakdown of which sales agents are actually booking meetings for people.',
             category: 'Technology',
             date: '2025-01-20',
             readTime: '10 min read',
@@ -23,7 +23,7 @@ export default function BlogPage() {
         },
         {
             title: 'The Ultimate AI Marketing Strategy Guide',
-            excerpt: 'AI can do more than just write emails. It can find your best prospects by analyzing behavior and scoring them for priority. Here is how to use it.',
+            excerpt: 'Goes beyond email writing. Shows you how to find good prospects by looking at what people actually do on your site.',
             category: 'Strategy',
             date: '2025-01-15',
             readTime: '15 min read',
@@ -32,7 +32,7 @@ export default function BlogPage() {
         },
         {
             title: 'Top AI Lead Generation Software to Watch in 2025',
-            excerpt: 'We compared the top lead gen tools on the market. If you want to scale your outreach without increasing your workload, these are the tools you need.',
+            excerpt: 'Side-by-side look at the lead gen tools people are talking about. What they cost, what they do, which ones are worth your money.',
             category: 'Tools',
             date: '2025-01-10',
             readTime: '8 min read',
@@ -41,7 +41,7 @@ export default function BlogPage() {
         },
         {
             title: 'Automating Lead Generation with Intelligent Workflows',
-            excerpt: 'Learn how connecting your forms to automation tools can streamline your entire sales process. It is about working smarter, not harder.',
+            excerpt: 'How to wire up your forms so leads go straight into your CRM and get follow-up emails without you lifting a finger.',
             category: 'Automation',
             date: '2025-01-05',
             readTime: '9 min read',
@@ -50,7 +50,7 @@ export default function BlogPage() {
         },
         {
             title: 'How Top Sales Teams are Using AI to Win',
-            excerpt: 'Real-world examples of how sales teams are using AI to automate routine work and personalize their outreach at scale.',
+            excerpt: 'Stories from actual sales teams who figured out how to spend less time on busywork and more time closing.',
             category: 'Sales',
             date: '2024-12-28',
             readTime: '7 min read',
@@ -65,9 +65,9 @@ export default function BlogPage() {
 
             <section className="bg-[#f9f6f3] py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#1a1a1a] mb-6">Latest Insights</h1>
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#1a1a1a] mb-6">What We're Reading</h1>
                     <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed italic">
-                        Stay informed on how artificial intelligence is changing the way we find leads and grow businesses.
+                        Stuff we found useful about getting more leads and growing your business. No fluff.
                     </p>
                 </div>
             </section>
@@ -98,9 +98,9 @@ export default function BlogPage() {
 
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Grow Your Business?</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Want to Talk Shop?</h2>
                     <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-                        See how our AI-powered marketing can help you get more leads and make more sales.
+                        We help businesses get more leads without all the headaches. Curious if we can help you? Let's chat.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact" className="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition-colors">

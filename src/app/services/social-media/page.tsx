@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Consistent Social Presence Package | Amp AI",
-  description: "20 posts per month across all platforms. Stay visible without the hassle.",
+  description: "Stay active online without spending all day on your phone. Real posts for real people.",
 };
 
 export default function SocialMediaPage() {
@@ -15,7 +15,7 @@ export default function SocialMediaPage() {
           <div className="text-6xl mb-6">📱</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Consistent Social Presence</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Look, social media can feel like a full-time job—and honestly, nobody&apos;s got time for that. But if you&apos;re not showing up consistently, you&apos;re basically invisible.
+            Stay active online without spending all day on your phone. We post three times a week with real photos and captions that start conversations. It keeps your brand top-of-mind and builds a loyal following.
           </p>
         </div>
       </section>
@@ -44,8 +44,8 @@ export default function SocialMediaPage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$299<span className="text-xl text-gray-500">/mo</span></div>
-              <p className="text-gray-600 mb-6">Includes content calendar and scheduling.</p>
+              <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $299<span className="text-xl text-gray-500">/mo</span></div>
+              <p className="text-gray-600 mb-6">Content calendar and scheduling included.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
               </Link>

@@ -98,10 +98,10 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
                     <div className="space-y-8">
                         <Link href="/">
-                            <img src="/logo-amp-ai-v2.svg" alt="Amp AI Experts" className="h-12 w-auto" />
+<img src="/logo-amp-ai-v2.svg" alt="Amp AI Experts" className="h-12 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
                         </Link>
                         <p className="text-gray-400 text-[15px] leading-relaxed pr-6">
-                            AI solutions that actually work. We help businesses automate, scale, and grow with cutting-edge artificial intelligence.
+                            AI tools that grow your business. We help you automate and scale with smart technology that actually works.
                         </p>
                     </div>
 

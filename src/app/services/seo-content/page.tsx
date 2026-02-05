@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Content That Ranks | Amp AI",
-  description: "2,000+ word articles that rank. Real SEO, not valuable information.",
+  description: "Helpful articles that real people want to read. Get more traffic without the fluff.",
 };
 
 export default function SeoContentPage() {
@@ -15,7 +15,7 @@ export default function SeoContentPage() {
           <div className="text-6xl mb-6">🔍</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Content That Ranks</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Content that Google loves and humans actually read. Keywords that rank, copy that converts.
+            Articles that real people want to read. We find the questions your customers are asking and answer them clearly. No fluff or keyword stuffing—just helpful info that brings steady traffic to your site.
           </p>
         </div>
       </section>
@@ -26,11 +26,11 @@ export default function SeoContentPage() {
               <p className="text-gray-600 mb-4">Ever wonder why some content gets high traffic while other pages remain invisible? We create content that search engines favor and your audience actually wants to read. Here is how we make that happen:</p>
               <ul className="space-y-4">
                 {[
-                  "Around 2,000 words of genuinely useful content that actually answers what searchers are looking for. No filler.",
+                   "Around 2,000 words of genuinely useful content that actually answers what searchers are looking for. No filler.",
                   "We don&apos;t guess at keywords. We dig into ones with real search volume—actual opportunities, not made-up nonsense.",
-                  "Internal linking that actually makes sense for how your site is structured.",
-                  "Meta titles and descriptions that make people stop scrolling and click.",
-                  "Headers that sound natural to readers while playing nice with Google at the same time.",
+                  "Links that connect your pages together in a way that actually makes sense.",
+                  "The text people see when searching on Google that makes them stop scrolling and click.",
+                  "Headers that sound natural to readers while playing nice with search engines at the same time.",
                   "And honestly? The best part is that it&apos;s ready to drop right into WordPress, Wix, Squarespace—whatever platform you&apos;re using.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
@@ -44,7 +44,8 @@ export default function SeoContentPage() {
             </div>
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
-              <div className="text-5xl font-black text-indigo-600 mb-2">$149<span className="text-xl text-gray-500">/article</span></div>
+              <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $149<span className="text-xl text-gray-500">/article</span></div>
+              <p className="text-sm text-gray-500 mb-2">One-time fee per article</p>
               <p className="text-gray-600 mb-6">Or $499/mo for 4 articles delivered monthly.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Order Article
