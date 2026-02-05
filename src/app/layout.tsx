@@ -57,7 +57,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "name": "Amp AI Experts",
     "image": "https://ampaiexperts.com/logo.png",
-    "description": "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
+    "description": "Scale your business with Growth on Autopilot. We automate your lead generation, follow-ups, and sales with AI systems that run 24/7.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "74 Northeastern Blvd #12a Ste 101",
