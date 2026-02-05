@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Amp AI Experts | AI Tools That Grow Your Business",
+    default: "Amp AI Experts | AI Marketing Automation",
     template: "%s | Amp AI Experts",
   },
-  description: "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
-  keywords: ["AI solutions", "AI consulting", "AI lead generation", "custom AI applications", "AI chatbot", "AI voice", "programmatic advertising", "AI automation"],
+  description: "AI marketing automation that grows your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
+  keywords: ["AI marketing", "marketing automation", "AI lead generation", "AI chatbot", "AI voice", "sales automation"],
   authors: [{ name: "Amp AI Experts" }],
   creator: "Amp AI Experts",
   publisher: "Amp AI Experts",
