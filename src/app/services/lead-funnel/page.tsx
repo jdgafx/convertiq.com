@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Smart Lead Capture | Amp AI",
+  title: "AI Assisted Leadgen | Amp AI",
   description: "Turn visitors into customers 24/7. AI-powered lead capture across website, Facebook, and LinkedIn.",
 };
 
@@ -14,7 +14,7 @@ export default function LeadGenPage() {
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🧲</div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">Smart Lead Capture</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">AI Assisted Leadgen</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Most lead funnels are broken. They either ask for too much info too soon, or they just drop leads into a black hole. We build funnels that actually convert strangers into booked appointments.
           </p>
@@ -25,7 +25,7 @@ export default function LeadGenPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Smart Lead Capture Works Better</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why AI Assisted Leadgen Works Better</h2>
               <p className="text-gray-600 mb-6">
                 We build funnels that actually work—you know, the kind that turn strangers into booked appointments on your calendar. Here&apos;s how we roll:
               </p>
