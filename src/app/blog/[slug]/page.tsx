@@ -8,12 +8,14 @@ import Image from 'next/image';
 export async function generateStaticParams() {
     try {
         const posts = await getPosts();
-        return posts.map((post: { slug: { current: string } }) => ({ 
-            slug: post.slug.current 
-        }));
-    } catch {
-        return [];
+        if (posts && posts.length > 0) {
+            return posts.map((post: { slug: { current: string } }) => ({ 
+                slug: post.slug.current 
+            }));
+        }
+    } catch (e) {
     }
+    return [{ slug: 'placeholder' }];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
