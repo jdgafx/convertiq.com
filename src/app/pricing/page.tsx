@@ -113,7 +113,7 @@ export default function PricingPage() {
                         Transparent Pricing
                     </span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6">
-                        Straightforward Prices. <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">No BS.</span>
+                        Straightforward Prices. <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">No Hidden Fees.</span>
                     </h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
                         No sneaky fees. No contracts locking you in. Everything&apos;s customizable—because that&apos;s how we do things.
