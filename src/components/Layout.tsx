@@ -16,7 +16,7 @@ export function Navbar() {
     return (
         <nav className="bg-white w-full h-auto shadow-sm sticky top-0 z-[100] font-poppins">
             {/* Desktop Navigation */}
-            <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 container mx-auto px-4">
+            <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 w-full px-8 max-w-[1920px] mx-auto">
                 <div className="flex items-center">
                     <Link href="/" className="transition-opacity hover:opacity-90">
                         <img src="/logo.svg" alt="AMP Marketing" className="h-24 w-auto" />
