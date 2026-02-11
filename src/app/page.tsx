@@ -35,11 +35,17 @@ export default function Home() {
               <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
               See real results in a week
             </div>
-            <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
+            
+            <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
               AI That Works <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">for Your Business</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              We build AI tools that bring in leads, answer your phones, and handle the boring stuff while you sleep. No complicated tech talk. No empty promises. Just things that actually work.
+            
+            <p className="text-2xl md:text-3xl font-bold text-white mb-6">
+              More Leads, Less Busywork.
+            </p>
+
+            <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+              We build smart tools that bring in leads, answer your phones, and handle the boring stuff while you sleep. No complicated tech talk. Just results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-1">

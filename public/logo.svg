@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 140" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" fill="none">
   <defs>
     <!-- Lovable-style Vivid Gradient: Electric Blue to Hot Pink -->
     <linearGradient id="lovableGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -30,7 +30,6 @@
   </g>
   
   <!-- Text: Modern, Geometric, Friendly -->
-  <!-- "AMP" - Bold Dark -->
   <text x="145" y="70" 
         font-family="'Inter', 'Figtree', system-ui, sans-serif" 
         font-size="60" 
@@ -40,7 +39,6 @@
     AMP
   </text>
   
-  <!-- "Marketing" - Gradient Style like "AI" was -->
   <text x="275" y="70" 
         font-family="'Inter', 'Figtree', system-ui, sans-serif" 
         font-size="60" 
@@ -50,7 +48,7 @@
     Marketing
   </text>
   
-  <!-- Tagline: "Growth on Autopilot" -->
+  <!-- Tagline -->
   <text x="148" y="105" 
         font-family="'Inter', 'Figtree', system-ui, sans-serif" 
         font-size="16" 
