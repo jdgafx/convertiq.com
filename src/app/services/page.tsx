@@ -88,11 +88,11 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-white font-sans">
       <Navbar />
 
-      <section className="bg-[#0F0F23] text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-24">
         <div className="container mx-auto px-4 text-center">
           <span className="text-indigo-400 font-bold uppercase tracking-widest text-sm">Our Services</span>
             <h1 className="text-4xl md:text-6xl font-black mt-4 mb-6">
-               AI That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Gets Results</span>
+               Marketing That <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">Gets Results</span>
              </h1>
              <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                More leads. Less busywork. We build AI tools that save you time and bring in customers.
