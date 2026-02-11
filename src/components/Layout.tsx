@@ -48,7 +48,7 @@ export function Navbar() {
             {/* Mobile Header */}
             <div className="xl:hidden flex items-center justify-between px-4 py-4 border-b bg-white relative z-50">
                 <Link href="/">
-                    <img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-12 w-auto" />
+                    <img src="/logo.svg" alt="AMP Marketing" className="h-12 w-auto" />
                 </Link>
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -98,7 +98,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
                     <div className="space-y-8">
                         <Link href="/">
-<img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-12 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
+                            <img src="/logo.svg" alt="AMP Marketing" className="h-12 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
                         </Link>
                         <p className="text-gray-400 text-[15px] leading-relaxed pr-6">
                             Smart marketing tools that grow your business. We help you automate and scale with technology that actually works.

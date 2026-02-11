@@ -30,11 +30,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, rgba(79,70,229,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(99,102,241,0.2) 0%, transparent 50%)" }}></div>
 
         <div className="container mx-auto px-4 relative z-10">
-        {/* Logo Section */}
-          <div className="flex justify-center mb-8">
-            <img src="/logo.svg" alt="AMP Marketing" className="h-16 w-auto drop-shadow-[0_10px_rgba(0,0,0,0.3)]" />
-          </div>
-
+        
         {/* Hero Tagline */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">
