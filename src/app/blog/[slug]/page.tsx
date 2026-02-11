@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         if (!post) return { title: 'Post Not Found' };
         
         return {
-            title: `${post.title} | Amp AI Blog`,
+            title: `${post.title} | AMP Marketing Blog`,
             description: post.excerpt,
         };
     } catch {

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://ampaiexperts.com/sitemap.xml',
+    sitemap: 'https://convertiq.com/sitemap.xml',
   };
 }

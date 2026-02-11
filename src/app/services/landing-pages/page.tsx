@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "High-Converting Pages | Amp AI",
+  title: "High-Converting Pages | AMP Marketing",
   description: "Pages built to turn visitors into customers. Clean, fast, and easy to use.",
 };
 

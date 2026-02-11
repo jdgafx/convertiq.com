@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Chatbot Setup | Amp AI",
+  title: "AI Chatbot Setup | AMP Marketing",
   description: "Capture leads 24/7 with an intelligent AI chatbot. Never miss a website visitor again.",
 };
 

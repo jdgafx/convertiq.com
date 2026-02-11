@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Solutions & Services | Amp AI Experts",
+  title: "AI Solutions & Services | AMP Marketing",
   description: "We help businesses get more leads and save time with AI. From finding customers to handling calls, we build tools that actually work.",
 };
 

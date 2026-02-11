@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "High-Performance Ads Optimization | Amp AI",
+  title: "High-Performance Ads Optimization | AMP Marketing",
   description: "Ad copy that grabs attention and gets clicks. Lower your costs and sell more.",
 };
 

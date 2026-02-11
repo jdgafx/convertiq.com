@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Consistent Social Presence Package | Amp AI",
+  title: "Consistent Social Presence Package | AMP Marketing",
   description: "Stay active online without spending all day on your phone. Real posts for real people.",
 };
 

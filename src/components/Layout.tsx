@@ -19,7 +19,7 @@ export function Navbar() {
             <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 container mx-auto px-4">
                 <div className="flex items-center">
                     <Link href="/" className="transition-opacity hover:opacity-90">
-                        <img src="/logo-amp-ai-v2.svg" alt="Amp AI Experts" className="h-24 w-auto" />
+                        <img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-24 w-auto" />
                     </Link>
                 </div>
 
@@ -48,7 +48,7 @@ export function Navbar() {
             {/* Mobile Header */}
             <div className="xl:hidden flex items-center justify-between px-4 py-4 border-b bg-white relative z-50">
                 <Link href="/">
-                    <img src="/logo-amp-ai-v2.svg" alt="Amp AI Experts" className="h-12 w-auto" />
+                    <img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-12 w-auto" />
                 </Link>
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -98,10 +98,10 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
                     <div className="space-y-8">
                         <Link href="/">
-<img src="/logo-amp-ai-v2.svg" alt="Amp AI Experts" className="h-12 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
+<img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-12 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
                         </Link>
                         <p className="text-gray-400 text-[15px] leading-relaxed pr-6">
-                            AI tools that grow your business. We help you automate and scale with smart technology that actually works.
+                            Smart marketing tools that grow your business. We help you automate and scale with technology that actually works.
                         </p>
                     </div>
 
@@ -124,7 +124,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <span className="text-indigo-400 mr-4 text-xl">📧</span>
-                                <a href="mailto:hello@ampaiexperts.com" className="hover:text-white transition-colors">hello@ampaiexperts.com</a>
+                                <a href="mailto:hello@primemarketingexperts.com" className="hover:text-white transition-colors">hello@convertiq.com</a>
                             </li>
                             <li className="flex items-center">
                                 <span className="text-indigo-400 mr-4 text-xl">📞</span>
@@ -137,7 +137,7 @@ export function Footer() {
 
             <div className="bg-[#0b111f] py-8">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs tracking-widest uppercase">
-                    <p>© {new Date().getFullYear()} Amp AI Experts. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} AMP Marketing. All rights reserved.</p>
                     <div className="flex space-x-8 mt-6 md:mt-0">
                         <Link href="#" className="hover:text-white transition-colors">Terms of use</Link>
                         <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

@@ -3,35 +3,35 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Amp AI Experts | Growth on Autopilot",
-    template: "%s | Amp AI Experts",
+    default: "AMP Marketing | More Leads, Less Busywork",
+    template: "%s | AMP Marketing",
   },
-  description: "Scale your business with Growth on Autopilot. We automate your lead generation, follow-ups, and sales with AI systems that run 24/7.",
-  keywords: ["Growth on Autopilot", "AI marketing agency", "automated lead generation", "AI business growth", "AI voice receptionist", "sales automation services", "24/7 AI chatbot", "AI sales funnel", "marketing automation 2025", "generative AI marketing"],
-  authors: [{ name: "Amp AI Experts" }],
-  creator: "Amp AI Experts",
-  publisher: "Amp AI Experts",
-  metadataBase: new URL("https://ampaiexperts.com"),
+  description: "We help businesses get more leads and save time with smart marketing tools. From AI chatbots to ad campaigns, we build systems that work around the clock.",
+  keywords: ["marketing agency", "AI marketing", "automated lead generation", "business growth", "AI voice receptionist", "sales automation", "AI chatbot", "sales funnel", "marketing automation", "lead generation"],
+  authors: [{ name: "AMP Marketing" }],
+  creator: "AMP Marketing",
+  publisher: "AMP Marketing",
+  metadataBase: new URL("https://convertiq.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ampaiexperts.com",
-    siteName: "Amp AI Experts",
-    title: "Amp AI Experts | AI Tools That Grow Your Business",
-    description: "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
+    url: "https://convertiq.com",
+    siteName: "AMP Marketing",
+    title: "AMP Marketing | Smart Tools That Grow Your Business",
+    description: "We help you automate lead capture and sales follow-ups with smart technology that actually works.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Amp AI Experts - AI Solutions That Scale",
+        alt: "AMP Marketing - Solutions That Scale",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amp AI Experts | AI Tools That Grow Your Business",
-    description: "AI tools that grow your business. We help you automate lead capture and sales follow-ups with smart technology that actually works.",
+    title: "AMP Marketing | Smart Tools That Grow Your Business",
+    description: "We help you automate lead capture and sales follow-ups with smart technology that actually works.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -55,9 +55,9 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Amp AI Experts",
-    "image": "https://ampaiexperts.com/logo.png",
-    "description": "Scale your business with Growth on Autopilot. We automate your lead generation, follow-ups, and sales with AI systems that run 24/7.",
+    "name": "AMP Marketing",
+    "image": "https://convertiq.com/logo.png",
+    "description": "We help businesses get more leads and save time with smart marketing tools that work around the clock.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "74 Northeastern Blvd #12a Ste 101",
@@ -67,8 +67,8 @@ export default function RootLayout({
       "addressCountry": "US",
     },
     "telephone": "+1-617-651-1457",
-    "email": "hello@ampaiexperts.com",
-    "url": "https://ampaiexperts.com",
+    "email": "hello@convertiq.com",
+    "url": "https://convertiq.com",
     "priceRange": "$$",
     "openingHoursSpecification": [
       {
@@ -85,15 +85,15 @@ export default function RootLayout({
       },
     ],
     "sameAs": [
-      "https://www.facebook.com/ampaiexperts",
-      "https://www.twitter.com/ampaiexperts",
-      "https://www.linkedin.com/company/ampaiexperts",
+      "https://www.facebook.com/ampmarketing",
+      "https://www.twitter.com/ampmarketing",
+      "https://www.linkedin.com/company/ampmarketing",
     ],
     "areaServed": {
       "@type": "Place",
       "name": "United States",
     },
-    "serviceType": "AI Solutions Provider",
+    "serviceType": "Marketing Solutions Provider",
   };
 
   return (

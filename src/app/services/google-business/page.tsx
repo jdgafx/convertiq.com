@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Google Business Profile Optimization | Amp AI",
+  title: "Google Business Profile Optimization | AMP Marketing",
   description: "Dominate local search. Show up when nearby customers are looking for you.",
 };
 

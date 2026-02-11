@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Content That Ranks | Amp AI",
+  title: "Content That Ranks | AMP Marketing",
   description: "Helpful articles that real people want to read. Get more traffic without the fluff.",
 };
 

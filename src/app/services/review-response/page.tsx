@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Reputation Management System | Amp AI",
+  title: "Reputation Management System | AMP Marketing",
   description: "We handle your customer reviews for you. Thoughtful, personal replies to every person.",
 };
 

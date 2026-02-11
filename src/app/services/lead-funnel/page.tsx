@@ -2,7 +2,7 @@ import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Assisted Leadgen | Amp AI",
+  title: "AI Assisted Leadgen | AMP Marketing",
   description: "Turn visitors into customers 24/7. AI-powered lead capture across website, Facebook, and LinkedIn.",
 };
 

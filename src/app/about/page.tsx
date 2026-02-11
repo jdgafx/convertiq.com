@@ -8,7 +8,7 @@ export default function AboutPage() {
 
             <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-black mb-6">About Amp AI</h1>
+                    <h1 className="text-4xl md:text-6xl font-black mb-6">About AMP Marketing</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         We help businesses find more leads and close more sales using technology that actually delivers.
                     </p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                     <div className="bg-white rounded-3xl p-10 md:p-16 shadow-xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            Amp AI was built by the same dedicated team behind <a href="https://www.primemarketingexperts.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prime Marketing Experts</a>. 
+                            AMP Marketing was built by the same dedicated team behind <a href="https://www.primemarketingexperts.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Prime Marketing Experts</a>. 
                             Led by Michael Krieger, our mission remains the same: helping businesses grow through smart, results-driven strategies.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -56,12 +56,12 @@ export default function AboutPage() {
                             Along the way, he noticed something: AI was getting good enough to make marketing faster and way more affordable for regular businesses.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            Amp AI is what came next. We took everything we learned at Prime and mixed it with AI tools that actually work—the kind that get you qualified leads in days, not months. 
+                            AMP Marketing is what came next. We took everything we learned at Prime and mixed it with AI tools that actually work—the kind that get you qualified leads in days, not months. 
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed mb-8">
                             We now work with over 500 businesses across the country. Doesn't matter if you're a plumber or a law firm—you get the same attention to detail and focus on results that Michael's been about since day one.
                         </p>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Amp AI Difference</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The AMP Marketing Difference</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {[
                                 { icon: "💸", title: "Fair Pricing", desc: "You see exactly what you're paying. No surprise fees, and you can walk away whenever." },
@@ -92,7 +92,7 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold mb-8">What Our Clients Say</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { quote: "Amp AI finally fixed our lead generation problem. We went from 10 leads a month to over 100 in just 8 weeks. The chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
+                            { quote: "AMP Marketing finally fixed our lead generation problem. We went from 10 leads a month to over 100 in just 8 weeks. The chatbot alone captures dozens of leads while we sleep.", author: "Mike R.", company: "HVAC Company Owner" },
                             { quote: "We've worked with plenty of agencies, but none delivered results this fast. We saw more patient inquiries in the first month than we did all last year.", author: "Sarah L.", company: "Dental Practice" },
                             { quote: "We went from being invisible on Google to dominating the local map pack. Our phone hasn't stopped ringing with reservation inquiries.", author: "James T.", company: "Local Restaurant Owner" },
                             { quote: "The AI voice receptionist pays for itself every single month. We used to miss 20% of our calls. Now every single one gets answered professionally, 24/7.", author: "Amanda K.", company: "Law Firm" },
