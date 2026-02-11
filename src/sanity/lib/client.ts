@@ -1,4 +1,4 @@
-import { createClient } from '@sanity/client'
+import { createClient } from 'next-sanity'
 import imageUrlBuilder from '@sanity/image-url'
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
@@ -18,15 +18,15 @@ export const client = isSanityConfigured
 
 const builder = client ? imageUrlBuilder(client) : null
 
-export function urlFor(source: Parameters<NonNullable<typeof builder>['image']>[0]) {
+export function urlFor(source: any) {
   if (!builder) throw new Error('Sanity not configured')
   return builder.image(source)
 }
 
 export async function getPosts() {
   if (!client) return []
-  return client.fetch(`
-    *[_type == "post"] | order(publishedAt desc) {
+  return client.fetch(
+    `*[_type == "post"] | order(publishedAt desc) {
       _id,
       title,
       slug,
@@ -36,14 +36,16 @@ export async function getPosts() {
       readTime,
       "category": category->title,
       "author": author->name
-    }
-  `)
+    }`,
+    {},
+    { next: { tags: ['post'] } }
+  )
 }
 
 export async function getPost(slug: string) {
   if (!client) return null
-  return client.fetch(`
-    *[_type == "post" && slug.current == $slug][0] {
+  return client.fetch(
+    `*[_type == "post" && slug.current == $slug][0] {
       _id,
       title,
       slug,
@@ -54,18 +56,22 @@ export async function getPost(slug: string) {
       readTime,
       "category": category->{title, slug},
       "author": author->{name, image, bio}
-    }
-  `, { slug })
+    }`,
+    { slug },
+    { next: { tags: ['post', `post:${slug}`] } }
+  )
 }
 
 export async function getCategories() {
   if (!client) return []
-  return client.fetch(`
-    *[_type == "category"] | order(title asc) {
+  return client.fetch(
+    `*[_type == "category"] | order(title asc) {
       _id,
       title,
       slug,
       description
-    }
-  `)
+    }`,
+    {},
+    { next: { tags: ['category'] } }
+  )
 }

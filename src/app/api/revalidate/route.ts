@@ -1,39 +1,25 @@
-import { revalidateTag } from 'next/cache'
+import { revalidatePath } from 'next/cache'
 import { type NextRequest, NextResponse } from 'next/server'
-import { parseBody } from 'next-sanity/webhook'
 
 export async function POST(req: NextRequest) {
   try {
-    const { body, isValidSignature } = await parseBody<{
-      _type: string
-      slug?: string | { current: string }
-    }>(req, process.env.SANITY_WEBHOOK_SECRET)
-
-    if (!isValidSignature) {
-      return new NextResponse('Invalid signature', { status: 401 })
-    }
-
-    if (!body?._type) {
-      return new NextResponse('Bad Request', { status: 400 })
-    }
-
-    // Revalidate the specific type (e.g., 'post')
-    revalidateTag(body._type)
+    const secret = req.nextUrl.searchParams.get('secret')
     
-    // Also revalidate the slug if it's a post
-    if (body._type === 'post' && body.slug) {
-        const slug = typeof body.slug === 'string' ? body.slug : body.slug.current
-        revalidateTag(`post:${slug}`)
+    if (secret !== process.env.SANITY_WEBHOOK_SECRET) {
+      return new NextResponse('Invalid secret', { status: 401 })
     }
+
+    // Revalidate all pages
+    revalidatePath('/', 'layout')
 
     return NextResponse.json({
       status: 200,
       revalidated: true,
       now: Date.now(),
-      body,
     })
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Unknown error'
     console.error(err)
-    return new NextResponse(err.message, { status: 500 })
+    return new NextResponse(message, { status: 500 })
   }
 }
