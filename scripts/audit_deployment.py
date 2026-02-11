@@ -80,7 +80,10 @@ if __name__ == "__main__":
     urls = (
         sys.argv[1:]
         if len(sys.argv) > 1
-        else ["https://convertiq.pages.dev", "https://convertiq.netlify.app"]
+        else [
+            "https://melodic-travesseiro-f5ef27.netlify.app",
+            "https://convertiq.pages.dev",
+        ]
     )
 
     if not AISEO_API_KEY:

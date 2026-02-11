@@ -30,13 +30,20 @@ export default function Home() {
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, rgba(79,70,229,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(99,102,241,0.2) 0%, transparent 50%)" }}></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          {/* Logo Section */}
+        {/* Logo Section */}
           <div className="flex justify-center mb-8">
-            <img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-16 w-auto drop-shadow-[0_10px_rgba(0,0,0,0.3)]" />
+            <img src="/logo.svg" alt="AMP Marketing" className="h-16 w-auto drop-shadow-[0_10px_rgba(0,0,0,0.3)]" />
           </div>
 
+        {/* Hero Tagline */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">
+            More Leads, Less Busywork
+          </h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Smart marketing tools that grow your business without adding to your workload. We handle the heavy lifting so you can focus on closing deals.
+          </p>
         </div>
-        <div className="text-center">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse-glow">
               <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>

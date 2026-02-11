@@ -19,7 +19,7 @@ export function Navbar() {
             <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 container mx-auto px-4">
                 <div className="flex items-center">
                     <Link href="/" className="transition-opacity hover:opacity-90">
-                        <img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-24 w-auto" />
+                        <img src="/logo.svg" alt="AMP Marketing" className="h-24 w-auto" />
                     </Link>
                 </div>
 

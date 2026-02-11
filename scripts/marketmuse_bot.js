@@ -1,78 +1,69 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
-const path = require('path');
 
-async function runMarketMuseAudit(email, password, contentMap) {
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  const page = await context.newPage();
-
-  console.log('🚀 Starting MarketMuse Bot...');
+async function runMarketMuseAudit(email, password, contentMapPath) {
+  console.log('🚀 Starting MarketMuse SEO Bot (v5 - Final Surgical Strike)...');
   
-  await page.goto('https://app.marketmuse.com/login');
-  
-  await page.fill('input[name="email"]', email);
-  await page.fill('input[name="password"]', password);
-  await page.click('button[type="submit"]');
-  
-  await page.waitForURL('**/dashboard**');
-  console.log('✅ Logged into MarketMuse');
+  const contentMap = JSON.parse(fs.readFileSync(contentMapPath, 'utf8'));
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
 
-  const results = {};
+  try {
+    console.log('🔗 Navigating to login...');
+    await page.goto('https://app.marketmuse.com/login', { waitUntil: 'networkidle' });
+    
+    await page.waitForSelector('#identifier-field');
+    await page.fill('#identifier-field', email);
+    await page.click('button:has-text("Continue")');
+    await page.waitForSelector('#password-field');
+    await page.fill('#password-field', password);
+    await page.click('button:has-text("Continue")');
+    
+    console.log('⏳ Waiting for dashboard...');
+    await page.waitForSelector('text=Select a Workflow', { timeout: 60000 });
+    console.log('✅ Logged into MarketMuse');
 
-  for (const [filePath, text] of Object.entries(contentMap)) {
-    console.log(`🔍 Auditing ${filePath}...`);
+    const results = {};
+    for (const [filePath, data] of Object.entries(contentMap)) {
+      console.log(`🔍 Auditing SEO for ${filePath}...`);
+      
+      await page.goto('https://app.marketmuse.com/applications/optimize', { waitUntil: 'load' });
+      await page.waitForTimeout(10000); 
+
+      const textarea = await page.waitForSelector('textarea', { timeout: 30000 });
+      await textarea.fill(data.full_text);
+      
+      const subjectInput = await page.waitForSelector('input[placeholder*="subject"], input[id*="subject"]', { timeout: 10000 });
+      await subjectInput.fill(data.topic || 'General');
+      
+      console.log('  ⚡ Clicking Run...');
+      await page.click('button:has-text("Run")');
+      
+      console.log('  ⏳ Waiting for content score (Max 2 mins)...');
+      await page.waitForSelector('.content-score-value', { timeout: 120000 });
+      
+      const score = await page.innerText('.content-score-value');
+      const target = await page.innerText('.target-score-value');
+      
+      results[filePath] = { score, target };
+      console.log(`  ✅ Score Received: ${score}/${target}`);
+      
+      fs.writeFileSync('scripts/marketmuse_progress_report.json', JSON.stringify(results, null, 2));
+    }
+
+    fs.writeFileSync('scripts/marketmuse_final_report.json', JSON.stringify(results, null, 2));
+    console.log('💾 ALL SEO SCORES SAVED to scripts/marketmuse_final_report.json');
     
-    await page.goto('https://app.marketmuse.com/applications/optimize');
-    
-    await page.click('button:has-text("New content")');
-    await page.fill('textarea[placeholder*="Paste your content"]', text);
-    
-    const pageTitle = filePath.split('/').pop().replace('.tsx', '');
-    await page.fill('input[placeholder="Enter subject"]', pageTitle);
-    
-    await page.click('button:has-text("Run")');
-    
-    await page.waitForSelector('.content-score-value', { timeout: 60000 });
-    
-    const score = await page.innerText('.content-score-value');
-    const target = await page.innerText('.target-score-value');
-    
-    const keywords = await page.$$eval('.keyword-list-item', items => 
-      items.slice(0, 10).map(item => ({
-        term: item.querySelector('.keyword-term').innerText,
-        suggested: item.querySelector('.suggested-count').innerText,
-        current: item.querySelector('.current-count').innerText
-      }))
-    );
-    
-    results[filePath] = {
-      score,
-      target,
-      topMissingKeywords: keywords.filter(k => parseInt(k.current) === 0)
-    };
-    
-    console.log(`  📊 Score: ${score}/${target}`);
+  } catch (error) {
+    console.error('❌ MarketMuse Bot Error:', error.message);
+    await page.screenshot({ path: 'marketmuse_v5_error.png' });
+  } finally {
+    await browser.close();
   }
-
-  fs.writeFileSync('marketmuse_audit_report.json', JSON.stringify(results, null, 2));
-  console.log('💾 Report saved to marketmuse_audit_report.json');
-  
-  await browser.close();
 }
 
 if (require.main === module) {
   const email = process.env.MARKETMUSE_EMAIL;
   const password = process.env.MARKETMUSE_PASSWORD;
-  
-  if (!email || !password) {
-    console.log('❌ Error: MARKETMUSE_EMAIL and MARKETMUSE_PASSWORD env vars required');
-    process.exit(1);
-  }
-  
-  const sampleContent = {
-    'src/app/pricing/page.tsx': 'We provide the best AI services with transparent pricing. No hidden fees. Our starter plan includes AI chatbot setup and Google Business optimization.'
-  };
-  
-  runMarketMuseAudit(email, password, sampleContent);
+  runMarketMuseAudit(email, password, process.argv[2] || 'scripts/content_map.json');
 }

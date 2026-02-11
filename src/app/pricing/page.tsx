@@ -142,8 +142,8 @@ export default function PricingPage() {
                                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
                                 <p className="text-gray-600 text-sm mb-6">{tier.description}</p>
                                 <div className="mb-6">
-                                    <span className="text-5xl font-black text-gray-900">${isAnnual ? tier.annualPrice : tier.monthlyPrice}</span>
-                                    <span className="text-gray-500">/month</span>
+                                    <span className="text-5xl font-black text-gray-900">Starting at <span className="text-indigo-600">${isAnnual ? tier.annualPrice : tier.monthlyPrice}</span></span>
+                                    <span className="text-gray-500 text-sm">/month</span>
                                     {isAnnual && <p className="text-emerald-600 text-sm font-semibold mt-1">Billed annually (${tier.annualPrice * 12}/yr)</p>}
                                 </div>
                                 <ul className="space-y-3 mb-8">
@@ -157,7 +157,7 @@ export default function PricingPage() {
                                     ))}
                                 </ul>
                                 <Link href="/contact" className={`block w-full text-center py-4 rounded-xl font-bold transition-all ${tier.popular ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg hover:shadow-indigo-500/30' : 'bg-gray-100 text-gray-900 hover:bg-gray-200'}`}>
-                                    {tier.cta}
+                                    Learn More
                                 </Link>
                             </div>
                         ))}
