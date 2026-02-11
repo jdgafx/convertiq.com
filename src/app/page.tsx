@@ -27,10 +27,16 @@ export default function Home() {
       <Navbar />
 
       <section className="relative bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, rgba(79,70,229,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(99,102,241,0.2) 0%, transparent 50%)" }}></div>
-        </div>
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, rgba(79,70,229,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(99,102,241,0.2) 0%, transparent 50%)" }}></div>
+
         <div className="container mx-auto px-4 relative z-10">
+          {/* Logo Section */}
+          <div className="flex justify-center mb-8">
+            <img src="/logo-amp-ai-v2.svg" alt="AMP Marketing" className="h-16 w-auto drop-shadow-[0_10px_rgba(0,0,0,0.3)]" />
+          </div>
+
+        </div>
+        <div className="text-center">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse-glow">
               <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>

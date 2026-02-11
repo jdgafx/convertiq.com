@@ -20,7 +20,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <div className="bg-white rounded-3xl p-10 shadow-xl">
                                                         <h2 className="text-2xl font-bold text-gray-900 mb-6">Drop Us a Line</h2>
-                            <form className="space-y-6" action="https://formsubmit.co/hello@primemarketingexperts.com" method="POST">
+                            <form className="space-y-6" action="https://formsubmit.co/michael@primemarketingexperts.com" method="POST">
                                 <input type="hidden" name="_subject" value="New Contact Form Submission - AMP Marketing" />
                                 <input type="hidden" name="_next" value="https://convertiq.com/contact?success=true" />
                                 <input type="hidden" name="_honeypot" value="" />
@@ -100,7 +100,7 @@ export default function ContactPage() {
                                 <p className="text-indigo-700 mb-6">
                                     Free 15-minute chat. Tell us what's bugging you. No pitch, no pressure—just a real conversation about whether we can help.
                                 </p>
-                                <a href="mailto:hello@primemarketingexperts.com" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
+                                <a href="mailto:michael@primemarketingexperts.com" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us
                                 </a>
                             </div>

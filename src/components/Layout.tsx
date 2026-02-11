@@ -124,7 +124,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <span className="text-indigo-400 mr-4 text-xl">📧</span>
-                                <a href="mailto:hello@primemarketingexperts.com" className="hover:text-white transition-colors">hello@convertiq.com</a>
+                                <a href="mailto:michael@primemarketingexperts.com" className="hover:text-white transition-colors">michael@primemarketingexperts.com</a>
                             </li>
                             <li className="flex items-center">
                                 <span className="text-indigo-400 mr-4 text-xl">📞</span>
