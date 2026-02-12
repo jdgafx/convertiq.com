@@ -7,8 +7,8 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '7195n27i'
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'
 
 export default defineConfig({
-  name: 'amp-ai-experts',
-  title: 'Amp AI Experts CMS',
+  name: 'amp-marketing',
+  title: 'AMP Marketing CMS',
   
   projectId,
   dataset,
