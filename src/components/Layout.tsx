@@ -10,6 +10,7 @@ export function Navbar() {
         { label: "About", href: "/about" },
         { label: "Services", href: "/services" },
         { label: "Pricing", href: "/pricing" },
+        { label: "Blog", href: "/blog" },
         { label: "Contact", href: "/contact" },
     ];
 
@@ -109,6 +110,7 @@ export function Footer() {
                         <h4 className="text-lg font-bold uppercase tracking-wider mb-8 text-white">Quick Links</h4>
                         <ul className="grid grid-cols-1 gap-3 text-gray-400 text-sm">
                             <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
                             <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
                             <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>

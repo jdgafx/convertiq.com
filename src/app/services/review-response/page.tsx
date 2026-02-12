@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Reputation Management System | AMP Marketing",
-  description: "We handle your customer reviews for you. Thoughtful, personal replies to every person.",
+  description: "We handle customer reviews for you, with thoughtful and personalized replies to everyone.",
 };
 
 export default function ReviewResponsePage() {
@@ -15,7 +15,7 @@ export default function ReviewResponsePage() {
           <div className="text-6xl mb-6">⭐</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Reputation Management</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            We handle your customer feedback so you don&apos;t have to. Every review gets a thoughtful, personal reply within 24 hours. It shows people you care and helps your business show up higher in local searches.
+            We negotiate your customer feedback on your behalf so you don&apos;t have to. A thoughtful and personalized response is given to every review within 24 hours. It communicates to people that you are attentive and it also helps your business rank first in local searches.
           </p>
         </div>
       </section>
@@ -23,15 +23,15 @@ export default function ReviewResponsePage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here&apos;s how we keep your reputation spotless while you sleep:</p>
+              <p className="text-gray-600 mb-4">This is how we clean your reputation while you get your sleep:</p>
               <ul className="space-y-4">
                 {[
-                  "It thanks customers for positive feedback in a way that feels real and authentic.",
-                  "It handles the haters professionally—defusing the situation so you don&apos;t have to stress about it.",
-                  "We teach it to sound like you, not a corporate press release.",
-                  "Google, Yelp, Facebook—if someone&apos;s talking about you online, we catch it.",
-                  "If things get heated, it pings you instantly so you can step in.",
-                  "It responds in minutes, not &apos;whenever I get around to it&apos;.",
+                  "It expresses gratitude to customers for their positive review in a very sincere and authentic way.",
+                  "It professionally deals with those who are upset through de-escalating the conflict so you are not getting anxious about it.",
+                  "We train it to be personal and sound like you rather than a cold corporate press release.",
+                  "Google, Yelp, Facebook - anytime and anywhere someone mentions you in a positive or negative way, we are on top of it.",
+                  "If the situation gets out of control, it fires a message to your phone straight away so you can be the first to act.",
+                  "It does not wait until it is convenient but nearly instantaneously replies.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +45,7 @@ export default function ReviewResponsePage() {
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
               <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $99<span className="text-xl text-gray-500">/mo</span></div>
-              <p className="text-gray-600 mb-6">Unlimited responses included. No per-review fees.</p>
+              <p className="text-gray-600 mb-6">The price includes unlimited number of replies. There is no charge per review.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
               </Link>
@@ -57,9 +57,9 @@ export default function ReviewResponsePage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Some Common Questions</h2>
           {[
-            { q: "Can I customize the responses?", a: "Totally. You can tweak the voice, approve templates, or just let it run. It's your reputation, you're in charge." },
-            { q: "What platforms do you monitor?", a: "Pretty much everywhere people complain or compliment. Google, Yelp, TripAdvisor—we got 'em covered." },
-            { q: "What about angry customers?", a: "We don't let the AI freelance on angry rants. Those get flagged straight to you unless you tell us otherwise." },
+            { q: "Can I tweak the responses?", a: "Absolutely. If you want, you may modify the voice, give the template a go-ahead, or simply run the system. You are at the helm of the reputation management." },
+            { q: "Which social media platforms are monitored by you?", a: "Basically, wherever anyone posts compliments or grievances. We cover Google, Yelp, TripAdvisor, and all the rest." },
+            { q: "And what about customer complaints...", a: "We do not allow AI to go off on angry rants without supervision. Those are flagged and sent to you immediately unless you have instructed otherwise." },
             { q: "Does it sound robotic?", a: "Not a chance. We specifically train it to avoid that 'Thank you valued customer' vibe. It sounds like a human being." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
@@ -73,7 +73,7 @@ export default function ReviewResponsePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Build Trust Automatically</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Respond to every review. Show customers you care. Start today.
+            Every review should receive a response. Let your customers know that you value them. Get started today.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Start Free Trial

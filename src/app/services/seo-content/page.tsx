@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Content That Ranks | AMP Marketing",
-  description: "Helpful articles that real people want to read. Get more traffic without the fluff.",
+  description: "Knowledgeable articles that human beings will genuinely read. Boost your site traffic without worthless content.",
 };
 
 export default function SeoContentPage() {
@@ -15,7 +15,7 @@ export default function SeoContentPage() {
           <div className="text-6xl mb-6">🔍</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Content That Ranks</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Articles that real people want to read. We find the questions your customers are asking and answer them clearly. No fluff or keyword stuffing—just helpful info that brings steady traffic to your site.
+            Are articles that people actually read. We discover the questions that your buyers are asking and provide clear answers. We avoid fluff and repetitive keywords. Instead, we offer only helpful information that steadily brings traffic to your website.
           </p>
         </div>
       </section>
@@ -23,15 +23,15 @@ export default function SeoContentPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Ever wonder why some content gets high traffic while other pages remain invisible? We create content that search engines favor and your audience actually wants to read. Here is how we make that happen:</p>
+              <p className="text-gray-600 mb-4">Have you ever thought about why some content attracts traffic while other pages get no visitors? One way we render our content is by putting the needs of your audience first and search engines second so naturally, your content gets the best of both worlds. We take several steps:</p>
               <ul className="space-y-4">
                 {[
-                   "Around 2,000 words of genuinely useful content that actually answers what searchers are looking for. No filler.",
+                   "Approximately 2,000 words of legitimate content carefully crafted to provide comprehensive answers to the main search intent without fillers or other content additives.",
                   "We don&apos;t guess at keywords. We dig into ones with real search volume—actual opportunities, not made-up nonsense.",
-                  "Links that connect your pages together in a way that actually makes sense.",
-                  "The text people see when searching on Google that makes them stop scrolling and click.",
-                  "Headers that sound natural to readers while playing nice with search engines at the same time.",
-                  "And honestly? The best part is that it&apos;s ready to drop right into WordPress, Wix, Squarespace—whatever platform you&apos;re using.",
+                  "Always make the link relationships among your pages logical and coherent.",
+                  "The text element that people see when searching on Google, which catches their attention and attracts clicks.",
+                  "Titles that sound appealing to the reader while simultaneously being friendly to search engines.",
+                  "Frankly, the best thing about it is that it comes ready to be uploaded to the most popular platforms such as WordPress, Wix, Squarespace, or any other platform you are using.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@ export default function SeoContentPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
               <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $149<span className="text-xl text-gray-500">/article</span></div>
               <p className="text-sm text-gray-500 mb-2">One-time fee per article</p>
-              <p className="text-gray-600 mb-6">Or $499/mo for 4 articles delivered monthly.</p>
+              <p className="text-gray-600 mb-6">Or $499/month for 4 new articles delivered each month.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Order Article
               </Link>
@@ -58,10 +58,10 @@ export default function SeoContentPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Before You Ask</h2>
           {[
-            { q: "How do you pick what to write about?", a: "Honestly, we dig into what your competitors are ranking for, check out what questions your customers are asking, and find out what search terms actually get traffic. We run everything by you before we start writing—no surprises." },
-            { q: "Do you guarantee first page rankings?", a: "Look, no honest person can promise that. Here's what we can guarantee: well-written, properly optimized content. Rankings depend on so many factors though—competition, domain authority, how old your site is, you name it." },
-            { q: "Can you publish directly to my site?", a: "Absolutely. WordPress, Wix, Squarespace—we can log in and handle it, or just give you the content to upload yourself. Whatever's easier for you." },
-            { q: "What kind of articles work best?", a: "How-to guides, industry explainers, comparisons, and answers to frequently asked questions. Basically, the information your audience is actually searching for." },
+            { q: "How do you decide what to write about?", a: "Actually, we think about what your competitors rank for, analyze the questions from your customers, and determine which search terms are really getting traffic. We include you in decision-making before doing the actual writing—so no surprises." },
+            { q: "Do you guarantee first page rankings?", a: "Come on, no reasonable person can make such a promise. What we do promise is: great content that is well crafted and properly optimized. However, there are so many ranking factors such as your competitors, your domain authority, the age of your site, and so on." },
+            { q: "Can you post the articles on my website?", a: "Certainly. WordPress, Wix, Squarespace, etc. we can log in and post it, or just give you the content to upload yourself. Whatever is most convenient for you." },
+            { q: "Which type of articles are best?", a: "Instructional articles or how-to guides, industry explainers, comparisons and list of FAQs. In fact, it is all the information that your target audience needs and searches for." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -72,9 +72,9 @@ export default function SeoContentPage() {
       </section>
       <section className="py-20 bg-indigo-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Organic Traffic That Actually Converts</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Organic Traffic That Converts</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            A client in the home services space went from 300 monthly visitors to 3,000 in 4 months. The right content, optimized the right way.
+            A home services client went from getting 300 visitors per month to 3,000 in only 4 months. It was the right content in the right way that made it happen.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Write My First Article

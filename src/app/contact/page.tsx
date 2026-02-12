@@ -9,8 +9,7 @@ export default function ContactPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-black mb-6">Contact Us</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Got questions? Want to chat about your project? Drop us a line 
-                        and we'll get back to you fast—usually the same day.
+                        Do you have any questions? Are you interested in discussing your project? Please, send us a message and we will respond to you quickly—in most cases the same day.
                     </p>
                 </div>
             </section>
@@ -65,7 +64,7 @@ export default function ContactPage() {
                                 <button type="submit" className="w-full bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5">
                                     Send Message
                                 </button>
-                                                                 <p className="text-xs text-gray-500 text-center">We usually reply within a day.</p>
+                                                                 <p className="text-xs text-gray-500 text-center">Most times, we respond within 24 hours.</p>
                             </form>
                         </div>
                         <div className="space-y-8">
@@ -98,7 +97,7 @@ export default function ContactPage() {
                             <div className="bg-indigo-50 rounded-3xl p-10">
                                                                 <h3 className="text-2xl font-bold text-indigo-900 mb-4">Let's Talk</h3>
                                 <p className="text-indigo-700 mb-6">
-                                    Free 15-minute chat. Tell us what's bugging you. No pitch, no pressure—just a real conversation about whether we can help.
+                                    15 minutes for free. Tell us what is your problem. You won't get pressured or pitched here — only a real conversation on whether we could be the right people to help you.
                                 </p>
                                 <a href="mailto:michael@primemarketingexperts.com" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us

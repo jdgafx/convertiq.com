@@ -10,7 +10,7 @@ export default function PricingPage() {
     const platformTiers = [
         {
             name: 'Starter',
-            description: "Look, if you're just testing the waters—this is your starting point. You get a chatbot that books appointments while you sleep, we'll fix up your Google listing so locals can actually find you, and reviews get answered on autopilot. Pretty simple stuff.",
+            description: "What if you are just figuring things out? That should be your starting point. You get a chatbot that books appointments for you when you sleep, we'll optimize your Google listing so the locals can actually find you, and reviews will be answered automatically. Close to a dozen sign-ups a month.",
             monthlyPrice: 297,
             annualPrice: 247,
             features: [
@@ -26,7 +26,7 @@ export default function PricingPage() {
         },
         {
             name: 'Professional',
-            description: "Here's the thing—most of our clients land here. You get everything from Starter plus a phone bot that picks up when you can't, email sequences that don't feel spammy, regular social posts, and ad copy that people actually click on.",
+            description: "If you ask us most clients end up here. You get everything from Starter plus a phone bot that automatically answers your phone when you can't, email sequences that don't sound like spam, regular social media posts, and ad copy that people actually click on.",
             monthlyPrice: 597,
             annualPrice: 497,
             features: [
@@ -44,7 +44,7 @@ export default function PricingPage() {
         },
         {
             name: 'Enterprise',
-            description: "This is the full package. We handle your content, build landing pages, set up complete funnels, train custom AI on your business, and you get a dedicated person who knows your stuff inside and out.",
+            description: "That's the complete one. We create your content, design your landing pages, establish a complete sales funnel, train an AI which understands your business, and you are assigned a personal manager who knows your business inside out.",
             monthlyPrice: 1297,
             annualPrice: 1097,
             features: [
@@ -79,27 +79,27 @@ export default function PricingPage() {
     const faqs = [
         {
             question: "What do I get in the free trial?",
-            answer: "The whole thing. All of it. 7 days, no credit card needed, no weird catches. Try it out. If it's not for you, no big deal—just don't continue. Zero hassle."
+            answer: "It is everything. The whole thing. 7 days, no credit card required, no strange catches. Try it out. If it's not for you, no problem—just don't continue. Zero hassle."
         },
         {
             question: "Can you make it fit my business?",
-            answer: "That's the whole point. We don't copy-paste the same stuff for everyone. Your chatbot scripts, emails, ads—all of it gets written for YOUR business. We keep tweaking until it sounds like you."
+            answer: "There is no one-size-fits-all with us. We don't do copy-paste for the same content all over the place. Your chatbot scripts, emails, ads—everything is created specifically for YOUR business. We'll keep working on it until it really sounds like you."
         },
         {
             question: "What if I want to change plans?",
-            answer: "Go for it. Upgrade when you're ready to grow, downgrade if things slow down. We adjust your bill to match. No fees, no guilt trips."
+            answer: "Absolutely. Upgrade when you feel like expanding, downgrade if less busy. We make sure your bill is the right one. No fees, no guilt."
         },
         {
-            question: "What if none of these plans work for me?",
-            answer: "Then we'll make one that does. Just tell us what you're looking for and we'll put something together that fits your situation."
+            question: "What if none of the plans are right for me?",
+            answer: "We'll create one for you. It is as simple as saying what you want and we will come up with a solution that suits your circumstances."
         },
         {
-            question: "How fast will this actually work?",
-            answer: "Depends on what you're using. Chatbots? Day one. Could see leads that same afternoon. SEO takes a bit—usually a couple months to really kick in. But most people notice changes in the first week or two."
+            question: "How quickly will this actually work?",
+            answer: "This is mainly what you use. Chatbots? Day one. You might get the leads the same afternoon. SEO takes a little more time—usually a couple of months to really gain momentum. However, most people notice the results in the first week or two."
         },
         {
             question: "Do I have to sign a long contract?",
-            answer: "Nope. Month to month. Want to cancel? Just let us know 30 days ahead. We're not into trapping people."
+            answer: "We do a month to month thing. If you want to cancel, just give us a 30 days notice. We are different from those companies who trap their customers."
         }
     ];
 
@@ -300,7 +300,7 @@ export default function PricingPage() {
                             Start 7-Day Free Trial
                         </Link>
                         <Link href="/contact" className="bg-indigo-500/30 backdrop-blur text-white px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:bg-indigo-500/50 transition-all">
-                            Schedule Free Consultation
+                            Book a consultation session for free.
                         </Link>
                     </div>
                 </div>

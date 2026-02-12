@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Human-Like Follow Ups Sequences | AMP Marketing",
-  description: "Turn subscribers into customers with smart email sequences that actually get read.",
+  description: "Employ smart email sequences that successfully convert subscribers into customers.",
 };
 
 export default function EmailAutomationPage() {
@@ -15,7 +15,7 @@ export default function EmailAutomationPage() {
           <div className="text-6xl mb-6">✉️</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Human-Like Follow Ups</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Look, most automated emails are boring and go straight to spam. We don't do that. We build sequences that actually sound like a human wrote them, so you can turn subscribers into customers without sounding like a robot.
+            Generally, automated emails are dull and typical spam emails. We are not one of those. Our sequences are so convincing that it seems like real humans wrote them and not a robot. By doing this, you can successfully convert your subscribers into the customers without sounding robotic.
           </p>
         </div>
       </section>
@@ -23,16 +23,16 @@ export default function EmailAutomationPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Most Clients See Results in About a Week</h2>
-              <p className="text-gray-600 mb-4">Honestly, the goal is to make your emails feel like a one-on-one conversation. We've done this for HVAC, law firms, you name it. Here's how we help you win:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Most customers report seeing a positive impact within a week.</h2>
+              <p className="text-gray-600 mb-4">Let's be honest, the purpose here is to make your emails appear as a personal conversation between two people only. Regardless whether it's HVAC or legal services, we have experience on both. What we do for you:</p>
               <ul className="space-y-4">
                 {[
-                  "A welcome series that actually feels personal—like a real person sat down to write it.",
-                  "Cart recovery emails that bring people back (honestly, we usually see 15-30% recovery rates).",
-                  "Follow-ups that don&apos;t feel spammy or annoying.",
-                  "Campaigns to wake up those quiet subscribers who haven&apos;t opened anything in months.",
-                  "Smart triggers based on what people actually *do* on your site.",
-                  "We test everything. We don&apos;t just guess and hope.",
+                  "Welcome emails that really sound as if they were written by a human.",
+                  "Emails with script to remind the person of their carton which they abandoned and get them back (as a matter of fact, the recovery rates in the range of 15-30% is what we typically experience).",
+                  "Emails that follow up but are not intrusive or irritating.",
+                  "Those email marketing campaigns that re-activate the long lost subscribers who have not opened any of your communication for a while.",
+                  "Intelligent triggers based on real user's behavior on your site.",
+                  "We hold tests for all our steps. We don&apos;t simply guess and wish success.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@ export default function EmailAutomationPage() {
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
               <div className="text-4xl font-black text-indigo-600 mb-2">Starting at $199 setup + $49/mo</div>
-              <p className="text-gray-600 mb-2">Custom sequence build and monthly optimization.</p>
+              <p className="text-gray-600 mb-2">Personalized sequence creation and monthly fine-tuning.</p>
               <p className="text-gray-500 text-sm mb-6">First 2,500 subscribers included</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Start 7-Day Free Trial
@@ -59,10 +59,10 @@ export default function EmailAutomationPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Common Questions</h2>
           {[
-            { q: "How long does this take?", a: "Give us about a week. We need a few days to really get your voice down, set up the tech, and test it all. Rushing just leads to mistakes." },
-            { q: "What platforms do you work with?", a: "Pretty much all of them—Mailchimp, ConvertKit, Klaviyo, ActiveCampaign. If you're on something weird, we'll figure it out." },
-            { q: "Can I write my own copy?", a: "Absolutely. It's your business. We can write it, you can write it, or we can mix and match. Whatever works best for you." },
-            { q: "What about spam filters?", a: "We set up all the technical stuff—DKIM, SPF, list cleaning—so your emails actually land in inboxes. Most clients see 95%+ deliverability." },
+            { q: "How long does this take?", a: "Approximately one week of your time. We require 1-2 days to figure out your style of communication, install software, and make the necessary tests. Rushing is only conducive to errors." },
+            { q: "What platforms do you work with?", a: "We deal with almost all of them starting from Mailchimp, ConvertKit, Klaviyo, and ActiveCampaign. On the bright side, if you are using a rare platform, we will manage to find a solution." },
+            { q: "Can I write my own copy?", a: "Of course. The business is yours anyway, and you have full control. We are capable of writing the copy ourselves, you can do it, and together we can even do a hybrid version. The main thing is that you are comfortable." },
+            { q: "What about spam filters?", a: "We have done all the technical things—DKIM, SPF, and cleaning the list—so that your emails really reach envelopes. Most of the customers experience 95% or even more delivery rate." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -73,12 +73,12 @@ export default function EmailAutomationPage() {
       </section>
       <section className="py-20 bg-indigo-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Tired of Chasing Leads Manually?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Stop hunting down leads manually?</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            One of our clients put it best: &quot;I used to spend 3 hours a day on follow-ups. Now it all happens while I sleep.&quot;
+            One of the clients has said it best: &quot;I used to spend 3 hours a day on follow-ups. Now it all happens while I sleep.&quot;
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
-            Let us Build Your Sequence
+            How about we build your sequence?
           </Link>
         </div>
       </section>
