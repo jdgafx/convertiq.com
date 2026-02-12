@@ -1,4 +1,5 @@
 import { Navbar, Footer } from "@/components/Layout";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
 import Link from "next/link";
 
 export default function Home() {
@@ -26,8 +27,8 @@ export default function Home() {
     <main className="min-h-screen bg-white font-poppins">
       <Navbar />
 
-      <section className="relative bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, rgba(79,70,229,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(99,102,241,0.2) 0%, transparent 50%)" }}></div>
+      <section className="relative text-white py-32 overflow-hidden">
+        <AnimatedBackground />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
