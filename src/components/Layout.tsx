@@ -1,149 +1,179 @@
 'use client';
 
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Zap, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export function Navbar() {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
-    const mainNavigation = [
-        { label: "About", href: "/about" },
-        { label: "Services", href: "/services" },
-        { label: "Pricing", href: "/pricing" },
-        { label: "Blog", href: "/blog" },
-        { label: "Contact", href: "/contact" },
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const navItems = [
+        { label: 'Services', href: '/services' },
+        { label: 'Pricing', href: '/pricing' },
+        { label: 'About', href: '/about' },
+        { label: 'Contact', href: '/contact' },
     ];
 
     return (
-        <nav className="bg-white w-full h-auto shadow-sm sticky top-0 z-[100] font-poppins">
-            {/* Desktop Navigation */}
-            <div className="hidden xl:flex flex-row items-center justify-between py-4 h-24 w-full px-4 max-w-full">
-                <div className="flex items-center">
-                    <Link href="/" className="transition-opacity hover:opacity-90">
-                        <img src="/logo.svg" alt="AMP Marketing" className="h-24 w-auto" />
-                    </Link>
-                </div>
-
-                <div className="flex items-center gap-2">
-                    {mainNavigation.map((item) => (
-                        <Link
-                            key={item.label}
-                            href={item.href}
-                            className="block py-4 px-2 text-[15px] font-bold text-gray-800 hover:text-indigo-600 transition-colors"
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
-                </div>
-
-                <Link href="/contact">
-                    <div className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-8 py-3 rounded-full font-bold text-[15px] hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        Get Started
-                    </div>
-                </Link>
-            </div>
-
-            {/* Mobile Header */}
-            <div className="xl:hidden flex items-center justify-between px-4 py-4 border-b bg-white relative z-50">
-                <Link href="/">
-                    <img src="/logo.svg" alt="AMP Marketing" className="h-12 w-auto" />
-                </Link>
-                <button
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="p-2 text-gray-600 hover:text-indigo-600 transition-colors"
-                >
-                    {isMobileMenuOpen ? (
-                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l18 18" /></svg>
-                    ) : (
-                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
-                    )}
-                </button>
-            </div>
-
-            {/* Mobile Menu Overlay */}
-            {isMobileMenuOpen && (
-                <div className="xl:hidden bg-white border-t border-gray-100 overflow-y-auto max-h-[calc(100vh-80px)] shadow-inner">
-                    <div className="px-4 py-6 space-y-4">
-                        {mainNavigation.map((item) => (
-                            <div key={item.label} className="border-b border-gray-50 pb-4 last:border-0">
-                                <Link
-                                    href={item.href}
-                                    className="text-lg font-bold text-gray-900 hover:text-indigo-600 transition-colors"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                >
-                                    {item.label}
-                                </Link>
+        <div className="fixed top-0 left-0 w-full z-50 flex justify-center pt-6 px-4">
+            <nav 
+                className={`
+                    transition-all duration-500 ease-out
+                    ${scrolled || isOpen ? 'w-full max-w-5xl rounded-2xl bg-black/80 border border-white/10 shadow-2xl backdrop-blur-xl' : 'w-full max-w-7xl bg-transparent border-transparent'}
+                    px-6 py-4
+                `}
+            >
+                <div className="flex justify-between items-center">
+                    <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none">
+                        <div className="relative w-11 h-11 rounded-xl bg-gradient-to-b from-blue-500 to-purple-600 p-[1px] shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/40 transition-all duration-300">
+                            <div className="w-full h-full bg-[#0a0a0f] rounded-[10px] flex items-center justify-center relative overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-50"></div>
+                                <Zap className="w-5 h-5 text-white fill-white" style={{ filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.4))' }} />
                             </div>
+                        </div>
+                        
+                        <div className="flex flex-col justify-center">
+                            <div className="flex items-baseline leading-none mb-1">
+                                <span className="text-xl font-bold text-white tracking-tight mr-1">AMP</span>
+                                <span className="text-xl font-black text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">Marketing</span>
+                            </div>
+                            <span className="text-[10px] font-extrabold text-slate-400 tracking-[0.2em] uppercase pl-0.5">Growth on Autopilot</span>
+                        </div>
+                    </Link>
+
+                    <div className="hidden md:flex items-center bg-white/5 rounded-full px-2 py-1 border border-white/5 backdrop-blur-sm">
+                        {navItems.map((item) => (
+                            <Link 
+                                key={item.label} 
+                                href={item.href}
+                                className={`px-5 py-2 text-sm font-medium transition-all rounded-full ${pathname === item.href ? 'text-white bg-white/10 shadow-[0_0_10px_rgba(255,255,255,0.1)]' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                            >
+                                {item.label}
+                            </Link>
                         ))}
-                        <Link
-                            href="/contact"
-                            className="block bg-indigo-600 text-white text-center py-4 rounded-full font-bold"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Get Started
+                    </div>
+
+                    <div className="hidden md:block">
+                        <Link href="/contact">
+                            <button className="bg-white text-black hover:bg-indigo-50 px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105">
+                                Get Started
+                            </button>
                         </Link>
                     </div>
+
+                    <div className="md:hidden">
+                        <button onClick={() => setIsOpen(!isOpen)} className="text-white p-2">
+                            {isOpen ? <X /> : <Menu />}
+                        </button>
+                    </div>
                 </div>
-            )}
-        </nav>
+
+                {isOpen && (
+                    <div className="md:hidden mt-6 pb-6 border-t border-white/10 flex flex-col space-y-2">
+                        {navItems.map((item) => (
+                            <Link 
+                                key={item.label} 
+                                href={item.href}
+                                className="text-lg font-medium text-gray-300 hover:text-white py-3 px-4 hover:bg-white/5 rounded-lg transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {item.label}
+                            </Link>
+                        ))}
+                        <Link href="/contact" onClick={() => setIsOpen(false)}>
+                            <button className="w-full mt-4 bg-white text-black py-3 rounded-lg font-bold">
+                                Get Started
+                            </button>
+                        </Link>
+                    </div>
+                )}
+            </nav>
+        </div>
     );
 }
 
 export function Footer() {
     return (
-        <footer className="bg-[#1a1a1a] text-white pt-20 pb-10 font-poppins">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-                    <div className="space-y-8">
-                        <Link href="/">
-                            <img src="/logo.svg" alt="AMP Marketing" className="h-12 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
-                        </Link>
-                        <p className="text-gray-400 text-[15px] leading-relaxed pr-6">
-                            Smart marketing tools that grow your business. We help you automate and scale with technology that actually works.
-                        </p>
-                    </div>
+        <footer className="border-t border-white/10 bg-black/80 backdrop-blur-xl pt-20 pb-10 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+                <div className="col-span-1 md:col-span-1">
+                    <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none mb-6">
+                        <div className="relative w-10 h-10 rounded-lg bg-gradient-to-b from-blue-500 to-purple-600 p-[1px] shadow-lg shadow-purple-500/10">
+                            <div className="w-full h-full bg-[#0a0a0f] rounded-[7px] flex items-center justify-center relative overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-50"></div>
+                                <Zap className="w-5 h-5 text-white fill-white" style={{ filter: 'drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))' }} />
+                            </div>
+                        </div>
+                        
+                        <div className="flex flex-col justify-center">
+                            <div className="flex items-baseline leading-none mb-0.5">
+                                <span className="text-lg font-bold text-white tracking-tight mr-1">AMP</span>
+                                <span className="text-lg font-black text-white drop-shadow-[0_2px_5px_rgba(255,255,255,0.2)]">Marketing</span>
+                            </div>
+                            <span className="text-[9px] font-extrabold text-slate-500 tracking-[0.2em] uppercase pl-0.5">Growth on Autopilot</span>
+                        </div>
+                    </Link>
 
-                    <div>
-                        <h4 className="text-lg font-bold uppercase tracking-wider mb-8 text-white">Quick Links</h4>
-                        <ul className="grid grid-cols-1 gap-3 text-gray-400 text-sm">
-                            <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                            <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
-                            <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="text-lg font-bold uppercase tracking-wider mb-8 text-white">Contact Us</h4>
-                        <ul className="space-y-6 text-gray-400 text-sm">
-                            <li className="flex items-start">
-                                <span className="text-indigo-400 mr-4 text-xl">📍</span>
-                                <span>74 Northeastern Blvd #12a Ste 101<br />Nashua, NH 03062</span>
-                            </li>
-                            <li className="flex items-center">
-                                <span className="text-indigo-400 mr-4 text-xl">📧</span>
-                                <a href="mailto:michael@primemarketingexperts.com" className="hover:text-white transition-colors">michael@primemarketingexperts.com</a>
-                            </li>
-                            <li className="flex items-center">
-                                <span className="text-indigo-400 mr-4 text-xl">📞</span>
-                                <a href="tel:617-651-1457" className="text-xl font-bold text-white hover:text-indigo-400 transition-colors italic">617-651-1457</a>
-                            </li>
-                        </ul>
+                    <p className="text-gray-500 mb-6 leading-relaxed text-sm">
+                        Growth on autopilot. We build systems that help businesses scale without the headache.
+                    </p>
+                    <div className="flex gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer flex items-center justify-center text-gray-400 hover:text-white">
+                            <Twitter className="w-5 h-5" />
+                        </div>
+                        <div className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer flex items-center justify-center text-gray-400 hover:text-white">
+                            <Linkedin className="w-5 h-5" />
+                        </div>
+                        <div className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer flex items-center justify-center text-gray-400 hover:text-white">
+                            <Instagram className="w-5 h-5" />
+                        </div>
                     </div>
                 </div>
-            </div>
+                
+                <div>
+                    <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-8">Services</h4>
+                    <ul className="space-y-4 text-gray-500 text-sm font-medium">
+                        <li><Link href="/services/ai-chatbot" className="hover:text-amp-primary transition-colors">AI Chatbot</Link></li>
+                        <li><Link href="/services/ai-voice" className="hover:text-amp-primary transition-colors">AI Voice</Link></li>
+                        <li><Link href="/services/lead-funnel" className="hover:text-amp-primary transition-colors">Sales Funnels</Link></li>
+                        <li><Link href="/services/seo-content" className="hover:text-amp-primary transition-colors">SEO Engine</Link></li>
+                    </ul>
+                </div>
 
-            <div className="bg-[#0b111f] py-8">
-                <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs tracking-widest uppercase">
-                    <p>© {new Date().getFullYear()} AMP Marketing. All rights reserved.</p>
-                    <div className="flex space-x-8 mt-6 md:mt-0">
-                        <Link href="#" className="hover:text-white transition-colors">Terms of use</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-                    </div>
+                <div>
+                    <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-8">Company</h4>
+                    <ul className="space-y-4 text-gray-500 text-sm font-medium">
+                        <li><Link href="/about" className="hover:text-amp-primary transition-colors">About Us</Link></li>
+                        <li><Link href="/pricing" className="hover:text-amp-primary transition-colors">Pricing</Link></li>
+                        <li><Link href="/contact" className="hover:text-amp-primary transition-colors">Contact</Link></li>
+                        <li><Link href="/blog" className="hover:text-amp-primary transition-colors">Blog</Link></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-8">Legal</h4>
+                    <ul className="space-y-4 text-gray-500 text-sm font-medium">
+                        <li className="hover:text-white transition-colors cursor-pointer">Privacy Policy</li>
+                        <li className="hover:text-white transition-colors cursor-pointer">Terms of Service</li>
+                        <li className="hover:text-white transition-colors cursor-pointer">Cookie Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p className="text-gray-600 text-[10px] font-bold uppercase tracking-widest">© 2026 AMP Marketing. All rights reserved.</p>
+                <div className="flex gap-8 text-[10px] text-gray-600 font-bold uppercase tracking-widest">
+                    <span className="hover:text-gray-400 cursor-pointer">Built with AI</span>
                 </div>
             </div>
         </footer>
