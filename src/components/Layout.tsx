@@ -109,19 +109,19 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
                 <div className="col-span-1 md:col-span-1">
                     <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none mb-6">
-                        <div className="relative w-10 h-10 rounded-lg bg-gradient-to-b from-blue-500 to-purple-600 p-[1px] shadow-lg shadow-purple-500/10">
+                        <div className="relative w-12 h-12 rounded-lg bg-gradient-to-b from-blue-500 to-purple-600 p-[1px] shadow-lg shadow-purple-500/20">
                             <div className="w-full h-full bg-[#0a0a0f] rounded-[7px] flex items-center justify-center relative overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-50"></div>
-                                <Zap className="w-5 h-5 text-white fill-white" style={{ filter: 'drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))' }} />
+                                <Zap className="w-6 h-6 text-white fill-white" style={{ filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.4))' }} />
                             </div>
                         </div>
                         
                         <div className="flex flex-col justify-center">
                             <div className="flex items-baseline leading-none mb-0.5">
-                                <span className="text-lg font-bold text-white tracking-tight mr-1">AMP</span>
-                                <span className="text-lg font-black text-white drop-shadow-[0_2px_5px_rgba(255,255,255,0.2)]">Marketing</span>
+                                <span className="text-xl font-bold text-white tracking-tight mr-1">AMP</span>
+                                <span className="text-xl font-black text-white drop-shadow-[0_2px_5px_rgba(255,255,255,0.3)]">Marketing</span>
                             </div>
-                            <span className="text-[9px] font-extrabold text-slate-500 tracking-[0.2em] uppercase pl-0.5">Growth on Autopilot</span>
+                            <span className="text-[10px] font-extrabold text-slate-400 tracking-[0.2em] uppercase pl-0.5">Growth on Autopilot</span>
                         </div>
                     </Link>
 
