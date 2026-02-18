@@ -1,4 +1,5 @@
 import { Navbar, Footer } from "@/components/Layout";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,56 +24,43 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-white font-poppins text-gray-800">
+    <main className="min-h-screen bg-white font-poppins">
       <Navbar />
 
-      <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amp-primary/20 rounded-full blur-[120px] -z-10" />
+      <section className="relative text-white py-32 overflow-hidden">
+        <AnimatedBackground />
 
-        <div className="max-w-5xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 shadow-2xl hover:bg-white/10 transition-colors cursor-default">
-            <span className="relative flex h-2 w-2 mr-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amp-secondary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amp-secondary"></span>
-            </span>
-            <span className="text-sm font-medium text-gray-200 tracking-wide">Real results in a matter of days</span>
-          </div>
-
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[1.1] mb-8 text-white text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400 drop-shadow-sm">
-            AI That Works <br />
-            <span className="text-amp-secondary bg-clip-text text-transparent bg-gradient-to-r from-amp-secondary via-amp-accent to-amp-primary animate-gradient-x">
-              for Your Business
-            </span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-            We make high-tech tools that attract leads, take your calls, and take care of your boring tasks even if you are sleeping. No jargon. Just results.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact">
-              <button className="group relative w-full sm:w-auto px-8 py-4 bg-white text-black rounded-xl font-bold text-lg transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] flex items-center justify-center gap-2 overflow-hidden">
-                <span className="relative z-10">See If We're a Good Fit</span>
-              </button>
-            </Link>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse-glow">
+              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+              Real results in a matter of days
+            </div>
             
-            <Link href="/pricing">
-              <button className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-medium text-lg backdrop-blur-xl transition-all hover:scale-105 hover:border-white/20">
-                See Our Pricing
-              </button>
-            </Link>
-          </div>
+            <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
+              AI That Works <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">for Your Business</span>
+            </h1>
+            
+            <p className="text-2xl md:text-3xl font-bold text-white mb-6">
+              More Leads, Less Busywork.
+            </p>
 
-          <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            <span className="text-xl font-bold text-white tracking-widest">GOOGLE</span>
-            <span className="text-xl font-bold text-white tracking-widest">META</span>
-            <span className="text-xl font-bold text-white tracking-widest">SHOPIFY</span>
-            <span className="text-xl font-bold text-white tracking-widest">HUBSPOT</span>
+            <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+              We make high-tech tools that attract leads, take your calls, and take care of your boring tasks even if you are sleeping. No complicated technical jargon. Just good results.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact" className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-1">
+                See If We're a Good Fit
+              </Link>
+              <Link href="/pricing" className="bg-white/10 backdrop-blur text-white px-10 py-5 rounded-full font-bold text-lg border-2 border-white/20 hover:bg-white/20 transition-all">
+                See Our Pricing
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, idx) => (
@@ -111,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Why People Work With Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -121,7 +109,7 @@ export default function Home() {
               { icon: "📊", title: "Transparent Reporting", desc: "We don't miss a single lead and booking. Your insights will be crystal clear at all times." },
               { icon: "👋", title: "Direct Support", desc: "The person who answers the call is genuine. If you have a question, you can expect an helpful answer." },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+              <div key={idx} className="bg-white rounded-xl p-6 shadow">
                 <div className="text-3xl mb-3">{item.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
@@ -131,12 +119,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Testimonials</span>
-            <h2 className="text-4xl font-black text-gray-900 mt-4 mb-6">What Our Clients Say</h2>
-            <p className="text-gray-600 text-xl">Don't just believe us. Let real clients be the judge.</p>
+            <span className="text-indigo-400 font-bold uppercase tracking-widest text-sm">Testimonials</span>
+            <h2 className="text-4xl font-black mt-4 mb-6">What Our Clients Say</h2>
+            <p className="text-gray-400 text-xl">Don't just believe us. Let real clients be the judge.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -147,16 +135,16 @@ export default function Home() {
               { quote: "Our business has been changed by email automation. We used to spend a lot of time every week on our manual follow-ups. The process has been automated, and our close rate has increased by 40%.", author: "David M.", company: "Real Estate Agency" },
               { quote: "Custom-made AI application from them helped us save around 30 hours a week. That is not a typographical mistake. It is the best investment that we have ever made.", author: "Jennifer P.", company: "E-commerce Business" }
             ].map((testimonial, idx) => (
-              <div key={idx} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg">
+              <div key={idx} className="bg-gray-800 rounded-2xl p-8">
                 <div className="flex gap-1 mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <span key={star} className="text-amber-400 text-xl">★</span>
                   ))}
                 </div>
-                <p className="text-gray-600 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
-                <div className="border-t border-gray-100 pt-4">
-                  <p className="text-gray-900 font-bold">{testimonial.author}</p>
-                  <p className="text-indigo-600 text-sm">{testimonial.company}</p>
+                <p className="text-gray-300 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
+                <div className="border-t border-gray-700 pt-4">
+                  <p className="text-white font-bold">{testimonial.author}</p>
+                  <p className="text-indigo-400 text-sm">{testimonial.company}</p>
                 </div>
               </div>
             ))}
@@ -164,13 +152,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-amp-primary to-amp-accent py-20">
+      <section className="bg-gradient-to-r from-indigo-600 to-indigo-700 py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-black text-white mb-6">Want More Customers?</h2>
           <p className="text-indigo-100 text-xl mb-10 max-w-2xl mx-auto">
             We have hundreds of businesses under our belt. Let's have a brief chat and check whether we may be able to assist you too. No pressure and no sales pitch.
           </p>
-          <Link href="/contact" className="inline-block bg-white text-amp-primary px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
+          <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             Book a Free Call
           </Link>
         </div>

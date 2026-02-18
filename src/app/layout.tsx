@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AnimatedBackground } from "@/components/AnimatedBackground";
 
 export const metadata: Metadata = {
   title: {
@@ -121,10 +120,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <AnimatedBackground />
-        <div className="relative z-10">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
