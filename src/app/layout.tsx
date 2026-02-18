@@ -122,7 +122,9 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <AnimatedBackground />
-        {children}
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
