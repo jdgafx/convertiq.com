@@ -26,14 +26,14 @@ export function Navbar() {
     ];
 
     return (
-        <div className="fixed top-0 left-0 w-full z-50 flex justify-center pt-6 px-4">
+        <div className="fixed top-0 left-0 w-full z-50">
             <nav 
                 className={`
-                    transition-all duration-500 ease-out
-                    ${scrolled || isOpen ? 'w-full max-w-5xl rounded-2xl bg-black/80 border border-white/10 shadow-2xl backdrop-blur-xl' : 'w-full max-w-7xl bg-transparent border-transparent'}
-                    px-6 py-4
+                    transition-all duration-500 ease-out w-full
+                    ${scrolled || isOpen ? 'bg-black/80 border-b border-white/10 shadow-2xl backdrop-blur-xl' : 'bg-transparent'}
                 `}
             >
+                <div className="max-w-7xl mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
                     <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none">
                         <div className="relative w-11 h-11 rounded-xl bg-gradient-to-b from-blue-500 to-purple-600 p-[1px] shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/40 transition-all duration-300">
@@ -98,6 +98,7 @@ export function Navbar() {
                         </Link>
                     </div>
                 )}
+                </div>
             </nav>
         </div>
     );
