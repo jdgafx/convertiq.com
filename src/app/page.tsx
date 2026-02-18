@@ -23,7 +23,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-transparent font-poppins text-gray-200">
+    <main className="min-h-screen bg-white font-poppins text-gray-800">
       <Navbar />
 
       <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
@@ -72,37 +72,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-transparent">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center">
-                <div className="text-4xl md:text-5xl font-black text-amp-primary mb-2">{stat.value}</div>
-                <div className="text-gray-400 font-medium">{stat.label}</div>
+                <div className="text-4xl md:text-5xl font-black text-indigo-600 mb-2">{stat.value}</div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-amp-secondary font-bold uppercase tracking-widest text-sm">All Services</span>
-            <h2 className="text-4xl md:text-5xl font-black text-white mt-4 mb-6">All the things we can do for you</h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">All Services</span>
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-4 mb-6">All the things we can do for you</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               If it turns out AI is able to get you more customers or save your time, we may have just built it. See what we have here.
             </p>
           </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {services.map((service, idx) => (
-                <Link key={idx} href={service.href} className="bg-white/5 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-white/10 group hover:-translate-y-1 block backdrop-blur-sm hover:bg-white/10">
+                <Link key={idx} href={service.href} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group hover:-translate-y-1 block">
                   <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="text-lg font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-gray-400 text-sm mb-3">{service.desc}</p>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{service.title}</h3>
+                  <p className="text-gray-600 text-sm mb-3">{service.desc}</p>
                   <div className="flex justify-between items-center">
-                  <span className="text-amp-secondary font-bold text-sm">{service.price}</span>
-                  <span className="text-amp-primary font-semibold text-sm group-hover:text-amp-accent">Learn More →</span>
+                  <span className="text-indigo-600 font-bold text-sm">{service.price}</span>
+                  <span className="text-indigo-600 font-semibold text-sm group-hover:text-indigo-800">Learn More →</span>
                 </div>
                 </Link>
               ))}
@@ -111,9 +111,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-transparent">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-black text-white mb-8 text-center">Why People Work With Us</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Why People Work With Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { icon: "⚡", title: "Fast Implementation", desc: "Usually, people claim their stuff is up and running and functioning within a week. We don't waste time." },
@@ -121,22 +121,22 @@ export default function Home() {
               { icon: "📊", title: "Transparent Reporting", desc: "We don't miss a single lead and booking. Your insights will be crystal clear at all times." },
               { icon: "👋", title: "Direct Support", desc: "The person who answers the call is genuine. If you have a question, you can expect an helpful answer." },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white/5 rounded-xl p-6 shadow border border-white/10 backdrop-blur-sm">
+              <div key={idx} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-bold text-white mb-1">{item.title}</h3>
-                <p className="text-gray-400 text-sm">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-black/20 text-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <span className="text-amp-secondary font-bold uppercase tracking-widest text-sm">Testimonials</span>
-            <h2 className="text-4xl font-black mt-4 mb-6">What Our Clients Say</h2>
-            <p className="text-gray-400 text-xl">Don't just believe us. Let real clients be the judge.</p>
+            <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Testimonials</span>
+            <h2 className="text-4xl font-black text-gray-900 mt-4 mb-6">What Our Clients Say</h2>
+            <p className="text-gray-600 text-xl">Don't just believe us. Let real clients be the judge.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -147,16 +147,16 @@ export default function Home() {
               { quote: "Our business has been changed by email automation. We used to spend a lot of time every week on our manual follow-ups. The process has been automated, and our close rate has increased by 40%.", author: "David M.", company: "Real Estate Agency" },
               { quote: "Custom-made AI application from them helped us save around 30 hours a week. That is not a typographical mistake. It is the best investment that we have ever made.", author: "Jennifer P.", company: "E-commerce Business" }
             ].map((testimonial, idx) => (
-              <div key={idx} className="bg-white/5 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+              <div key={idx} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg">
                 <div className="flex gap-1 mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <span key={star} className="text-amber-400 text-xl">★</span>
                   ))}
                 </div>
-                <p className="text-gray-300 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
-                <div className="border-t border-white/10 pt-4">
-                  <p className="text-white font-bold">{testimonial.author}</p>
-                  <p className="text-amp-secondary text-sm">{testimonial.company}</p>
+                <p className="text-gray-600 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
+                <div className="border-t border-gray-100 pt-4">
+                  <p className="text-gray-900 font-bold">{testimonial.author}</p>
+                  <p className="text-indigo-600 text-sm">{testimonial.company}</p>
                 </div>
               </div>
             ))}

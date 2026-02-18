@@ -35,7 +35,7 @@ export function AnimatedBackground() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 overflow-hidden"
+      className="absolute inset-0 overflow-hidden"
       style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)" }}
     >
       {/* Animated gradient orbs */}
