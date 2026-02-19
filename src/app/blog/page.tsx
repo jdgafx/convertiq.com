@@ -99,10 +99,10 @@ export default async function BlogPage() {
         <main className="min-h-screen bg-white font-poppins">
             <Navbar />
 
-            <section className="bg-[#f9f6f3] py-24">
+            <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#1a1a1a] mb-6">What We're Reading</h1>
-                    <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed italic">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">What We're Reading</h1>
+                    <p className="max-w-3xl mx-auto text-xl text-gray-300 leading-relaxed italic">
                         Stuff we found useful about getting more leads and growing your business. No fluff.
                     </p>
                 </div>
@@ -152,17 +152,17 @@ export default async function BlogPage() {
                 </div>
             </section>
 
-            <section className="py-20 bg-gray-50">
+            <section className="py-20 bg-gradient-to-r from-indigo-600 to-indigo-700">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Want to Talk Shop?</h2>
-                    <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                    <h2 className="text-3xl font-bold text-white mb-6">Want to Talk Shop?</h2>
+                    <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
                         We help businesses get more leads without all the headaches. Curious if we can help you? Let's chat.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/contact" className="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition-colors">
+                        <Link href="/contact" className="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-xl">
                             Book a Free Call
                         </Link>
-                        <Link href="/pricing" className="bg-white text-indigo-600 border-2 border-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-indigo-50 transition-colors">
+                        <Link href="/pricing" className="bg-transparent text-white border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">
                             View Pricing
                         </Link>
                     </div>
