@@ -52,7 +52,7 @@ export function Navbar() {
                         </div>
                     </Link>
 
-                    <div className="hidden md:flex items-center bg-white/5 rounded-full px-2 py-1 border border-white/5 backdrop-blur-sm">
+                    <div className="hidden md:flex items-center bg-white/5 rounded-full px-2 py-1 border border-white/5">
                         {navItems.map((item) => (
                             <Link 
                                 key={item.label} 
