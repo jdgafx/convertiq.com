@@ -82,7 +82,7 @@ export default function ContactPage() {
                                         <span className="text-3xl">📧</span>
                                         <div>
                                             <p className="font-bold text-gray-900">Email us</p>
-                                            <p className="text-gray-600">hello@convertiq.com</p>
+                                            <p className="text-gray-600">hello@ampmarketing.io</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
@@ -99,7 +99,7 @@ export default function ContactPage() {
                                 <p className="text-indigo-700 mb-6">
                                     15 minutes for free. Tell us what is your problem. You won't get pressured or pitched here — only a real conversation on whether we could be the right people to help you.
                                 </p>
-                                <a href="mailto:michael@primemarketingexperts.com" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
+                                <a href="mailto:hello@ampmarketing.io" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us
                                 </a>
                             </div>

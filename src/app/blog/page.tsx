@@ -87,7 +87,7 @@ export default async function BlogPage() {
     try {
         const sanityPosts = await getPosts();
         if (sanityPosts && sanityPosts.length > 0) {
-            posts = sanityPosts;
+            posts = [...sanityPosts, ...fallbackPosts];
         } else {
             posts = fallbackPosts;
         }
