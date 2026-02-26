@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Google Business Profile Optimization | AMP Marketing",
   description: "Get found in Google's local map pack. We optimize your Business Profile so nearby customers call you first.",
-  keywords: ["Google Business Profile optimization", "local SEO services", "Google Maps ranking", "local map pack", "Google Business listing", "local search optimization", "GMB optimization", "local business marketing"],
+  keywords: ["Google Business Profile optimization", "local SEO services", "Google Maps ranking", "local map pack optimization", "Google Business listing management", "local search optimization", "GMB optimization service", "local business marketing", "get found on Google Maps", "Google Business Profile agency", "local SEO Nashua NH", "Bing Places optimization", "improve local search ranking", "Google Business reviews management", "rank higher on Google Maps"],
 };
 
 export default function GoogleBusinessPage() {

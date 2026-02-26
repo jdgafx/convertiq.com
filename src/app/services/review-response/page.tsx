@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Reputation Management System | AMP Marketing",
   description: "Automated review responses that sound personal and professional. Every review gets a reply within 24 hours.",
-  keywords: ["reputation management", "automated review responses", "Google review management", "Yelp review response", "online reputation service", "review monitoring", "business review management", "customer feedback automation"],
+  keywords: ["reputation management service", "automated review responses", "Google review management", "Yelp review response service", "online reputation management", "review monitoring service", "business review management", "customer feedback automation", "AI review response", "respond to Google reviews automatically", "negative review management", "review generation service", "online reviews for business", "best reputation management agency 2025"],
 };
 
 export default function ReviewResponsePage() {

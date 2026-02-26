@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "AI Solutions & Services | AMP Marketing",
   description: "Help with AI to grow your business and increase the leads. We build tools that work from attracting customers to handling calls.",
-  keywords: ["AI marketing services", "business automation services", "lead generation tools", "AI chatbot service", "voice receptionist service", "marketing automation agency", "Nashua NH marketing services", "Bing Ads services", "Google Ads management"],
+  keywords: ["AI marketing services", "business automation services", "lead generation tools", "AI chatbot service", "AI voice receptionist service", "marketing automation agency", "Nashua NH marketing services", "Bing Ads management services", "Google Ads management services", "AI-powered marketing solutions", "automated sales tools for business", "digital marketing services near me", "best AI marketing tools 2025"],
 };
 
 const services = [

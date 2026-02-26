@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | AMP Marketing",
   },
   description: "We help businesses get more leads and save time with smart marketing tools. From AI chatbots to ad campaigns, we build systems that work around the clock.",
-  keywords: ["marketing agency", "AI marketing", "automated lead generation", "business growth", "AI voice receptionist", "sales automation", "AI chatbot", "sales funnel", "marketing automation", "lead generation", "AI marketing agency Nashua NH", "Bing Ads agency", "Google Ads management", "small business marketing automation", "appointment booking AI", "lead generation services near me"],
+  keywords: ["AI marketing agency", "automated lead generation", "AI chatbot for business", "AI voice receptionist", "marketing automation", "lead generation agency", "sales automation tools", "small business marketing", "AI marketing agency Nashua NH", "Bing Ads agency", "Bing Ads management", "Google Ads agency", "Google Ads management", "lead generation services near me", "appointment booking AI", "AI lead capture", "business growth tools", "marketing agency New Hampshire", "digital marketing automation", "AI sales funnel", "PPC management agency", "local SEO services Nashua"],
   authors: [{ name: "AMP Marketing" }],
   creator: "AMP Marketing",
   publisher: "AMP Marketing",

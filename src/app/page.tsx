@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Marketing Agency | Automated Lead Generation & Sales Tools | AMP Marketing",
   description: "AMP Marketing builds AI-powered lead generation systems, chatbots, voice receptionists, and sales automation tools for small businesses. Get more leads, book more appointments, and grow revenue on autopilot.",
-  keywords: ["AI marketing agency", "automated lead generation", "AI chatbot for business", "AI voice receptionist", "marketing automation", "lead generation services", "sales automation tools", "small business marketing", "Nashua NH marketing agency", "digital marketing automation", "Bing Ads management", "Google Ads agency", "AI lead capture", "appointment booking automation", "business growth tools"],
+  keywords: ["AI marketing agency", "automated lead generation", "AI chatbot for business", "AI voice receptionist", "marketing automation", "lead generation services", "sales automation tools", "small business marketing", "Nashua NH marketing agency", "digital marketing automation", "Bing Ads management company", "Google Ads management agency", "AI lead capture system", "appointment booking automation", "business growth tools", "AI marketing services near me", "best AI marketing agency 2025", "affordable lead generation", "AI-powered sales funnel", "marketing agency for small business"],
   openGraph: {
     title: "AMP Marketing | AI-Powered Lead Generation & Sales Automation",
     description: "Get more leads and book more appointments with AI chatbots, voice receptionists, email automation, and smart sales funnels. Built for small businesses that want to grow.",

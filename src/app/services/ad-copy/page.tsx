@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Peak Performance Ads Optimization | AMP Marketing",
   description: "Ad copy that grabs attention, drives clicks, and lowers your cost per lead. We test relentlessly so your budget works harder.",
-  keywords: ["ad copy optimization", "PPC ad writing", "Google Ads copywriting", "Bing Ads copy", "Facebook ad copy", "ad headline testing", "cost per lead reduction", "paid advertising agency"],
+  keywords: ["ad copy optimization", "PPC ad writing service", "Google Ads copywriting", "Bing Ads copy optimization", "Facebook ad copy writing", "ad headline testing", "cost per lead reduction", "paid advertising agency", "Meta ad copy agency", "LinkedIn Ads copywriting", "Microsoft Ads copy", "ad A/B testing service", "lower cost per click", "PPC agency Nashua NH", "best ad copy agency 2025"],
 };
 
 export default function AdCopyPage() {

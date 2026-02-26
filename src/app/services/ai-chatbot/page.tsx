@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "AI Chatbot Setup | AMP Marketing",
   description: "An AI chatbot that captures leads around the clock. Never lose another website visitor.",
-  keywords: ["AI chatbot for business", "website chatbot", "lead capture chatbot", "automated appointment booking", "24/7 chatbot", "AI lead qualification", "chatbot for small business"],
+  keywords: ["AI chatbot for business", "website chatbot service", "lead capture chatbot", "automated appointment booking chatbot", "24/7 AI chatbot", "AI lead qualification", "chatbot for small business", "best business chatbot 2025", "AI customer service chatbot", "chatbot lead generation", "website visitor engagement bot", "conversational AI for business", "chatbot setup service", "AI chatbot agency"],
 };
 
 export default function AiChatbotPage() {

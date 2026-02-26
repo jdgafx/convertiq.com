@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Consistent Social Presence Package | AMP Marketing",
   description: "Consistent social media posting that keeps your brand visible. 20 posts a month that sound like you, not a robot.",
-  keywords: ["social media management", "social media posting service", "Instagram management", "LinkedIn content management", "Facebook business posting", "social media agency", "social media marketing", "brand awareness social media"],
+  keywords: ["social media management service", "social media posting service", "Instagram management for business", "LinkedIn content management", "Facebook business page management", "social media agency", "social media marketing", "brand awareness social media", "social media content calendar", "X Twitter management", "social media for small business", "social media agency Nashua NH", "best social media management 2025", "affordable social media service"],
 };
 
 export default function SocialMediaPage() {

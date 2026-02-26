@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "High-Converting Pages | AMP Marketing",
   description: "Pages designed to convert visitors into paying customers. Simple, quick, and user-friendly.",
-  keywords: ["landing page design", "high-converting landing pages", "lead capture pages", "landing page agency", "conversion rate optimization", "mobile-optimized landing pages"],
+  keywords: ["landing page design service", "high-converting landing pages", "lead capture page design", "landing page agency", "conversion rate optimization", "mobile-optimized landing pages", "custom landing page builder", "landing page for lead generation", "fast loading landing pages", "A/B tested landing pages", "landing page copywriting", "best landing page agency 2025", "PPC landing page design", "Bing Ads landing pages"],
 };
 
 export default function LandingPagesPage() {
