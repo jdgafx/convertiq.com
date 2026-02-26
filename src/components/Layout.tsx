@@ -26,23 +26,24 @@ export function Navbar() {
     ];
 
     return (
-        <div className="fixed top-0 left-0 w-full z-50">
-            <nav 
+        <div className="fixed top-0 left-0 w-full z-50" style={{ WebkitTransform: 'translateZ(0)', transform: 'translateZ(0)' }}>
+            <nav
                 className={`
                     transition-all duration-500 ease-out w-full
-                    ${scrolled || isOpen ? 'bg-black/80 border-b border-white/10 shadow-2xl backdrop-blur-xl' : 'bg-transparent'}
+                    ${scrolled || isOpen ? 'border-b border-white/10 shadow-2xl' : 'bg-transparent'}
                 `}
+                style={scrolled || isOpen ? { backgroundColor: 'rgba(2, 6, 23, 0.95)' } : undefined}
             >
                 <div className="max-w-7xl mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
-                    <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none">
+                    <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none" style={{ WebkitTransform: 'translateZ(0)', transform: 'translateZ(0)' }}>
                         <div className="relative w-11 h-11 rounded-xl bg-gradient-to-b from-blue-500 to-purple-600 p-[1px] shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/40 transition-all duration-300">
                             <div className="w-full h-full bg-[#0a0a0f] rounded-[10px] flex items-center justify-center relative overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-50"></div>
                                 <Zap className="w-5 h-5 text-white fill-white" style={{ filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.4))' }} />
                             </div>
                         </div>
-                        
+
                         <div className="flex flex-col justify-center">
                             <div className="flex items-baseline leading-none mb-1">
                                 <span className="text-xl font-bold text-white tracking-tight mr-1">AMP</span>
@@ -52,19 +53,20 @@ export function Navbar() {
                         </div>
                     </Link>
 
-                    <div className="hidden md:flex items-center bg-white/5 rounded-full px-2 py-1 border border-white/5">
+                    <div className="hidden md:flex items-center rounded-full px-2 py-1" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.05)', WebkitTransform: 'translateZ(0)', transform: 'translateZ(0)' }}>
                         {navItems.map((item) => (
-                            <Link 
-                                key={item.label} 
+                            <Link
+                                key={item.label}
                                 href={item.href}
-                                className={`px-5 py-2 text-sm font-medium transition-all rounded-full ${pathname === item.href ? 'text-white bg-white/10 shadow-[0_0_10px_rgba(255,255,255,0.1)]' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                                className={`px-5 py-2 text-sm font-medium transition-all rounded-full ${pathname === item.href ? 'text-white shadow-[0_0_10px_rgba(255,255,255,0.1)]' : 'text-gray-300 hover:text-white'}`}
+                                style={pathname === item.href ? { backgroundColor: 'rgba(255, 255, 255, 0.1)', WebkitTransform: 'translateZ(0)', transform: 'translateZ(0)' } : { WebkitTransform: 'translateZ(0)', transform: 'translateZ(0)' }}
                             >
                                 {item.label}
                             </Link>
                         ))}
                     </div>
 
-                    <div className="hidden md:block">
+                    <div className="hidden md:block" style={{ WebkitTransform: 'translateZ(0)', transform: 'translateZ(0)' }}>
                         <Link href="/contact">
                             <button className="bg-white text-black hover:bg-indigo-50 px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105">
                                 Get Started
@@ -106,7 +108,7 @@ export function Navbar() {
 
 export function Footer() {
     return (
-        <footer className="border-t border-white/10 bg-black/80 backdrop-blur-xl pt-20 pb-10 relative z-10">
+        <footer className="border-t border-white/10 pt-20 pb-10 relative z-10" style={{ backgroundColor: 'rgba(2, 6, 23, 0.95)' }}>
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
                 <div className="col-span-1 md:col-span-1">
                     <Link href="/" className="flex items-center gap-3 cursor-pointer group select-none mb-6">

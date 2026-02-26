@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | AMP Marketing",
   },
   description: "We help businesses get more leads and save time with smart marketing tools. From AI chatbots to ad campaigns, we build systems that work around the clock.",
-  keywords: ["marketing agency", "AI marketing", "automated lead generation", "business growth", "AI voice receptionist", "sales automation", "AI chatbot", "sales funnel", "marketing automation", "lead generation"],
+  keywords: ["marketing agency", "AI marketing", "automated lead generation", "business growth", "AI voice receptionist", "sales automation", "AI chatbot", "sales funnel", "marketing automation", "lead generation", "AI marketing agency Nashua NH", "Bing Ads agency", "Google Ads management", "small business marketing automation", "appointment booking AI", "lead generation services near me"],
   authors: [{ name: "AMP Marketing" }],
   creator: "AMP Marketing",
   publisher: "AMP Marketing",
@@ -103,6 +103,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <meta name="geo.region" content="US-NH" />
+        <meta name="geo.placename" content="Nashua" />
+        <meta name="geo.position" content="42.7654;-71.4676" />
+        <meta name="ICBM" content="42.7654, -71.4676" />
         <link rel="icon" href="/favicon-amp.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon-amp.svg" />
         <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-amp.svg" />

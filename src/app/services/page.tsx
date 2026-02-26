@@ -4,13 +4,14 @@ import Link from "next/link";
 export const metadata = {
   title: "AI Solutions & Services | AMP Marketing",
   description: "Help with AI to grow your business and increase the leads. We build tools that work from attracting customers to handling calls.",
+  keywords: ["AI marketing services", "business automation services", "lead generation tools", "AI chatbot service", "voice receptionist service", "marketing automation agency", "Nashua NH marketing services", "Bing Ads services", "Google Ads management"],
 };
 
 const services = [
   { 
     icon: "🚀", 
     title: "AI Assisted Leadgen", 
-    desc: "With AI power, find your potential customers on social media and different ad platforms. The system will auto-fill your sales funnel so that your only job is to close the sales.", 
+    desc: "AI finds your ideal clients across social media and ad platforms. Your sales funnel stays full so you can focus on closing deals.",
     price: "Starting at $1,499 Setup + $299/mo",
     href: "/services/lead-funnel",
     featured: true
@@ -18,7 +19,7 @@ const services = [
   { 
     icon: "💡", 
     title: "SEO Content", 
-    desc: "AI auxiliaries can help you a lot on the research side and produce top-notch articles that you can post on Google and will thus rank better. Besides, you gain nice and new contents that attract good traffic to your organics.", 
+    desc: "We research and write articles that rank well on Google. Fresh content that brings in organic traffic month after month.",
     price: "Starting at $149 per article",
     href: "/contact",
     featured: true
@@ -26,7 +27,7 @@ const services = [
   { 
     icon: "📞", 
     title: "AI Voice", 
-    desc: "Our AI will be answering the calls, qualifying the leads, and booking the appointments even when you are sleeping. This is the answer for both inbound and outbound calls.", 
+    desc: "Our AI answers calls, qualifies leads, and books appointments around the clock. Works for both inbound and outbound calls.",
     price: "Starting at $497 Setup + $249/mo",
     href: "/services/ai-voice",
     featured: true
@@ -34,7 +35,7 @@ const services = [
   { 
     icon: "⚙️", 
     title: "Landing Pages", 
-    desc: "You have only 3 seconds to capture the visitor’s attention. If you can convince him to make a purchase, then your page is the right one. Fast loading and seamless are the solution. Trust!", 
+    desc: "You have about 3 seconds before a visitor leaves. We build pages that load fast, look sharp, and turn browsers into buyers.",
     price: "Starting at $799 one-time",
     href: "/services/landing-pages",
     featured: true
@@ -42,42 +43,42 @@ const services = [
   { 
     icon: "🤖", 
     title: "AI Chatbot", 
-    desc: "Admittedly, a lot of chatbots are just terrible. But the one we develop is saving the day of your business by talking with a human voice and booking when people are ready to call. Thus, customers very often get more qualified leads during the first week.", 
+    desc: "Most chatbots are terrible. Ours actually books meetings and sounds like a real person. Clients typically see more qualified leads within the first week.",
     price: "Starting at $497 Setup + $149/mo",
     href: "/services/ai-chatbot"
   },
   { 
     icon: "📱", 
     title: "Social Media", 
-    desc: "Regular posting works well, but it takes a lot of your time. We keep you in good shape while you concentrate on other things.", 
+    desc: "Consistent posting builds your brand, but it takes time you don't have. We handle it so you can focus on running your business.",
     price: "Starting at $299/mo",
     href: "/services/social-media"
   },
   { 
     icon: "📝", 
     title: "Ad Copy", 
-    desc: "Bad advertisements only waste money. We write enticing headlines to generate clicks and keep testing until your customer acquisition cost goes down. 100+ advertising platforms.", 
+    desc: "Bad ads waste money. We write compelling headlines, test variations, and keep optimizing until your cost per lead drops. Works across 100+ ad platforms.",
     price: "Starting at $299 Setup + $199/mo",
     href: "/services/ad-copy"
   },
   { 
     icon: "✉️", 
     title: "Email Automation", 
-    desc: "Everybody gets tired of reading those boring generic emails. Our follow-ups are real and personal and above all, they typically get responses too!", 
+    desc: "Nobody reads generic follow-up emails. Ours sound personal and human, and they actually get responses.",
     price: "Starting at $199 Setup + $49/mo",
     href: "/services/email-automation"
   },
   { 
     icon: "📍", 
     title: "Google Business", 
-    desc: "If people can’t find your place on Google Map, it means they can find your competitors. We fix up your profile so that locals actually see you.", 
+    desc: "If people can’t find you on Google Maps, they’re finding your competitors instead. We optimize your profile so local customers see you first.",
     price: "Starting at $399 one-time",
     href: "/services/google-business"
   },
   { 
     icon: "⭐", 
     title: "Review Response", 
-    desc: "Answering to every review is a very time-consuming task. Our AI analyses the review and writes an appropriate response. Good ones get thanked. Bad ones get handled.", 
+    desc: "Responding to every review takes time. Our AI reads each one and writes a personalized reply. Good reviews get thanked. Bad ones get handled professionally.",
     price: "Starting at $99/mo",
     href: "/services/review-response"
   },
