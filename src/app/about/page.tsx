@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About AMP Marketing | AI-Driven Growth for 500+ Businesses",
+  title: "About Us | AI-Driven Growth for 500+ Businesses",
   description: "Founded by Michael Krieger, AMP Marketing combines Prime Marketing Experts' decade of experience with AI technology to deliver faster, more affordable lead generation for businesses nationwide.",
   keywords: ["about AMP Marketing", "Michael Krieger marketing", "Prime Marketing Experts", "AI marketing company", "marketing agency Nashua NH", "small business lead generation agency", "AI-powered business growth", "digital marketing agency New Hampshire", "AI marketing firm Boston area", "Nashua NH digital marketing", "results-driven marketing agency", "marketing automation company"],
   openGraph: {
