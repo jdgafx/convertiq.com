@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-02-26T23:34:27.609Z",
+  "sites": {
+    "main": {
+      "name": "AMP Marketing (Main)",
+      "pages": {}
+    }
+  },
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0
+  },
+  "error": "Connection closed."
+}

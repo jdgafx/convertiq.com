@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-26T23:32:57.348Z",
+  "sites": {},
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0
+  },
+  "error": "page.waitForTimeout is not a function"
+}
