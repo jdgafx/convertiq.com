@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +29,7 @@ export const metadata: Metadata = {
     description: "We help you automate lead capture and sales follow-ups with smart technology that actually works.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "AMP Marketing - Solutions That Scale",
@@ -32,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AMP Marketing | Smart Tools That Grow Your Business",
     description: "We help you automate lead capture and sales follow-ups with smart technology that actually works.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
@@ -109,7 +117,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "AMP Marketing",
-    "image": "https://melodic-travesseiro-f5ef27.netlify.app/logo.png",
+    "image": "https://melodic-travesseiro-f5ef27.netlify.app/logo-amp-marketing.svg",
     "description": "We help businesses get more leads and save time with smart marketing tools that work around the clock.",
     "address": {
       "@type": "PostalAddress",
@@ -150,7 +158,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.variable}>
       <head>
         <script
           type="application/ld+json"

@@ -2,5 +2,6 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 Disallow: /admin/
+Disallow: /studio/
 
-Sitemap: https://convertiq.com/sitemap.xml
+Sitemap: https://melodic-travesseiro-f5ef27.netlify.app/sitemap.xml

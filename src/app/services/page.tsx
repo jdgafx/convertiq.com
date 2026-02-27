@@ -92,7 +92,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-white font-sans">
+    <main className="min-h-screen bg-white font-poppins">
       <Navbar />
 
       <section className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white py-24">

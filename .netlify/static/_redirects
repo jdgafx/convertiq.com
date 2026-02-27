@@ -1,0 +1,2 @@
+# Sanity Studio SPA routing - all /studio paths serve the studio index
+/studio/*  /studio/index.html  200
