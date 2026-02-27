@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "High-Converting Pages",
   description: "Pages designed to convert visitors into paying customers. Simple, quick, and user-friendly.",
   keywords: ["landing page design service", "high-converting landing pages", "lead capture page design", "landing page agency", "conversion rate optimization", "mobile-optimized landing pages", "custom landing page builder", "landing page for lead generation", "fast loading landing pages", "A/B tested landing pages", "landing page copywriting", "best landing page agency 2025", "PPC landing page design", "Bing Ads landing pages"],
+  openGraph: {
+    title: "High-Converting Pages",
+    description: "Pages designed to convert visitors into paying customers. Simple, quick, and user-friendly.",
+    url: "https://melodic-travesseiro-f5ef27.netlify.app/services/landing-pages",
+  },
 };
 
 export default function LandingPagesPage() {
@@ -16,7 +22,7 @@ export default function LandingPagesPage() {
           <div className="text-6xl mb-6">🎯</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">High-Converting Pages</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Only one page needed to turn visitors into leads. We come up with the text, the design, and ensure that the &quot;Buy&quot; button is 100% functional. You get an elegant website that loads fast and is a great source of income for you.
+            One page is all it takes to turn visitors into leads. We write the copy, design the layout, and make sure every button works. You get a clean page that loads fast and actually makes you money.
           </p>
         </div>
       </section>
@@ -24,14 +30,14 @@ export default function LandingPagesPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-gray-600 mb-4">Here is the straightforward comparison between an attractive page and one that generates sales:</p>
+              <p className="text-gray-600 mb-4">Here's what separates a good-looking page from one that actually makes sales:</p>
               <ul className="space-y-4">
                 {[
                   "Flawless on mobile—where over 70% of your visitors are browsing.",
                   "Lightning-fast load times under 3 seconds. Anything slower and visitors leave.",
                   "Headlines that stop the scroll.",
-                  "Trust is instantly established when we combine your glowing testimonials and client logos—because people buy from people they trust.",
-                  "Prominent and obvious buttons. We don&apos;t make it difficult to check out.",
+                  "Your testimonials and client logos front and center — because people buy from brands they trust.",
+                  "Clear, prominent buttons. We make it easy to take action.",
                   "We set up proper analytics so you always know where the money is coming from.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
@@ -47,7 +53,7 @@ export default function LandingPagesPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h3>
               <div className="text-5xl font-black text-indigo-600 mb-2">Starting at $799<span className="text-xl text-gray-500">/page</span></div>
               <p className="text-sm text-gray-500 mb-2">One-time fee per page</p>
-              <p className="text-gray-600 mb-6">You are free to revise the content two times.</p>
+              <p className="text-gray-600 mb-6">Includes two rounds of revisions.</p>
               <Link href="/contact" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                 Order Landing Page
               </Link>
@@ -57,12 +63,12 @@ export default function LandingPagesPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Things You May Be Wondering About</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Common Questions</h2>
           {[
-            { q: "Where will the pages actually be?", a: "We can either put it on your existing website or create a new one for you. It'll work whichever way you choose." },
-            { q: "Can you integrate with my CRM?", a: "Of course, we can feed the leads directly into HubSpot, Salesforce, Mailchimp—the CRM of your choice. No hassles." },
-            { q: "What if I want changes after some time?", a: "We cover the first 30 days of tweaks, and after that, we are always available if you need further updates." },
-            { q: "How many conversions do you think I will get?", a: "Results depend on your product and your traffic. We build the conversion mechanism—you bring the audience." },
+            { q: "Where does the page live?", a: "We can add it to your existing website or set up a standalone page. Either way works." },
+            { q: "Can you integrate with my CRM?", a: "Yes. We connect directly to HubSpot, Salesforce, Mailchimp, or whatever you're using. No hassle." },
+            { q: "What if I need changes later?", a: "The first 30 days of tweaks are included. After that, we're always available if you need updates." },
+            { q: "How many conversions should I expect?", a: "That depends on your product and traffic. We build the page to convert — you bring the visitors." },
           ].map((faq, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 mb-4 shadow">
               <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -75,7 +81,7 @@ export default function LandingPagesPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">The landing page you&apos;ve been procrastinating about.</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            One e-commerce brand reported that a single landing page generated $47,000 in its first month. They had been putting it off for nearly two years.
+            One e-commerce brand made $47,000 from a single landing page in its first month. They'd been putting it off for two years.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Build My Page

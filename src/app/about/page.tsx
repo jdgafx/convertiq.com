@@ -22,7 +22,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-black mb-6">About AMP Marketing</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        We help find more leads for businesses and help them close more sales through technologies that really work.
+                        We help businesses find more leads and close more sales with technology that actually delivers.
                     </p>
                 </div>
             </section>

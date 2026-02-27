@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Human-Like Follow Ups Sequences",
   description: "Employ smart email sequences that successfully convert subscribers into customers.",
   keywords: ["email automation services", "automated email sequences", "email marketing automation", "drip campaign setup", "abandoned cart email recovery", "email follow-up automation", "B2B email sequences", "email nurture campaigns", "automated lead follow-up emails", "email automation agency", "best email automation for small business", "cold email sequences", "welcome email automation", "email marketing agency"],
+  openGraph: {
+    title: "Human-Like Follow Ups Sequences",
+    description: "Employ smart email sequences that successfully convert subscribers into customers.",
+    url: "https://melodic-travesseiro-f5ef27.netlify.app/services/email-automation",
+  },
 };
 
 export default function EmailAutomationPage() {
@@ -16,7 +22,7 @@ export default function EmailAutomationPage() {
           <div className="text-6xl mb-6">✉️</div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Human-Like Follow Ups</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Most automated emails feel like spam. Ours don't. Our sequences read as if a real person wrote them, not a robot. That's how you convert subscribers into customers without sounding robotic.
+            Most automated emails feel like spam. Ours read like a real person wrote them. That's how you turn subscribers into customers.
           </p>
         </div>
       </section>
@@ -24,8 +30,8 @@ export default function EmailAutomationPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Most customers report seeing a positive impact within a week.</h2>
-              <p className="text-gray-600 mb-4">The goal is to make every email feel like a personal conversation between just two people. Whether it's HVAC or legal services, we have experience across both. Here's what we deliver:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Most clients see results within a week.</h2>
+              <p className="text-gray-600 mb-4">Every email should feel like a one-on-one conversation. HVAC, legal, e-commerce — we've done it all. Here's what you get:</p>
               <ul className="space-y-4">
                 {[
                   "Welcome emails that read like a personal note, not a mass broadcast.",
@@ -76,7 +82,7 @@ export default function EmailAutomationPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Stop Chasing Leads Manually</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            One of the clients has said it best: &quot;I used to spend 3 hours a day on follow-ups. Now it all happens while I sleep.&quot;
+            One client put it best: &quot;I used to spend 3 hours a day on follow-ups. Now it all happens while I sleep.&quot;
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl">
             Let's Build Your Sequence

@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "AI Assisted Leadgen",
   description: "Convert potential customers 24/7. AI-powered lead capture on your website, Facebook, and LinkedIn.",
   keywords: ["lead generation funnel", "AI lead generation system", "automated sales funnel", "lead capture system", "lead nurturing automation", "B2B lead generation service", "appointment booking funnel", "sales funnel agency", "AI-powered lead generation", "multi-channel lead funnel", "lead magnet funnel setup", "best lead generation agency 2025", "automated prospect pipeline", "sales funnel for small business"],
+  openGraph: {
+    title: "AI Assisted Leadgen",
+    description: "Convert potential customers 24/7. AI-powered lead capture on your website, Facebook, and LinkedIn.",
+    url: "https://melodic-travesseiro-f5ef27.netlify.app/services/lead-funnel",
+  },
 };
 
 export default function LeadGenPage() {

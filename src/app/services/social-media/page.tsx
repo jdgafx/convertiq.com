@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Consistent Social Presence Package",
   description: "Consistent social media posting that keeps your brand visible. 20 posts a month that sound like you, not a robot.",
   keywords: ["social media management service", "social media posting service", "Instagram management for business", "LinkedIn content management", "Facebook business page management", "social media agency", "social media marketing", "brand awareness social media", "social media content calendar", "X Twitter management", "social media for small business", "social media agency Nashua NH", "best social media management 2025", "affordable social media service"],
+  openGraph: {
+    title: "Consistent Social Presence Package",
+    description: "Consistent social media posting that keeps your brand visible. 20 posts a month that sound like you, not a robot.",
+    url: "https://melodic-travesseiro-f5ef27.netlify.app/services/social-media",
+  },
 };
 
 export default function SocialMediaPage() {

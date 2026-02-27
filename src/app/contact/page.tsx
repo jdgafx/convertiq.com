@@ -21,7 +21,7 @@ export default function ContactPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-black mb-6">Contact Us</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Do you have any questions? Are you interested in discussing your project? Please, send us a message and we will respond to you quickly—in most cases the same day.
+                        Got a question? Want to talk about your project? Drop us a message and we'll get back to you fast — usually the same day.
                     </p>
                 </div>
             </section>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                             <div className="bg-indigo-50 rounded-3xl p-10">
                                                                 <h3 className="text-2xl font-bold text-indigo-900 mb-4">Let's Talk</h3>
                                 <p className="text-indigo-700 mb-6">
-                                    15 minutes for free. Tell us what is your problem. You won't get pressured or pitched here — only a real conversation on whether we could be the right people to help you.
+                                    15 minutes, totally free. Tell us what's going on. No pressure, no pitch — just a real conversation about whether we're the right fit.
                                 </p>
                                 <a href="mailto:hello@ampmarketing.io" className="block w-full bg-indigo-600 text-white text-center py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors">
                                     Email Us

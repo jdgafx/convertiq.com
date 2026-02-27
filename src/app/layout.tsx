@@ -52,6 +52,59 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does AMP Marketing offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AMP Marketing offers AI chatbots, AI voice receptionists, automated lead generation funnels, email automation, SEO content writing, social media management, Google Business optimization, ad copy optimization, landing page design, and review response management.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can I see results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most clients see their first qualified leads within 7 days. Full system implementation typically takes about a week.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Do you require long-term contracts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All plans are month-to-month with no long-term contracts. You can cancel anytime.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Where is AMP Marketing located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AMP Marketing is located at 74 Northeastern Blvd #12a Ste 101, Nashua, NH 03062. We serve businesses nationwide.",
+        },
+      },
+    ],
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AMP Marketing",
+    "url": "https://melodic-travesseiro-f5ef27.netlify.app",
+    "logo": "https://melodic-travesseiro-f5ef27.netlify.app/logo-amp-marketing.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-617-651-1457",
+      "contactType": "sales",
+      "email": "hello@ampmarketing.io",
+    },
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -103,6 +156,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <meta name="geo.region" content="US-NH" />
         <meta name="geo.placename" content="Nashua" />
         <meta name="geo.position" content="42.7654;-71.4676" />
@@ -111,17 +172,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon-amp.svg" />
         <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-amp.svg" />
         <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-amp.svg" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
-        />
+        {/* Add Google Analytics here when tracking ID is available */}
       </head>
       <body className="antialiased">
         {children}

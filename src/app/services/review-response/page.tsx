@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Reputation Management System",
   description: "Automated review responses that sound personal and professional. Every review gets a reply within 24 hours.",
   keywords: ["reputation management service", "automated review responses", "Google review management", "Yelp review response service", "online reputation management", "review monitoring service", "business review management", "customer feedback automation", "AI review response", "respond to Google reviews automatically", "negative review management", "review generation service", "online reviews for business", "best reputation management agency 2025"],
+  openGraph: {
+    title: "Reputation Management System",
+    description: "Automated review responses that sound personal and professional. Every review gets a reply within 24 hours.",
+    url: "https://melodic-travesseiro-f5ef27.netlify.app/services/review-response",
+  },
 };
 
 export default function ReviewResponsePage() {

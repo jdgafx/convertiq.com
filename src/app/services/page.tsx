@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/Layout";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "AI Solutions & Services",
-  description: "Help with AI to grow your business and increase the leads. We build tools that work from attracting customers to handling calls.",
+  description: "AI-powered tools to grow your business and bring in more leads. We build systems that attract customers and handle calls.",
   keywords: ["AI marketing services", "business automation services", "lead generation tools", "AI chatbot service", "AI voice receptionist service", "marketing automation agency", "Nashua NH marketing services", "Bing Ads management services", "Google Ads management services", "AI-powered marketing solutions", "automated sales tools for business", "digital marketing services near me", "best AI marketing tools 2025"],
+  openGraph: {
+    title: "AI Solutions & Services",
+    description: "AI-powered tools to grow your business and bring in more leads. We build systems that attract customers and handle calls.",
+    url: "https://melodic-travesseiro-f5ef27.netlify.app/services",
+  },
 };
 
 const services = [
@@ -147,7 +153,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-black text-white mb-6">Not Sure What You Need?</h2>
           <p className="text-indigo-100 text-xl mb-8 max-w-2xl mx-auto">
-            Let's meet for 15 minutes. No selling—we will just decide what makes sense for you.
+            Let's talk for 15 minutes. No sales pitch — just figuring out what makes sense for you.
           </p>
           <Link 
             href="/contact" 

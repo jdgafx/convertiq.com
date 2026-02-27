@@ -59,7 +59,7 @@ export default function Home() {
             </p>
 
             <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              We make high-tech tools that attract leads, take your calls, and take care of your boring tasks even if you are sleeping. No complicated technical jargon. Just good results.
+              We build tools that bring in leads, answer your calls, and handle the busywork — even while you sleep. No jargon. Just results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-1">
@@ -90,9 +90,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">All Services</span>
-            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-4 mb-6">All the things we can do for you</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-4 mb-6">Everything We Build</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              If it turns out AI is able to get you more customers or save your time, we may have just built it. See what we have here.
+              If AI can get you more customers or save you time, we've probably already built it.
             </p>
           </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -169,7 +169,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-black text-white mb-6">Want More Customers?</h2>
           <p className="text-indigo-100 text-xl mb-10 max-w-2xl mx-auto">
-            We have hundreds of businesses under our belt. Let's have a brief chat and check whether we may be able to assist you too. No pressure and no sales pitch.
+            We've helped hundreds of businesses grow. Let's have a quick chat and see if we can help yours too. No pressure, no sales pitch.
           </p>
           <Link href="/contact" className="inline-block bg-white text-indigo-600 px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             Book a Free Call
