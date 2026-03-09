@@ -45,11 +45,6 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse-glow">
-              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-              Real results in a matter of days
-            </div>
-            
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
               AI That Works <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">for Your Business</span>
             </h1>
