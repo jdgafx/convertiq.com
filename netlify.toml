@@ -3,6 +3,13 @@
   publish = "out"
   environment = { NODE_VERSION = "20" }
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  # Keep the headless-chromium binary external — Netlify ships it as a layer
+  # rather than bundling 50+MB into every function invocation.
+  external_node_modules = ["@sparticuz/chromium", "playwright-core"]
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
