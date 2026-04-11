@@ -18,7 +18,7 @@
     "@sparticuz/chromium": "^131.0.1",
     "framer-motion": "^11.18.0",
     "lucide-react": "^0.563.0",
-    "next": "16.1.5",
+    "next": "16.2.3",
     "next-sanity": "^12.0.17",
     "playwright-core": "^1.47.2",
     "react": "19.2.3",
