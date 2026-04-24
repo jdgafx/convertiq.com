@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 
 const SITE_URL = 'https://melodic-travesseiro-f5ef27.netlify.app';
 const SITE_NAME = 'AMP Marketing';
-const ORG_LOGO = `${SITE_URL}/logo.png`;
+const ORG_LOGO = `${SITE_URL}/logo-amp-marketing.svg`;
 
 type PortableImage = { asset: { _ref: string }; alt?: string };
 type PortableLink = { href?: string };
